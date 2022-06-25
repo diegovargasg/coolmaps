@@ -73,8 +73,33 @@
         -webkit-overflow-scrolling: touch;
       }
 
-      #map {
-        height: 600px;
+      .map {
+        height: 650px;
+      }
+
+      .legend {
+        line-height: 18px;
+        color: #555;
+      }
+      .legend i {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+      }
+
+      .info {
+        padding: 6px 8px;
+        background: white;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        color: #000;
+      }
+      .info h5 {
+        margin: 0 0 5px;
+        color: #777;
       }
     </style>
   </head>
@@ -105,7 +130,7 @@
 
         <div class="p-5 mb-4 bg-light rounded-3">
           <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">
+            <h1 class="display-6 fw-bold">
               Evaluation of the impact of Covid-19 lockdowns on the levels of
               air-pollution in Germany
             </h1>
@@ -125,12 +150,52 @@
         </div>
 
         <div class="row align-items-md-stretch mb-4">
-          <div class="col-md-12">
-            <div id="map" class="p-5 text-white bg-light rounded-3"></div>
+          <div class="col-md-6">
+            <h4>PM10 Concentration April 2019</h4>
+            <div
+              id="map_2019"
+              class="p-5 text-white bg-light rounded-3 map"
+            ></div>
+          </div>
+          <div class="col-md-6">
+            <h4>PM10 Concentration April 2020</h4>
+            <div
+              id="map_2020"
+              class="p-5 text-white bg-light rounded-3 map"
+            ></div>
           </div>
         </div>
 
-        <footer class="pt-3 mt-4 text-muted border-top">&copy; 2022 - Diego Vargas</footer>
+        <div class="p-5 mb-4">
+          <div class="container-fluid py-5">
+            <h3 class="display-6 fw-bold">Input Data</h3>
+            <p class="col-md-12 fs-4">
+              For the analisys, I needed datasets obtained within the german territory that included: 
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5 mb-4">
+          <div class="container-fluid py-5">
+            <h3 class="display-6 fw-bold">Methodology</h3>
+            <p class="col-md-12 fs-4">
+              Methodoloty goes here
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5 mb-4">
+          <div class="container-fluid py-5">
+            <h3 class="display-6 fw-bold">Results</h3>
+            <p class="col-md-12 fs-4">
+              Results go here 
+            </p>
+          </div>
+        </div>
+
+        <footer class="pt-3 mt-4 text-muted border-top">
+          &copy; 2022 - Diego Vargas
+        </footer>
       </div>
     </main>
 
@@ -146,14 +211,161 @@
       crossorigin=""
     ></script>
     <script>
-      var map = L.map("map").setView([51.1657, 10.4515], 6)
-      L.tileLayer(
-        "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
-        {
-          maxZoom: 19,
-          attribution: "© OpenStreetMap"
+      let geojson = []
+      let info = []
+      let layers = {}
+      let mapId
+
+      async function initMap(year) {
+
+        mapId = year
+
+        const findLayer = (key, layerId) => {
+          return layers[key].find(e => (e._layerId === layerId))
         }
-      ).addTo(map)
+
+        const highlightFeature = (e) => {
+
+          const highlightStyle = {
+            weight: 1.5,
+            opacity: 1,
+            color: "#666",
+            dashArray: "",
+            fillOpacity: 0.7
+          }
+
+          let layer = e.target
+
+          //highlights all maps with same layerId
+          Object.entries(layers).forEach(([key, value]) => {
+            let sameLayerOtherMap = findLayer(key, layer._layerId)
+            sameLayerOtherMap.setStyle(highlightStyle)
+
+            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+              layer.bringToFront()
+            }
+
+            info[key].update(sameLayerOtherMap.feature.properties)
+          });
+        }
+
+        const resetHighlight = (e) => {
+          let layer = e.target
+          //reset the other linked maps
+          Object.entries(layers).forEach(([key, value]) => {
+            let sameLayerOtherMap = findLayer(key, layer._layerId)
+            geojson[key].resetStyle(sameLayerOtherMap)
+            info[key].update()
+          });
+        }
+
+        const onEachFeature = (feature, layer) => {
+          layer._layerId = feature.properties.fid
+          layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight
+          })
+          layers[year].push(layer)
+        }
+
+        const getColor = (d) => {
+          return d >= 28
+            ? "#d7191c"
+            : d >= 25 && d < 28
+            ? "#ed6e43"
+            : d >= 23 && d < 25
+            ? "#fdba6f"
+            : d >= 21 && d < 23
+            ? "#fee8a5"
+            : d >= 19 && d < 21
+            ? "#e6f4a7"
+            : d >= 18 && d < 19
+            ? "#b3de76"
+            : d >= 15 && d < 18
+            ? "#6abc58"
+            : d >= 8 && d < 15
+            ? "#1a9641"
+            : "#1a9641"
+        }
+
+        const style = (feature) => {
+          return {
+            fillColor: getColor(feature.properties.pm10),
+            weight: 1.5,
+            opacity: 0.1,
+            color: "#000",
+            fillOpacity: 1
+          }
+        }
+
+        const response = await fetch(`./resources/${year}.json`)
+        const data = await response.json()
+        const map = L.map(`map_${year}`, {
+          zoomControl: false,
+          scrollWheelZoom: false
+        }).setView([51.166, 10.4515], 6)
+        L.tileLayer(
+          "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+          {
+            zoom: 6,
+            attribution: "© OpenStreetMap"
+          }
+        ).addTo(map)
+
+        layers[year] = [];
+        geojson[year] = L.geoJson(data, {
+          style: style,
+          onEachFeature: onEachFeature
+        }).addTo(map)
+
+        info[year] = L.control()
+
+        info[year].onAdd = function (map) {
+          this._div = L.DomUtil.create("div", "info") // create a div with a class "info"
+          this.update()
+          return this._div
+        }
+
+        // method that we will use to update the control based on feature properties passed
+        info[year].update = function (props) {
+          this._div.innerHTML = props
+            ? `
+              <b>State:</b> ${props.state}<br/>
+              <b>District:</b> ${props.district}<br/>
+              <b>PM10 Concentration:</b> ${props.pm10.toFixed(2)} µg/m3 <br/>`
+            : "Hover over a district"
+        }
+
+        info[year].addTo(map)
+
+        let legend = L.control({ position: "bottomleft" })
+        legend.onAdd = function (map) {
+          let div = L.DomUtil.create("div", "info legend"),
+            grades = [28, 25, 23, 21, 19, 18, 15, 8],
+            labels = []
+
+          // loop through our density intervals and generate a label with a colored square for each interval
+          for (let i = 0; i < grades.length; i++) {
+            div.innerHTML +=
+              '<i style="background:' +
+              getColor(grades[i] + 1) +
+              '"></i> ' +
+              grades[i] +
+              (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+")
+          }
+
+          return div
+        }
+
+        legend.addTo(map)
+
+        map.on('mouseover', (e) => {
+          mapId = year;
+        })
+      }
+
+      initMap("2019")
+      initMap("2020")
     </script>
   </body>
 </html>
