@@ -1,1 +1,1 @@
-# Happy Maps around the world!
+# Cool Maps around the world!
