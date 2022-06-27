@@ -56,3 +56,11 @@ a.svg-icon {
 a.back-top {
   color: rgba(var(--bs-body-color-rgb), 0.75) !important;
 }
+
+.references {
+  word-break: break-word;
+}
+
+.foot-note{
+  font-size: 10px;
+}

@@ -119,8 +119,8 @@
               Germany that could help me generate information by states and
               districts. Such information was obtained from:
             </p>
-            <ul>
-              <li class="fs-4">
+            <ul class="fs-4">
+              <li>
                 <b>Copernicus: </b>the European Union's Earth observation
                 programme that provides consistent and quality-controlled
                 information related to air pollution and health -
@@ -128,7 +128,7 @@
                   >https://www.copernicus.eu/</a
                 >
               </li>
-              <li class="fs-4">
+              <li>
                 <b>DIVA-GIS:</b> is a free geographic information system
                 software program used for the analysis of geographic data, in
                 particular point data on biodiversity -
@@ -136,7 +136,7 @@
                   >https://www.diva-gis.org/</a
                 >
               </li>
-              <li class="fs-4">
+              <li>
                 <b>The European Environment Agency: </b> is an agency of the
                 European Union, whose task is to provide sound, independent
                 information on the environment -
@@ -152,17 +152,17 @@
           <div class="container-fluid">
             <h3 class="display-6 fw-bold">Methodology</h3>
             <p class="col-md-12 fs-4">
-              After the creation of python scripts for the download, filtering
+              After the creation of python scripts for the download, filtering,
               and processing of the datasets, I proceeded to make use of spatial
               interpolations for estimating the spatial distribution of PM10
-              particles based on the data provided by the air monitoring
-              stations in Germany.<br />
+              based on the data provided by the air monitoring stations in
+              Germany.<br />
               As I wanted the information to be categorized by district, I also
-              made use of zonal statistics in order to group the raster
-              information based on the vector geometries of the administrative
-              boundaries of Germany.<br />
-              Finally, with the help of raster calculations I obtained the
-              relative changes of the concentration of PM10 particles in the
+              made use of zonal statistics to group the raster information based
+              on the vector geometries of the administrative boundaries of
+              Germany.<br />
+              Finally, with the help of raster calculations, I obtained the
+              relative changes in the concentration of PM10 particles in the
               atmosphere between April 2019 and April 2020.
             </p>
           </div>
@@ -196,7 +196,9 @@
           </div>
         </div>
 
-        <div class="py-4 px-1 px-md-5 my-2 my-md-5 row align-items-md-stretch bg-light">
+        <div
+          class="py-4 px-1 px-md-5 my-2 my-md-5 row align-items-md-stretch bg-light"
+        >
           <div class="col-md-12">
             <h4 class="mb-4">
               Minimum and Maximum average concentration in Germany for April
@@ -241,10 +243,10 @@
           </div>
           <div class="col-md-6 mb-4">
             <h4 class="mb-4">Bonus Map - Location of coal mines in Germany</h4>
-            <div
-              id="map_relative"
-              class="p-5 text-white bg-light rounded-3 map"
-            ></div>
+            <div class="map rounded-3 text-center">
+              <img src="resources/coal_mines_germany.jpg" height="490" /><br />
+              <i class="foot-note">Source: European Association for Coal and Lignite</i>
+            </div>
           </div>
         </div>
 
@@ -252,9 +254,16 @@
           <div class="container-fluid">
             <h3 class="display-6 fw-bold">Conclusion</h3>
             <p class="col-md-12 fs-4">
-              In the maps below I show the results of this spatial analysis
-              begining by the average PM10 concentration by district and
-              followed by the relative changed experience during this period.
+              Based on the data obtained, we can observe a relative improvement
+              of about 9,31% in the quality of air during the peak of the
+              covid-19 restrictions compared to the previous year. An
+              interesting observation though is that in some districts the
+              pollution levels increased up to 20% despite the restrictions;
+              this could be explained as a consequence of these air-tracking
+              stations being located in areas of heavy industrial and mining
+              activity. Now that the pandemic seems to be entering a different
+              phase, only time will tell if any improvements made will be lost
+              as we resume the routines we used to have in pre-covid times.
             </p>
           </div>
         </div>
@@ -262,41 +271,32 @@
         <div class="p-2 px-md-5 mb-4">
           <div class="container-fluid">
             <h3 class="display-6 fw-bold">References</h3>
-            <ul>
-              <li></li>
+            <ul class="references">
+              <li>
+                Health effects of particulate matter -
+                <a
+                  href="https://www.who.int/europe/publications/i/item/9789240034433"
+                  target="_blank"
+                  >https://www.who.int/europe/publications/i/item/9789240034433</a
+                >
+              </li>
+              <li>
+                COVID-19 pandemic -
+                <a
+                  href="https://en.wikipedia.org/wiki/COVID-19_pandemic"
+                  target="_blank"
+                  >https://en.wikipedia.org/wiki/COVID-19_pandemic</a
+                >
+              </li>
+              <li>
+                Power sources in Germany -
+                <a
+                  href="https://www.carbonbrief.org/how-germany-generates-its-electricity/"
+                  target="_blank"
+                  >https://www.carbonbrief.org/how-germany-generates-its-electricity/</a
+                >
+              </li>
             </ul>
-            <figure>
-              <blockquote class="blockquote">
-                <p>Health effects of particulate matter</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                https://www.euro.who.int/__data/assets/pdf_file/0006/189051/Health-effects-of-particulate-matter-final-Eng.pdf
-              </figcaption>
-            </figure>
-            <figure>
-              <blockquote class="blockquote">
-                <p>COVID-19 pandemic</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                https://en.wikipedia.org/wiki/COVID-19_pandemic
-              </figcaption>
-            </figure>
-            <figure>
-              <blockquote class="blockquote">
-                <p>Power sources in Germany</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                https://www.carbonbrief.org/how-germany-generates-its-electricity/
-              </figcaption>
-            </figure>
-            <figure>
-              <blockquote class="blockquote">
-                <p>PM10 Particulates</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                https://en.wikipedia.org/wiki/Particulates
-              </figcaption>
-            </figure>
           </div>
         </div>
 
@@ -431,7 +431,9 @@
               ? "#d1e2f3"
               : d >= 0 && d < 5
               ? "#f7fbff"
-              : "#f7fbff"
+              : d < 0
+              ? "#ffffff"
+              : "#ffffff"
           }
 
           return d >= 28
@@ -499,12 +501,23 @@
 
         // method that we will use to update the control based on feature properties passed
         info[year].update = function (props) {
-          this._div.innerHTML = props
-            ? `
+          if (year === "relative") {
+            this._div.innerHTML = props
+              ? `
+              <b>State:</b> ${props.state}<br/>
+              <b>District:</b> ${props.district}<br/>
+              <b>Relative Improvement:</b> ${props.relative_change.toFixed(
+                2
+              )}% <br/>`
+              : "Hover over a district"
+          } else {
+            this._div.innerHTML = props
+              ? `
               <b>State:</b> ${props.state}<br/>
               <b>District:</b> ${props.district}<br/>
               <b>PM10 Concentration:</b> ${props.pm10.toFixed(2)} µg/m3 <br/>`
-            : "Hover over a district"
+              : "Hover over a district"
+          }
         }
 
         info[year].addTo(map)
