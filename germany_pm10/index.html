@@ -23,7 +23,7 @@
 
     <style>
       .map {
-        height: 650px;
+        height: 500px;
       }
 
       .legend {
@@ -55,59 +55,137 @@
 
   <body>
     <main>
+      <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container">
+            <a href="../index.html" class="navbar-brand d-flex align-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                aria-hidden="true"
+                class="bi bi-globe me-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+                />
+              </svg>
+              <strong>Cool Maps</strong>
+            </a>
+          </div>
+        </div>
+      </header>
       <div class="container py-4">
-        <header class="pb-3 mb-4 border-bottom">
-          <a
-            href="../index.html"
-            class="d-flex align-items-center text-dark text-decoration-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="currentColor"
-              class="bi bi-globe me-2"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
-              />
-            </svg>
-            <span class="fs-4">Cool Maps</span>
-          </a>
-        </header>
-
-        <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="py-4 px-5 mb-4 bg-light rounded-3">
           <div class="container-fluid py-5">
             <h1 class="display-6 fw-bold">
-              Evaluation of the impact of Covid-19 lockdowns on the levels of
-              air-pollution in Germany
+              Evaluation of the impact of Covid-19 restrictions on the levels of
+              air pollution in Germany
             </h1>
-            <p class="col-md-8 fs-4">
-              The Covid-19 lockdowns implemented by the German government during
-              the years 2020 to 2022, impacted the day to day lives of its
-              citizens, making practices like Home-Office and reduction of air
-              traveling the new norm. Provided that burning fossil fuels account
-              for more than half of the emissions of harmful substances in the
-              atmosphere around the world, and that air pollution is a leading
-              cause of death for humans, this project seeks to analyze, evaluate
-              and understand any significant change in the concentration of PM10
-              during Covid-19 lockdowns and the impact that mobility, air travel
-              and commuting has on the environment of the habitants of Germany.
+            <p class="col-md-12 fs-4">
+              In December 2019, a novel coronavirus strain (SARS-CoV-2) was
+              identified from an outbreak in Wuhan China and despite the
+              attempts to contain it, the pandemic has caused millions of
+              confirmed deaths, making it one of the deadliest in history.
+            </p>
+            <p class="col-md-12 fs-4">
+              In order to mitigate the negative impacts of Covid-19, the German
+              government implemented a series of restrictions and lockdowns that
+              aimed to minimize the spread of the virus and decrease the
+              incidence rate in the country.
+            </p>
+            <p class="col-md-12 fs-4">
+              In this geospatial analysis, I am going to have a look at the
+              changes experienced during the peak of the restrictions in terms
+              of air pollution and the impact that day-to-day activities like
+              commuting to the office and international traveling have on the
+              quality of the air that I breathe.
+            </p>
+          </div>
+        </div>
+
+        <div class="px-5 mb-4">
+          <div class="container-fluid py-5">
+            <h3 class="display-6 fw-bold">Data Sources</h3>
+            <p class="col-md-12 fs-4">
+              For the analysis, I needed datasets that provided information
+              about the quality of air within the german territory. I also
+              needed geographic data for the administrative subdivisions of
+              Germany that could help me generate information by states and
+              districts. Such information was obtained from:
+            </p>
+            <ul>
+              <li class="fs-4">
+                <b>Copernicus: </b>the European Union's Earth observation
+                programme that provides consistent and quality-controlled
+                information related to air pollution and health -
+                <a href="https://www.copernicus.eu/" target="_blank"
+                  >https://www.copernicus.eu/</a
+                >
+              </li>
+              <li class="fs-4">
+                <b>DIVA-GIS:</b> is a free geographic information system
+                software program used for the analysis of geographic data, in
+                particular point data on biodiversity -
+                <a href="https://www.diva-gis.org/" target="_blank"
+                  >https://www.diva-gis.org/</a
+                >
+              </li>
+              <li class="fs-4">
+                <b>The European Environment Agency: </b> is an agency of the
+                European Union, whose task is to provide sound, independent
+                information on the environment -
+                <a href="https://www.eea.europa.eu/" target="_blank"
+                  >https://www.eea.europa.eu/</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="px-5 mb-4">
+          <div class="container-fluid py-5">
+            <h3 class="display-6 fw-bold">Methodology</h3>
+            <p class="col-md-12 fs-4">
+              After the creation of python scripts for the download, filtering
+              and processing of the datasets, I proceeded to make use of spatial
+              interpolations for estimating the spatial distribution of PM10
+              particles based on the data provided by the air monitoring
+              stations in Germany.<br />
+              As I wanted the information to be categorized by district, I also
+              made use of zonal statistics in order to group the raster
+              information based on the vector geometries of the administrative
+              boundaries of Germany.<br />
+              Finally, with the help of raster calculations I obtained the
+              relative changes of the concentration of PM10 particles in the
+              atmosphere between April 2019 and April 2020.
+            </p>
+          </div>
+        </div>
+
+        <div class="px-5 mb-4">
+          <div class="container-fluid py-5">
+            <h3 class="display-6 fw-bold">Results</h3>
+            <p class="col-md-12 fs-4">
+              In the maps below I show the results of this spatial analysis
+              begining by the average PM10 concentration by district and
+              followed by the relative changed experience during this period.
             </p>
           </div>
         </div>
 
         <div class="row align-items-md-stretch mb-4">
           <div class="col-md-6">
-            <h4>PM10 Concentration April 2019</h4>
+            <h4 class="mb-4">PM10 Concentration April 2019</h4>
             <div
               id="map_2019"
               class="p-5 text-white bg-light rounded-3 map"
             ></div>
           </div>
           <div class="col-md-6">
-            <h4>PM10 Concentration April 2020</h4>
+            <h4 class="mb-4">PM10 Concentration April 2020</h4>
             <div
               id="map_2020"
               class="p-5 text-white bg-light rounded-3 map"
@@ -115,27 +193,91 @@
           </div>
         </div>
 
-        <div class="p-5 mb-4">
+        <div class="row align-items-md-stretch mb-4">
+          <div class="col-md-12">
+            <h4 class="mb-4">Minimum and Maximum average concentration in Germany for April 2019-2020</h4>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Min PM10 Concentration</th>
+                  <th scope="col">Max PM10 Concentration</th>
+                  <th scope="col">Germany's PM10 average concentration</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>April 2019</th>
+                  <td>8,503 μg/m3</td>
+                  <td>35,693 μg/m3</td>
+                  <td>21,879 μg/m3</td>
+                </tr>
+                <tr>
+                  <th>April 2020</th>
+                  <td>10,241 μg/m3</td>
+                  <td>29,666 μg/m3</td>
+                  <td>19,842 μg/m3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row align-items-md-stretch mb-4">
+          <div class="col-md-6">
+            <h4 class="mb-4">Relative Change April 2019 - April 2020</h4>
+            <div
+              id="map_relative"
+              class="p-5 text-white bg-light rounded-3 map"
+            ></div>
+          </div>
+          <div class="col-md-6">
+            <h4 class="mb-4">Bonus Map - Location of coal mines in Germany</h4>
+            <div
+              id="map_relative"
+              class="p-5 text-white bg-light rounded-3 map"
+            ></div>
+          </div>
+        </div>
+
+        <div class="px-5 mb-4">
           <div class="container-fluid py-5">
-            <h3 class="display-6 fw-bold">Input Data</h3>
+            <h3 class="display-6 fw-bold">Conclusion</h3>
             <p class="col-md-12 fs-4">
-              For the analisys, I needed datasets obtained within the german
-              territory that included:
+              In the maps below I show the results of this spatial analysis
+              begining by the average PM10 concentration by district and
+              followed by the relative changed experience during this period.
             </p>
           </div>
         </div>
 
-        <div class="p-5 mb-4">
+        <div class="px-5 mb-4">
           <div class="container-fluid py-5">
-            <h3 class="display-6 fw-bold">Methodology</h3>
-            <p class="col-md-12 fs-4">Methodoloty goes here</p>
-          </div>
-        </div>
-
-        <div class="p-5 mb-4">
-          <div class="container-fluid py-5">
-            <h3 class="display-6 fw-bold">Results</h3>
-            <p class="col-md-12 fs-4">Results go here</p>
+            <h3 class="display-6 fw-bold">References</h3>
+            <figure>
+              <blockquote class="blockquote">
+                <p>Health effects of particulate matter</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                https://www.euro.who.int/__data/assets/pdf_file/0006/189051/Health-effects-of-particulate-matter-final-Eng.pdf
+              </figcaption>
+            </figure>
+            <figure>
+              <blockquote class="blockquote">
+                <p>COVID-19 pandemic</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                https://en.wikipedia.org/wiki/COVID-19_pandemic
+              </figcaption>
+            </figure>
+            <figure>
+              <blockquote class="blockquote">
+                <p>PM10 Particulates</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                https://en.wikipedia.org/wiki/Particulates
+              </figcaption>
+            </figure>
           </div>
         </div>
 
@@ -289,12 +431,15 @@
         const data = await response.json()
         const map = L.map(`map_${year}`, {
           zoomControl: false,
-          scrollWheelZoom: false
-        }).setView([51.166, 10.4515], 6)
+          scrollWheelZoom: false,
+          doubleClickZoom: false,
+          dragging: false,
+          zoomSnap: 0.25
+        }).setView([51.166, 10.4515], 5.725)
         L.tileLayer(
           "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
           {
-            zoom: 6,
+            zoom: 5.725,
             attribution: "© OpenStreetMap"
           }
         ).addTo(map)
@@ -353,6 +498,7 @@
 
       initMap("2019")
       initMap("2020")
+      initMap("relative")
     </script>
   </body>
 </html>
