@@ -58,7 +58,10 @@
       <header>
         <div class="navbar navbar-dark bg-dark shadow-sm">
           <div class="container">
-            <a href="../index.html" class="navbar-brand d-flex align-items-center">
+            <a
+              href="../index.html"
+              class="navbar-brand d-flex align-items-center"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -78,7 +81,7 @@
         </div>
       </header>
       <div class="container py-4">
-        <div class="py-4 px-5 mb-4 bg-light rounded-3">
+        <div class="p-2 py-md-4 px-md-5 my-2 my-md-5 bg-light rounded-3">
           <div class="container-fluid py-5">
             <h1 class="display-6 fw-bold">
               Evaluation of the impact of Covid-19 restrictions on the levels of
@@ -106,8 +109,8 @@
           </div>
         </div>
 
-        <div class="px-5 mb-4">
-          <div class="container-fluid py-5">
+        <div class="p-2 px-md-5 mb-4">
+          <div class="container-fluid">
             <h3 class="display-6 fw-bold">Data Sources</h3>
             <p class="col-md-12 fs-4">
               For the analysis, I needed datasets that provided information
@@ -145,8 +148,8 @@
           </div>
         </div>
 
-        <div class="px-5 mb-4">
-          <div class="container-fluid py-5">
+        <div class="p-2 px-md-5 mb-4">
+          <div class="container-fluid">
             <h3 class="display-6 fw-bold">Methodology</h3>
             <p class="col-md-12 fs-4">
               After the creation of python scripts for the download, filtering
@@ -165,8 +168,8 @@
           </div>
         </div>
 
-        <div class="px-5 mb-4">
-          <div class="container-fluid py-5">
+        <div class="p-2 px-md-5 mb-4">
+          <div class="container-fluid">
             <h3 class="display-6 fw-bold">Results</h3>
             <p class="col-md-12 fs-4">
               In the maps below I show the results of this spatial analysis
@@ -176,15 +179,15 @@
           </div>
         </div>
 
-        <div class="row align-items-md-stretch mb-4">
-          <div class="col-md-6">
+        <div class="row align-items-md-stretch mb-4 mb-md-0">
+          <div class="col-md-6 mb-4">
             <h4 class="mb-4">PM10 Concentration April 2019</h4>
             <div
               id="map_2019"
               class="p-5 text-white bg-light rounded-3 map"
             ></div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 mb-4">
             <h4 class="mb-4">PM10 Concentration April 2020</h4>
             <div
               id="map_2020"
@@ -193,45 +196,50 @@
           </div>
         </div>
 
-        <div class="row align-items-md-stretch mb-4">
+        <div class="py-4 px-1 px-md-5 my-2 my-md-5 row align-items-md-stretch bg-light">
           <div class="col-md-12">
-            <h4 class="mb-4">Minimum and Maximum average concentration in Germany for April 2019-2020</h4>
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Min PM10 Concentration</th>
-                  <th scope="col">Max PM10 Concentration</th>
-                  <th scope="col">Germany's PM10 average concentration</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>April 2019</th>
-                  <td>8,503 μg/m3</td>
-                  <td>35,693 μg/m3</td>
-                  <td>21,879 μg/m3</td>
-                </tr>
-                <tr>
-                  <th>April 2020</th>
-                  <td>10,241 μg/m3</td>
-                  <td>29,666 μg/m3</td>
-                  <td>19,842 μg/m3</td>
-                </tr>
-              </tbody>
-            </table>
+            <h4 class="mb-4">
+              Minimum and Maximum average concentration in Germany for April
+              2019-2020
+            </h4>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Min PM10 Concentration</th>
+                    <th scope="col">Max PM10 Concentration</th>
+                    <th scope="col">Germany's PM10 average concentration</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>April 2019</th>
+                    <td>8,503 μg/m3</td>
+                    <td>35,693 μg/m3</td>
+                    <td>21,879 μg/m3</td>
+                  </tr>
+                  <tr>
+                    <th>April 2020</th>
+                    <td>10,241 μg/m3</td>
+                    <td>29,666 μg/m3</td>
+                    <td>19,842 μg/m3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
-        <div class="row align-items-md-stretch mb-4">
-          <div class="col-md-6">
+        <div class="row align-items-md-stretch mb-4 mb-md-0">
+          <div class="col-md-6 mb-4">
             <h4 class="mb-4">Relative Change April 2019 - April 2020</h4>
             <div
               id="map_relative"
               class="p-5 text-white bg-light rounded-3 map"
             ></div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 mb-4">
             <h4 class="mb-4">Bonus Map - Location of coal mines in Germany</h4>
             <div
               id="map_relative"
@@ -240,8 +248,8 @@
           </div>
         </div>
 
-        <div class="px-5 mb-4">
-          <div class="container-fluid py-5">
+        <div class="p-2 px-md-5 mb-4">
+          <div class="container-fluid">
             <h3 class="display-6 fw-bold">Conclusion</h3>
             <p class="col-md-12 fs-4">
               In the maps below I show the results of this spatial analysis
@@ -251,9 +259,12 @@
           </div>
         </div>
 
-        <div class="px-5 mb-4">
-          <div class="container-fluid py-5">
+        <div class="p-2 px-md-5 mb-4">
+          <div class="container-fluid">
             <h3 class="display-6 fw-bold">References</h3>
+            <ul>
+              <li></li>
+            </ul>
             <figure>
               <blockquote class="blockquote">
                 <p>Health effects of particulate matter</p>
@@ -268,6 +279,14 @@
               </blockquote>
               <figcaption class="blockquote-footer">
                 https://en.wikipedia.org/wiki/COVID-19_pandemic
+              </figcaption>
+            </figure>
+            <figure>
+              <blockquote class="blockquote">
+                <p>Power sources in Germany</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                https://www.carbonbrief.org/how-germany-generates-its-electricity/
               </figcaption>
             </figure>
             <figure>
@@ -347,7 +366,7 @@
       let layers = {}
       let mapId
 
-      async function initMap(year) {
+      async function initMap(year, grades) {
         mapId = year
 
         const findLayer = (key, layerId) => {
@@ -398,6 +417,23 @@
         }
 
         const getColor = (d) => {
+          if (year === "relative") {
+            //[0, 5, 12, 19, 28, 38]
+            return d >= 38
+              ? "#08306b"
+              : d >= 28 && d < 38
+              ? "#1d6cb1"
+              : d >= 19 && d < 28
+              ? "#529dcc"
+              : d >= 12 && d < 19
+              ? "#9ac8e0"
+              : d >= 5 && d < 12
+              ? "#d1e2f3"
+              : d >= 0 && d < 5
+              ? "#f7fbff"
+              : "#f7fbff"
+          }
+
           return d >= 28
             ? "#d7191c"
             : d >= 25 && d < 28
@@ -419,7 +455,10 @@
 
         const style = (feature) => {
           return {
-            fillColor: getColor(feature.properties.pm10),
+            fillColor:
+              year === "relative"
+                ? getColor(feature.properties.relative_change)
+                : getColor(feature.properties.pm10),
             weight: 1.5,
             opacity: 0.1,
             color: "#000",
@@ -472,9 +511,8 @@
 
         let legend = L.control({ position: "bottomleft" })
         legend.onAdd = function (map) {
-          let div = L.DomUtil.create("div", "info legend"),
-            grades = [28, 25, 23, 21, 19, 18, 15, 8],
-            labels = []
+          let div = L.DomUtil.create("div", "info legend")
+          let labels = []
 
           // loop through our density intervals and generate a label with a colored square for each interval
           for (let i = 0; i < grades.length; i++) {
@@ -496,9 +534,9 @@
         })
       }
 
-      initMap("2019")
-      initMap("2020")
-      initMap("relative")
+      initMap("2019", [28, 25, 23, 21, 19, 18, 15, 8])
+      initMap("2020", [28, 25, 23, 21, 19, 18, 15, 8])
+      initMap("relative", [0, 5, 12, 19, 28, 38])
     </script>
   </body>
 </html>
