@@ -64,3 +64,9 @@ a.back-top {
 .foot-note{
   font-size: 10px;
 }
+
+.author {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
