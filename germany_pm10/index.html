@@ -58,10 +58,7 @@
       <header>
         <div class="navbar navbar-dark bg-dark shadow-sm">
           <div class="container">
-            <a
-              href="../"
-              class="navbar-brand d-flex align-items-center"
-            >
+            <a href="../" class="navbar-brand d-flex align-items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -89,8 +86,8 @@
             </h1>
             <p class="col-md-12 fs-4">
               In December 2019, a novel coronavirus strain (SARS-CoV-2) was
-              identified from an outbreak in Wuhan China and despite the
-              attempts to contain it, the pandemic has caused millions of
+              identified from an outbreak in Wuhan China, generating a pandemic
+              that has caused more than 543 million cases and 6.32 million
               confirmed deaths, making it one of the deadliest in history.
             </p>
             <p class="col-md-12 fs-4">
@@ -100,11 +97,12 @@
               incidence rate in the country.
             </p>
             <p class="col-md-12 fs-4">
-              In this geospatial analysis, I am going to have a look at the
+              In this geospatial analysis, we are going to have a look at the
               changes experienced during the peak of the restrictions in terms
-              of air pollution and the impact that day-to-day activities like
-              commuting to the office and international traveling have on the
-              quality of the air that I breathe.
+              of air pollution contained in the atmosphere and the impact that
+              day-to-day activities like commuting to the office and
+              international traveling have on the quality of the air that we
+              breathe.
             </p>
           </div>
         </div>
@@ -113,11 +111,11 @@
           <div class="container-fluid">
             <h3 class="display-6 fw-bold">Data Sources</h3>
             <p class="col-md-12 fs-4">
-              For the analysis, I needed datasets that provided information
-              about the quality of air within the german territory. I also
-              needed geographic data for the administrative subdivisions of
-              Germany that could help me generate information by states and
-              districts. Such information was obtained from:
+              For this analysis, I needed datasets that provided information
+              about the quality of air within the german territory and also
+              geographic data of the administrative subdivisions of Germany that
+              could help me generate information by states and districts. Such
+              information was obtained from:
             </p>
             <ul class="fs-4">
               <li>
@@ -129,9 +127,8 @@
                 >
               </li>
               <li>
-                <b>DIVA-GIS:</b> is a free geographic information system
-                software program used for the analysis of geographic data, in
-                particular point data on biodiversity -
+                <b>DIVA-GIS:</b> website that contains free spatial data and
+                resources -
                 <a href="https://www.diva-gis.org/" target="_blank"
                   >https://www.diva-gis.org/</a
                 >
@@ -152,12 +149,12 @@
           <div class="container-fluid">
             <h3 class="display-6 fw-bold">PM10 as Air pollutant</h3>
             <p class="col-md-12 fs-4">
-              PM10 is an air pollutant consisting of small particles with an aerodynamic
-              diameter less than or equal to a nominal 10 micrometer (about 1/7
-              the diameter of a single human hair). Their small size allows them
-              to make their way to the air passages deep within the lungs where
-              they may be deposited and result in adverse health effects. PM10
-              also causes visibility reduction.
+              PM10 is an air pollutant consisting of small particles with an
+              aerodynamic diameter less than or equal to a nominal 10 micrometer
+              (about 1/7 the diameter of a single human hair). Their small size
+              allows them to make their way to the air passages deep within the
+              lungs where they may be deposited and result in adverse health
+              effects. PM10 also causes visibility reduction.
             </p>
           </div>
         </div>
@@ -176,8 +173,8 @@
               on the vector geometries of the administrative boundaries of
               Germany.<br />
               Finally, with the help of raster calculations, I obtained the
-              relative changes in the concentration of PM10 particles in the
-              atmosphere between April 2019 and April 2020.
+              relative changes in the concentration of PM10 particles between
+              April 2019 and April 2020.
             </p>
           </div>
         </div>
@@ -246,15 +243,13 @@
             </div>
           </div>
           <div class="col-md-6 mb-4">
-            <h4 class="mb-4">Top reductions of PM10</h4>
-            <div
-              class="rounded-3 text-center"
-            >
+            <h4 class="mb-4">Top reductions of PM10 by district</h4>
+            <div class="rounded-3 text-center">
               <img src="resources/topimprovements.png" width="100%" />
             </div>
           </div>
           <div class="col-md-6 mb-4">
-            <h4 class="mb-4">Top increments of PM10</h4>
+            <h4 class="mb-4">Top increments of PM10 by district</h4>
             <div class="rounded-3 text-center">
               <img src="resources/topdecreament.png" width="100%" />
             </div>
@@ -285,15 +280,24 @@
             <h3 class="display-6 fw-bold">Conclusion</h3>
             <p class="col-md-12 fs-4">
               Based on the data obtained, we can observe a relative improvement
-              of about 9,31% in the quality of air of Germany during the peak of
-              the covid-19 restrictions compared to the previous year. An
-              interesting observation though is that in some districts the
-              pollution levels increased up to 20% despite the restrictions;
-              this could be explained as a consequence of these air-tracking
-              stations being located in areas of heavy industrial and mining
-              activity. Now that the pandemic seems to be entering a different
-              phase, only time will tell if any improvements made will be lost
-              as we resume the routines we used to have in pre-covid times.
+              of about 9,31% in the air quality of Germany during the peak of
+              the covid-19 restrictions compared to the previous year. The
+              districts belonging to the state of Mecklenburg-Vorpommern,
+              located along the Baltic Sea coast, experienced the most
+              improvement of the country, making some districts account for a
+              relative 50% reduction of PM10 concentration. An interesting
+              observation though is that in some districts the pollution levels
+              increased up to 20% despite the restrictions.<br />
+              It's important to note that PM10 concentrations may also vary
+              based on natural and meteorological events and every change can't
+              be categorized as a consequence of a change in human activities
+              and because of that I will be posting a future analysis about
+              concentration of NO<sub>2</sub> during lockdowns, which is mainly
+              produced during the combustion of fossil fuels.<br />
+              For now, the pandemic seems to be entering a different phase, only
+              time will tell if any change in the concentration of PM10 will be
+              reverted as we resume the routines we used to have in pre-covid
+              times.
             </p>
           </div>
         </div>
