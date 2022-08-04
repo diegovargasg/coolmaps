@@ -1,0 +1,99 @@
+Steps:
+
+- Shapefile from Germany, taken from http://www.naturalearthdata.com/downloads/10m-cultural-vectors/ and editing the attribute table filter out Germany
+- Download Air-stations from https://discomap.eea.europa.eu/map/fme/AirQualityExport.htm  and add it as comma separated layer
+- Extract by location in order to obtain only the relevant air stations
+- Add filtered final csv
+- create join by attribute between csv and german stations by AirQualityStation
+- Refactor fields and make mean as Decimal Double
+- Make permanent joinedlayer
+- reimport permanent layer and select as Z the mean attribute
+- Create the interpolation with extend as German-outline EPSG:4326, 624 rows, P distance 4
+- Generate a Clip raster by mask layer, between interpolated and germany outline
+- explicar que es jenks y por que se utiliza como metodo de clasificacion en mis mapas
+
+
+
+Python script for filtering the dates in ranges:
+- python get-pip.py
+- pip install pandas
+
+
+
+CREATE TABLE year_2020(
+   Countrycode              VARCHAR(100) NOT NULL 
+  ,Namespace                VARCHAR(100) NOT NULL
+  ,AirQualityNetwork        VARCHAR(100) NOT NULL
+  ,AirQualityStation        VARCHAR(100) NOT NULL
+  ,AirQualityStationEoICode VARCHAR(100) NOT NULL
+  ,SamplingPoint            VARCHAR(100) NOT NULL
+  ,SamplingProcess          VARCHAR(100) NOT NULL
+  ,Sample                   VARCHAR(100) NOT NULL
+  ,AirPollutant             VARCHAR(100) NOT NULL
+  ,AirPollutantCode         VARCHAR(100) NOT NULL
+  ,AveragingTime            VARCHAR(100) NOT NULL
+  ,Concentration            DECIMAL NOT NULL
+  ,UnitOfMeasurement        VARCHAR(100) NOT NULL
+  ,DatetimeBegin            VARCHAR(100) NOT NULL
+  ,DatetimeEnd              VARCHAR(100) NOT NULL
+  ,Validity                 INTEGER  NOT NULL
+  ,Verification             INTEGER  NOT NULL
+);
+
+
+select airqualitystation, avg(concentration) FROM year_2020
+GROUP BY airqualitystation
+
+
+-- SELECT y.airqualitystation, e."Longitude", e."Latitude"
+-- FROM year_2019 as y 
+-- INNER JOIN european_metadata as e
+-- ON y.airqualitystation = e."AirQualityStation"
+
+SELECT 
+	e."AirQualityStation", e."Latitude", e."Longitude", avg(y.concentration) as concentration 
+FROM 
+	year_2020 as y, 
+	(SELECT e."AirQualityStation", e."Latitude", e."Longitude"
+	FROM european_metadata as e 
+	WHERE e."Countrycode" = 'DE'
+	GROUP BY e."AirQualityStation", e."Latitude", e."Longitude") as e
+WHERE y.airqualitystation = e."AirQualityStation"
+GROUP BY e."AirQualityStation", e."Latitude", e."Longitude"
+ORDER BY concentration DESC 
+
+
+## Including the country code in concentration
+
+SELECT 
+	ee."Countrycode", ee."AirQualityStation", ee."Latitude", ee."Longitude", avg(y.concentration) as concentration 
+FROM 
+	year_2020 as y, 
+	(SELECT e."Countrycode", e."AirQualityStation", e."Latitude", e."Longitude"
+	FROM european_metadata as e 
+	WHERE e."Countrycode" = 'DE'
+	GROUP BY e."Countrycode", e."AirQualityStation", e."Latitude", e."Longitude") as ee
+WHERE y.airqualitystation = ee."AirQualityStation"
+GROUP BY ee."AirQualityStation", ee."Latitude", ee."Longitude", ee."Countrycode" 
+ORDER BY concentration DESC 
+
+
+## Average Concentration for whole germany by year
+
+SELECT avg(concentration) FROM (
+
+SELECT 
+		ee."Countrycode", ee."AirQualityStation", ee."Latitude", ee."Longitude", avg(y.concentration) as concentration 
+	FROM 
+		year_2020 as y, 
+		(SELECT e."Countrycode", e."AirQualityStation", e."Latitude", e."Longitude"
+		FROM european_metadata as e 
+		WHERE e."Countrycode" = 'DE'
+		GROUP BY e."Countrycode", e."AirQualityStation", e."Latitude", e."Longitude") as ee
+	WHERE y.airqualitystation = ee."AirQualityStation"
+	GROUP BY ee."AirQualityStation", ee."Latitude", ee."Longitude", ee."Countrycode" 
+	ORDER BY concentration DESC) as yy
+
+## Calculating relative change in attribute table, this I will add to document and website! 
+
+((pm10_2019-pm10_2020)/max( pm10_2019, pm10_2020))*100
