@@ -1,0 +1,190 @@
+{
+  "KEYFRAMES": {
+    "camera": {
+      "groups": [
+        {
+          "enabled": true,
+          "keyframes": [
+            {
+              "camera": {
+                "fx": -1988671.8536674837,
+                "fy": 3331946.202011384,
+                "fz": 1197.65234375,
+                "x": -1988671.8536674837,
+                "y": 3269208.38487002,
+                "z": 63935.46948511383
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "keyframe 1",
+              "type": 128
+            },
+            {
+              "camera": {
+                "fx": -1992403.0937402677,
+                "fy": 3325491.1718150713,
+                "fz": 1197.65234375,
+                "x": -2006872.8503864566,
+                "y": 3314295.6981263426,
+                "z": 13793.167609109207
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "keyframe 2",
+              "type": 128
+            }
+          ],
+          "name": "Group 2",
+          "type": 64
+        }
+      ]
+    },
+    "enabled": true,
+    "layers": {
+      "EMSR546_AOI01_GRA_MONIT63_observedEventA_r1_v1_7d15b5a7_1082_4321_a75b_e7f13d966dbb": {
+        "enabled": true,
+        "groups": []
+      },
+      "ESP_adm4_fc8badca_3ff0_4716_b1c2_79187d10098e": {
+        "enabled": true,
+        "groups": []
+      },
+      "fp:1f100ecd": {
+        "enabled": true,
+        "groups": []
+      },
+      "output_COP30_081fc9ba_5f75_445b_9258_3fca56423c3a": {
+        "enabled": true,
+        "groups": []
+      }
+    },
+    "repeat": false,
+    "startOnLoad": true
+  },
+  "LAYERS": [
+    {
+      "geomType": 3,
+      "layerId": "EMSR546_AOI01_GRA_MONIT63_observedEventA_r1_v1_7d15b5a7_1082_4321_a75b_e7f13d966dbb",
+      "name": "EMSR546_AOI01_GRA_MONIT63_observedEventA_r1_v1",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 3,
+      "layerId": "ESP_adm4_fc8badca_3ff0_4716_b1c2_79187d10098e",
+      "name": "ESP_adm4",
+      "properties": {},
+      "visible": false
+    },
+    {
+      "geomType": 0,
+      "layerId": "output_COP30_081fc9ba_5f75_445b_9258_3fca56423c3a",
+      "name": "LaPalma",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Clip": false,
+        "checkBox_Frame": false,
+        "checkBox_Sides": false,
+        "checkBox_Tiles": false,
+        "checkBox_Visible": true,
+        "checkBox_Wireframe": false,
+        "colorButton_Edge": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_Side": [
+          204,
+          187,
+          170,
+          255
+        ],
+        "colorButton_Wireframe": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "comboBox_ClipLayer": "ESP_adm4_fc8badca_3ff0_4716_b1c2_79187d10098e",
+        "horizontalSlider_DEMSize": 5,
+        "lineEdit_Bottom": "0",
+        "lineEdit_Name": "",
+        "materials": [
+          {
+            "id": "94dc4939",
+            "name": "map (canvas)",
+            "properties": {
+              "checkBox_Shading": true,
+              "checkBox_TransparentBackground": true,
+              "comboBox_TextureSize": "2048",
+              "radioButton_PNG": true,
+              "spinBox_Opacity": 100
+            },
+            "type": 0
+          }
+        ],
+        "mtlId": "94dc4939",
+        "spinBox_Roughening": 1,
+        "spinBox_Size": 3
+      },
+      "visible": true
+    },
+    {
+      "geomType": 0,
+      "layerId": "fp:1f100ecd",
+      "name": "Flat Plane",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Frame": false,
+        "checkBox_Sides": false,
+        "checkBox_Tiles": false,
+        "checkBox_Visible": true,
+        "checkBox_Wireframe": false,
+        "colorButton_Edge": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_Side": [
+          204,
+          187,
+          170,
+          255
+        ],
+        "colorButton_Wireframe": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "lineEdit_Altitude": "0",
+        "lineEdit_Bottom": "0",
+        "lineEdit_Name": "",
+        "materials": [
+          {
+            "id": "52278861",
+            "name": "map (canvas)",
+            "properties": {},
+            "type": 0
+          }
+        ],
+        "mtlId": "52278861",
+        "spinBox_Size": 3
+      },
+      "visible": false
+    }
+  ],
+  "OPT": {
+    "animation.enabled": true,
+    "animation.startOnLoad": true,
+    "localMode": true
+  },
+  "OutputFilename": "D:/Projekte/coolmaps/palma_island/3d_model\\index.html",
+  "Template": "3DViewer.html",
+  "Title": "palma_island",
+  "Version": 20701
+}
