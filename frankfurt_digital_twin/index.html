@@ -9,12 +9,16 @@
         body { margin: 0; }
     </style>
     <script src="js/three.min.js"></script>
+    <script src="js/geolib.min.js"></script>
     <script src="js/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
 </head>
 <body>
-    <div  id="map"></div>
+    <div id="map"></div>
     <script>
         let camera, controls, scene, renderer, map;
+        let MAT_BUILDING;
+        let center = [8.661569309005895, 50.105860364457655];
 
         function init() {
             map = document.getElementById("map");
@@ -45,10 +49,10 @@
             let gridHelper = new THREE.GridHelper(60, 160, new THREE.Color(0x555555), new THREE.Color(0x333333));
             scene.add(gridHelper);
 
-            const geometry = new THREE.BoxGeometry(1, 1, 1);
-            const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-            const cube = new THREE.Mesh(geometry, material);
-            scene.add(cube);
+            // const geometry = new THREE.BoxGeometry(1, 1, 1);
+            // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+            // const cube = new THREE.Mesh(geometry, material);
+            // scene.add(cube);
 
             renderer = new THREE.WebGLRenderer({antialias: true});
             renderer.setPixelRatio(window.devicePixelRatio);
@@ -64,6 +68,9 @@
             controls.maxDistance = 100;
 
             window.addEventListener( 'resize', onWindowResize );
+
+            MAT_BUILDING = new THREE.MeshPhongMaterial();
+            getData();
         }
 
         function onWindowResize() {
@@ -74,8 +81,8 @@
 
         function animate() {
             requestAnimationFrame(animate);
-            controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
             render();
+            controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
         }
 
         function render() {
@@ -85,12 +92,101 @@
         function getData() {
             fetch("./resources/frankfurt-skyline.geojson").then((resp) => {
                 resp.json().then(data => {
-                    console.log(data);
+                    loadBuildings(data);
                 });
             });
         }
 
-        getData();
+        function loadBuildings(data) {
+            data.features.forEach(element => {
+                if(!element["properties"]) return;
+
+                if(element.properties["building"] !== "no" && element.geometry.type === "Polygon") {
+                    addBuilding(element.geometry.coordinates, element.properties, element.properties["building:levels"]);
+                }
+            });
+        }
+
+        function addBuilding(coordinates, properties, height = 1) {
+            height = height ? height : 1;
+            coordinates.forEach(coordinate => {
+
+                let shape = generateShape(coordinate, center);
+                let geometry = generateGeometry(shape, {
+                    curveSegments: 1,
+                    depth: 0.05 * height,
+                    bevelEnabled: false
+                });
+
+                geometry.rotateX(Math.PI / 2);
+                geometry.rotateZ(Math.PI);
+
+                let mesh = new THREE.Mesh(geometry, MAT_BUILDING);
+                scene.add(mesh);
+            });
+        }
+
+        function generateShape(coordinate, center) {
+            let shape = new THREE.Shape();
+
+            //if(typeof coordinate === "object") {
+                coordinate.forEach((element, index) => {
+                    elPosition = GPSRelativePositionTurf(element, center);
+                    if(index === 0) {
+                        shape.moveTo(elPosition[0], elPosition[1]);
+                    } else {
+                        shape.lineTo(elPosition[0], elPosition[1]);
+                    }
+                });
+            //}
+
+            return shape;
+        }
+
+        function GPSRelativePosition(objPosi, centerPosi) {
+
+            // Get GPS distance
+            let dis = window.geolib.getDistance(objPosi, centerPosi);
+
+            // Get bearing angle
+            let bearing = window.geolib.getRhumbLineBearing(objPosi, centerPosi);
+
+            // Calculate X by centerPosi.x + distance * cos(rad)
+            let x = centerPosi[0] + (dis * Math.cos(bearing * Math.PI / 180));
+
+            // Calculate Y by centerPosi.y + distance * sin(rad)
+            let y = centerPosi[1] + (dis * Math.sin(bearing * Math.PI / 180));
+
+            // Reverse X (it work) 
+            return [-x / 100, y / 100];
+        }
+
+        function GPSRelativePositionTurf(objPosi, centerPosi) {
+
+            let options = {units: 'meters'};
+
+            // Get GPS distance
+            let dis = turf.distance(objPosi, centerPosi, options);
+
+            // Get bearing angle
+            let bearing =  turf.rhumbBearing(objPosi, centerPosi);
+
+            // Calculate X by centerPosi.x + distance * cos(rad)
+            let x = centerPosi[0] + (dis * Math.cos(bearing * Math.PI / 180));
+
+            // Calculate Y by centerPosi.y + distance * sin(rad)
+            let y = centerPosi[1] + (dis * Math.sin(bearing * Math.PI / 180));
+
+            // Reverse X (it work) 
+            return [-x / 100, y / 100];
+        }
+
+        function generateGeometry(shape, settings) {
+            let geometry = new THREE.ExtrudeGeometry(shape, settings);
+            geometry.computeBoundingBox();
+            return geometry;
+        }
+
         init();
         //render(); // remove when using next line for animation loop (requestAnimationFrame)
         animate();
