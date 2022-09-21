@@ -13,6 +13,7 @@
     <script src="js/three.min.js"></script>
     <script src="js/geolib.min.js"></script>
     <script src="js/OrbitControls.js"></script>
+    <script src="js/BufferGeometryUtils.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
@@ -68,7 +69,9 @@
       //     })
     </script>
     <script>
-      let camera, controls, scene, renderer, map
+      let camera, controls, scene, renderer, map, group
+      let buildingsGeometry = []
+
       let MAT_BUILDING
       let center = [8.661569309005895, 50.105860364457655]
 
@@ -86,10 +89,10 @@
         camera.position.set(8, 4, 0)
         camera.position.z = 5
 
-        // let group = new THREE.Group();
-        // group = "Interactive Root";
+        group = new THREE.Group();
+        group.name = "Interactive Root";
 
-        // scene.add(group);
+        scene.add(group);
 
         let light0 = new THREE.AmbientLight(0xfafafa, 0.25)
 
@@ -169,6 +172,10 @@
             )
           }
         })
+
+        let mergeGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(buildingsGeometry)
+        let mesh = new THREE.Mesh(mergeGeometry, MAT_BUILDING)
+        group.add(mesh)
       }
 
       function addBuilding(coordinates, properties, height = 1) {
@@ -197,8 +204,9 @@
           geometry.rotateX(Math.PI / 2)
           geometry.rotateZ(Math.PI)
 
-          let mesh = new THREE.Mesh(geometry, MAT_BUILDING)
-          scene.add(mesh)
+        //   let mesh = new THREE.Mesh(geometry, MAT_BUILDING)
+        //   scene.add(mesh)
+        buildingsGeometry.push(geometry)
       }
 
       function generateShape(coordinate, center) {
