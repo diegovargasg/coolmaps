@@ -89,10 +89,10 @@
         camera.position.set(8, 4, 0)
         camera.position.z = 5
 
-        group = new THREE.Group();
-        group.name = "Interactive Root";
+        group = new THREE.Group()
+        group.name = "Interactive Root"
 
-        scene.add(group);
+        scene.add(group)
 
         let light0 = new THREE.AmbientLight(0xfafafa, 0.25)
 
@@ -173,7 +173,8 @@
           }
         })
 
-        let mergeGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(buildingsGeometry)
+        let mergeGeometry =
+          THREE.BufferGeometryUtils.mergeBufferGeometries(buildingsGeometry)
         let mesh = new THREE.Mesh(mergeGeometry, MAT_BUILDING)
         group.add(mesh)
       }
@@ -191,22 +192,43 @@
           }
         })
 
-        gaps.forEach(gap => {
-            shape.holes.push(gap)
+        gaps.forEach((gap) => {
+          shape.holes.push(gap)
         })
 
         geometry = generateGeometry(shape, {
-            curveSegments: 1,
-            depth: 0.05 * height,
-            bevelEnabled: false
-          })
+          curveSegments: 1,
+          depth: 0.05 * height,
+          bevelEnabled: false
+        })
 
-          geometry.rotateX(Math.PI / 2)
-          geometry.rotateZ(Math.PI)
+        geometry.rotateX(Math.PI / 2)
+        geometry.rotateZ(Math.PI)
 
-        //   let mesh = new THREE.Mesh(geometry, MAT_BUILDING)
-        //   scene.add(mesh)
         buildingsGeometry.push(geometry)
+
+        let helper = generateHelper(geometry)
+
+        if (helper) {
+          helper.name = properties["name"] ? properties["name"] : "Building"
+          helper.info = properties
+          scene.add(helper)
+        }
+      }
+
+      function generateHelper(geometry) {
+        if (!geometry.boundingBox) {
+          geometry.computeBoundingBox()
+        }
+
+        let box3 = geometry.boundingBox
+
+        if (!isFinite(box3.max.x)) {
+          return false
+        }
+
+        let helper = new THREE.Box3Helper(box3, 0xffff00)
+        return helper
       }
 
       function generateShape(coordinate, center) {
