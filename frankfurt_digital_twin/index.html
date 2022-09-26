@@ -71,6 +71,8 @@
     <script>
       let camera, controls, scene, renderer, map, group
       let buildingsGeometry = []
+      let waterGeometry = []
+      let grassGeometry = []
 
       let MAT_BUILDING
       let center = [8.661569309005895, 50.105860364457655]
@@ -86,7 +88,7 @@
           0.1,
           1000
         )
-        camera.position.set(8, 4, 0)
+        camera.position.set(0, 10, 0)
         camera.position.z = 5
 
         group = new THREE.Group()
@@ -112,7 +114,7 @@
           new THREE.Color(0x555555),
           new THREE.Color(0x333333)
         )
-        scene.add(gridHelper)
+        //scene.add(gridHelper)
 
         renderer = new THREE.WebGLRenderer({ antialias: true })
         renderer.setPixelRatio(window.devicePixelRatio)
@@ -125,12 +127,13 @@
         controls.dampingFactor = 0.25
         controls.screenSpacePanning = false
         controls.minDistance = 10
-        controls.maxDistance = 100
-
+        controls.maxDistance = 800
         window.addEventListener("resize", onWindowResize)
 
         MAT_BUILDING = new THREE.MeshPhongMaterial()
-        getData()
+        //MAT_BUILDING = new THREE.MeshBasicMaterial()
+        getBuildings()
+        getWater()
       }
 
       function onWindowResize() {
@@ -149,7 +152,87 @@
         renderer.render(scene, camera)
       }
 
-      function getData() {
+      function getWater() {
+        fetch("./resources/frankfurt-surroundings.geojson").then((resp) => {
+          resp.json().then((data) => {
+            loadWater(data)
+          })
+        })
+      }
+
+      function loadWater(data) {
+        data.features.forEach((element) => {
+          if (!element["properties"]) return
+
+          if (
+            element.geometry.type === "Polygon"
+          ) {
+
+            if(element.properties["water"]) {
+              addWater(
+                element.geometry.coordinates,
+                element.properties,
+                "water"
+              )
+            } else {
+              addWater(
+                element.geometry.coordinates,
+                element.properties,
+                "grass"
+              )
+            }
+          }
+        })
+
+        let waterColor = 0x90cccc
+        let grassColor = 0xd0ddaf
+        let highwayColor = 0xd0938e
+
+        let mergeGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(waterGeometry)
+        const material = new THREE.MeshPhongMaterial( { color:  waterColor} );
+        let mesh = new THREE.Mesh(mergeGeometry, material)
+        group.add(mesh)
+
+        let mergeGrassGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(grassGeometry)
+        const grassMaterial = new THREE.MeshPhongMaterial( { color:  grassColor} );
+        let grassMesh = new THREE.Mesh(mergeGrassGeometry, grassMaterial)
+        group.add(grassMesh)
+      }
+
+      function addWater(coordinates, properties, type) {
+        let shape, geometry
+        let gaps = []
+
+        coordinates.forEach((coordinate, index) => {
+          if (index === 0) {
+            shape = generateShape(coordinate, center)
+          } else {
+            gaps.push(generateShape(coordinate, center))
+          }
+        })
+
+        gaps.forEach((gap) => {
+          shape.holes.push(gap)
+        })
+
+        geometry = generateGeometry(shape, {
+          curveSegments: 1,
+          depth: 0,
+          bevelEnabled: false
+        })
+
+        geometry.rotateX(Math.PI / 2)
+        geometry.rotateZ(Math.PI)
+
+        if(type === "water") {
+          waterGeometry.push(geometry)
+        } else {
+          grassGeometry.push(geometry)
+        }
+        
+      }
+
+      function getBuildings() {
         fetch("./resources/frankfurt-skyline.geojson").then((resp) => {
           resp.json().then((data) => {
             loadBuildings(data)
@@ -206,29 +289,6 @@
         geometry.rotateZ(Math.PI)
 
         buildingsGeometry.push(geometry)
-
-        let helper = generateHelper(geometry)
-
-        if (helper) {
-          helper.name = properties["name"] ? properties["name"] : "Building"
-          helper.info = properties
-          scene.add(helper)
-        }
-      }
-
-      function generateHelper(geometry) {
-        if (!geometry.boundingBox) {
-          geometry.computeBoundingBox()
-        }
-
-        let box3 = geometry.boundingBox
-
-        if (!isFinite(box3.max.x)) {
-          return false
-        }
-
-        let helper = new THREE.Box3Helper(box3, 0xffff00)
-        return helper
       }
 
       function generateShape(coordinate, center) {
