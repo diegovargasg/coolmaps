@@ -73,8 +73,9 @@
       let buildingsGeometry = []
       let waterGeometry = []
       let grassGeometry = []
+      let highwayGeometry = []
 
-      let MAT_BUILDING
+      let MAT_BUILDING, MAT_ROAD
       let center = [8.661569309005895, 50.105860364457655]
 
       function init() {
@@ -126,11 +127,12 @@
         controls.enableDamping = true
         controls.dampingFactor = 0.25
         controls.screenSpacePanning = false
-        controls.minDistance = 10
+        controls.minDistance = 1
         controls.maxDistance = 800
         window.addEventListener("resize", onWindowResize)
 
         MAT_BUILDING = new THREE.MeshPhongMaterial()
+        MAT_ROAD = new THREE.LineDashedMaterial( { color: 0xfde293, linewidth: 10 } )
         //MAT_BUILDING = new THREE.MeshBasicMaterial()
         getBuildings()
         getWater()
@@ -164,11 +166,8 @@
         data.features.forEach((element) => {
           if (!element["properties"]) return
 
-          if (
-            element.geometry.type === "Polygon"
-          ) {
-
-            if(element.properties["water"]) {
+          if (element.geometry.type === "Polygon") {
+            if (element.properties["water"]) {
               addWater(
                 element.geometry.coordinates,
                 element.properties,
@@ -180,21 +179,30 @@
                 element.properties,
                 "grass"
               )
+              
             }
+          } else if (element.geometry.type === "LineString" && element.properties["highway"]) {
+            addRoad(
+                element.geometry.coordinates,
+                element.properties,
+                "highway"
+              )
           }
         })
 
-        let waterColor = 0x90cccc
-        let grassColor = 0xd0ddaf
+        let waterColor = 0x9cc0f9
+        let grassColor = 0xb9e0c4
         let highwayColor = 0xd0938e
 
-        let mergeGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(waterGeometry)
-        const material = new THREE.MeshPhongMaterial( { color:  waterColor} );
+        let mergeGeometry =
+          THREE.BufferGeometryUtils.mergeBufferGeometries(waterGeometry)
+        const material = new THREE.MeshPhongMaterial({ color: waterColor })
         let mesh = new THREE.Mesh(mergeGeometry, material)
         group.add(mesh)
 
-        let mergeGrassGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(grassGeometry)
-        const grassMaterial = new THREE.MeshPhongMaterial( { color:  grassColor} );
+        let mergeGrassGeometry =
+          THREE.BufferGeometryUtils.mergeBufferGeometries(grassGeometry)
+        const grassMaterial = new THREE.MeshPhongMaterial({ color: grassColor })
         let grassMesh = new THREE.Mesh(mergeGrassGeometry, grassMaterial)
         group.add(grassMesh)
       }
@@ -224,12 +232,43 @@
         geometry.rotateX(Math.PI / 2)
         geometry.rotateZ(Math.PI)
 
-        if(type === "water") {
+        if (type === "water") {
           waterGeometry.push(geometry)
         } else {
           grassGeometry.push(geometry)
         }
-        
+      }
+
+      function addRoad(coordinates, properties) {
+        let points = []
+
+        coordinates.forEach(coordinate => {
+
+          //if(!coordinate[0][1]) return
+          
+          let el = coordinate
+          
+          if(!el[0] || !el[1]) return
+
+          let elp = [el[0], el[1]]
+
+          elp = GPSRelativePositionTurf([elp[0], elp[1]], center)
+          
+          points.push( new THREE.Vector3( elp[0], 0.5, elp[1] ) )
+        })
+
+
+        let geometry = new THREE.BufferGeometry().setFromPoints( points )
+
+        // Adjust geometry rotation
+        geometry.rotateZ(Math.PI)
+
+        let line = new THREE.Line( geometry, MAT_ROAD )
+        //line.info = info
+        line.computeLineDistances()
+
+        group.add(line)
+        line.position.set(line.position.x, 0.5, line.position.z)
       }
 
       function getBuildings() {
