@@ -115,7 +115,7 @@
           new THREE.Color(0x555555),
           new THREE.Color(0x333333)
         )
-        //scene.add(gridHelper)
+        scene.add(gridHelper)
 
         renderer = new THREE.WebGLRenderer({ antialias: true })
         renderer.setPixelRatio(window.devicePixelRatio)
@@ -181,7 +181,7 @@
               )
               
             }
-          } else if (element.geometry.type === "LineString" && element.properties["highway"]) {
+          } else if (element.geometry.type === "LineString" && element.properties["highway"] && (element.properties["highway"] === "primary" || element.properties["highway"] === "secondary" || element.properties["highway"] === "tertiary" || element.properties["highway"] === "residential")) {
             addRoad(
                 element.geometry.coordinates,
                 element.properties,
