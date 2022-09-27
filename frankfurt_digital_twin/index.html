@@ -76,7 +76,7 @@
       let highwayGeometry = []
 
       let MAT_BUILDING, MAT_ROAD
-      let center = [8.661569309005895, 50.105860364457655]
+      let center = [8.66342267271418, 50.10690781920793]
 
       function init() {
         map = document.getElementById("map")
@@ -110,12 +110,12 @@
         scene.add(light2)
 
         let gridHelper = new THREE.GridHelper(
-          60,
-          160,
+          40,
+          10,
           new THREE.Color(0x555555),
           new THREE.Color(0x333333)
         )
-        scene.add(gridHelper)
+        //scene.add(gridHelper)
 
         renderer = new THREE.WebGLRenderer({ antialias: true })
         renderer.setPixelRatio(window.devicePixelRatio)
@@ -225,7 +225,7 @@
 
         geometry = generateGeometry(shape, {
           curveSegments: 1,
-          depth: 0.02,
+          depth: 0,
           bevelEnabled: false
         })
 
@@ -268,7 +268,7 @@
         line.computeLineDistances()
 
         group.add(line)
-        line.position.set(line.position.x, 0.509, line.position.z)
+        line.position.set(line.position.x, 0.5, line.position.z)
       }
 
       function getBuildings() {
