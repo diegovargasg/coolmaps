@@ -6,6 +6,7 @@ import {
 	UniformsUtils,
 	Vector3
 } from './three.module.js';
+//import { GUI } from "./lil-gui.module.min.js";
 
 /**
  * Based on "A Practical Analytic Model for Daylight"
@@ -39,7 +40,65 @@ class Sky extends Mesh {
 		super( new BoxGeometry( 1, 1, 1 ), material );
 
 		this.isSky = true;
+		this.sun = new THREE.Vector3();
 
+		this.init();
+	}
+
+	init() {
+        /// GUI
+        const effectController = {
+          turbidity: 10,
+          rayleigh: 3,
+          mieCoefficient: 0.005,
+          mieDirectionalG: 0.7,
+          elevation: 2,
+          azimuth: 30,
+          exposure: 1,
+        };
+		const that = this;
+
+		const uniforms = that.material.uniforms;
+		uniforms["turbidity"].value = effectController.turbidity;
+		uniforms["rayleigh"].value = effectController.rayleigh;
+		uniforms["mieCoefficient"].value = effectController.mieCoefficient;
+		uniforms["mieDirectionalG"].value = effectController.mieDirectionalG;
+
+		const phi = THREE.MathUtils.degToRad(90 - effectController.elevation);
+		const theta = THREE.MathUtils.degToRad(effectController.azimuth);
+
+		that.sun.setFromSphericalCoords(1, phi, theta);
+
+		uniforms["sunPosition"].value.copy(that.sun);
+
+		/*** TO ACTIVATE SKY GUI */
+
+        /*function guiChanged() {
+          const uniforms = that.material.uniforms;
+          uniforms["turbidity"].value = effectController.turbidity;
+          uniforms["rayleigh"].value = effectController.rayleigh;
+          uniforms["mieCoefficient"].value = effectController.mieCoefficient;
+          uniforms["mieDirectionalG"].value = effectController.mieDirectionalG;
+
+          const phi = THREE.MathUtils.degToRad(90 - effectController.elevation);
+          const theta = THREE.MathUtils.degToRad(effectController.azimuth);
+
+          that.sun.setFromSphericalCoords(1, phi, theta);
+
+          uniforms["sunPosition"].value.copy(that.sun);
+        }
+
+        const gui = new GUI();
+
+        gui.add(effectController, "turbidity", 0.0, 20.0, 0.1).onChange(guiChanged);
+        gui.add(effectController, "rayleigh", 0.0, 4, 0.001).onChange(guiChanged);
+        gui.add(effectController, "mieCoefficient", 0.0, 0.1, 0.001).onChange(guiChanged);
+        gui.add(effectController, "mieDirectionalG", 0.0, 1, 0.001).onChange(guiChanged);
+        gui.add(effectController, "elevation", 0, 90, 0.1).onChange(guiChanged);
+        gui.add(effectController, "azimuth", -180, 180, 0.1).onChange(guiChanged);
+        gui.add(effectController, "exposure", 0, 1, 0.0001).onChange(guiChanged);
+
+        guiChanged();*/
 	}
 
 }

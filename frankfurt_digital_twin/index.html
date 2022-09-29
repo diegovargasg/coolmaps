@@ -17,12 +17,12 @@
     <script src="js/turf.min.js"></script>
     <script src="js/axios.min.js"></script>
     <script src="js/utils.js"></script>
+    <script src="js/Building.js"></script>
     <script src="js/Surrounding.js"></script>
   </head>
   <body>
     <div id="mapContainer"></div>
     <script type="module">
-      import { GUI } from "./js/lil-gui.module.min.js";
       import { Sky } from "./js/Sky.js";
       import Stats from "./js/stats.module.js";
 
@@ -66,6 +66,11 @@
 
         // const helper = new THREE.DirectionalLightHelper(sunLight)
         // scene.add(helper)
+
+        // SKY
+        let sky = new Sky();
+        sky.scale.setScalar(450000);
+        scene.add(sky);
 
         // GROUND
         const groundGeo = new THREE.PlaneGeometry(28, 37);
@@ -113,7 +118,6 @@
         stats = new Stats();
         mapContainer.appendChild(stats.dom);
 
-        initSky();
         getBuildings();
         getSurroundings();
       }
@@ -133,56 +137,6 @@
 
       function render() {
         renderer.render(scene, camera);
-      }
-
-      function initSky() {
-        // Add Sky
-        sky = new Sky();
-        sky.scale.setScalar(450000);
-        scene.add(sky);
-
-        sun = new THREE.Vector3();
-
-        /// GUI
-        const effectController = {
-          turbidity: 10,
-          rayleigh: 3,
-          mieCoefficient: 0.005,
-          mieDirectionalG: 0.7,
-          elevation: 2,
-          azimuth: 30,
-          exposure: renderer.toneMappingExposure,
-        };
-
-        function guiChanged() {
-          const uniforms = sky.material.uniforms;
-          uniforms["turbidity"].value = effectController.turbidity;
-          uniforms["rayleigh"].value = effectController.rayleigh;
-          uniforms["mieCoefficient"].value = effectController.mieCoefficient;
-          uniforms["mieDirectionalG"].value = effectController.mieDirectionalG;
-
-          const phi = THREE.MathUtils.degToRad(90 - effectController.elevation);
-          const theta = THREE.MathUtils.degToRad(effectController.azimuth);
-
-          sun.setFromSphericalCoords(1, phi, theta);
-
-          uniforms["sunPosition"].value.copy(sun);
-
-          renderer.toneMappingExposure = effectController.exposure;
-          renderer.render(scene, camera);
-        }
-
-        const gui = new GUI();
-
-        gui.add(effectController, "turbidity", 0.0, 20.0, 0.1).onChange(guiChanged);
-        gui.add(effectController, "rayleigh", 0.0, 4, 0.001).onChange(guiChanged);
-        gui.add(effectController, "mieCoefficient", 0.0, 0.1, 0.001).onChange(guiChanged);
-        gui.add(effectController, "mieDirectionalG", 0.0, 1, 0.001).onChange(guiChanged);
-        gui.add(effectController, "elevation", 0, 90, 0.1).onChange(guiChanged);
-        gui.add(effectController, "azimuth", -180, 180, 0.1).onChange(guiChanged);
-        gui.add(effectController, "exposure", 0, 1, 0.0001).onChange(guiChanged);
-
-        guiChanged();
       }
 
       function getSurroundings() {
@@ -239,7 +193,10 @@
           if (!element["properties"]) return;
 
           if (element.properties["building"] !== "no" && element.geometry.type === "Polygon") {
-            addBuilding(element.geometry.coordinates, element.properties, element.properties["building:levels"]);
+            const building = new Building(element.geometry.coordinates, element.properties, element.properties["building:levels"], center);
+            const buildingGeom = building.generateGeometry();
+
+            buildingsGeometry.push(buildingGeom);
           }
         });
 
@@ -248,35 +205,6 @@
         mesh.receiveShadow = true;
         mesh.castShadow = true;
         buildingsGroup.add(mesh);
-      }
-
-      function addBuilding(coordinates, properties, height = 1) {
-        height = height ? height : 1;
-        let shape, geometry;
-        let gaps = [];
-
-        coordinates.forEach((coordinate, index) => {
-          if (index === 0) {
-            shape = generateShape(coordinate, center);
-          } else {
-            gaps.push(generateShape(coordinate, center));
-          }
-        });
-
-        gaps.forEach((gap) => {
-          shape.holes.push(gap);
-        });
-
-        geometry = generateGeometry(shape, {
-          curveSegments: 1,
-          depth: 0.05 * height,
-          bevelEnabled: false,
-        });
-
-        geometry.rotateX(Math.PI / 2);
-        geometry.rotateZ(Math.PI);
-
-        buildingsGeometry.push(geometry);
       }
 
       init();
