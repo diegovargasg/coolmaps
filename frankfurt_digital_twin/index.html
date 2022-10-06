@@ -192,7 +192,7 @@
         data.features.forEach((element) => {
           if (!element["properties"]) return;
 
-          if (element.properties["building"] !== "no" && element.geometry.type === "Polygon") {
+          if ((element.properties["building"] !== "no" || element.properties["bridge"] === "yes") && element.geometry.type === "Polygon" ) {
             const building = new Building(element.geometry.coordinates, element.properties, element.properties["building:levels"], center);
             const buildingGeom = building.generateGeometry();
 
