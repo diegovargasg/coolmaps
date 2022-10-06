@@ -24,9 +24,10 @@
     <div id="mapContainer"></div>
     <script type="module">
       import { Sky } from "./js/Sky.js";
+      import { Water } from "./js/Water.js";
       import Stats from "./js/stats.module.js";
 
-      let camera, controls, scene, renderer, mapContainer, roadsGroup, surroudingsGroup, buildingsGroup, sky, sun, stats, groundMesh;
+      let camera, controls, scene, renderer, mapContainer, roadsGroup, surroudingsGroup, buildingsGroup, sky, sun, water, stats, groundMesh;
       let buildingsGeometry = [];
       let waterGeometry = [];
       let grassGeometry = [];
@@ -136,6 +137,9 @@
       }
 
       function render() {
+        if (typeof water !== "undefined" && water["material"]) {
+          water.material.uniforms["time"].value += 1.0 / 300;
+        }
         renderer.render(scene, camera);
       }
 
@@ -154,8 +158,24 @@
           const surrounding = new Surrounding(element.geometry.coordinates, element.properties, element.geometry.type, center);
           const surroundingGeom = surrounding.getGeometry();
 
-          if (surrounding.type === "water") {
-            waterGeometry.push(surroundingGeom);
+          if (surrounding.type === "water" && typeof water === "undefined") {
+            //waterGeometry.push(surroundingGeom);
+            water = new Water(surroundingGeom, {
+              textureWidth: 50,
+              textureHeight: 50,
+              waterNormals: new THREE.TextureLoader().load("./textures/waternormals.jpg", function (texture) {
+                texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+              }),
+              sunDirection: new THREE.Vector3(),
+              sunColor: 0xffffff,
+              waterColor: 0x009cdd,
+              distortionScale: 1,
+              fog: scene.fog !== undefined,
+            });
+
+            //water.rotation.x = -Math.PI / 2;
+
+            scene.add(water);
           } else if (surrounding.type === "grass") {
             grassGeometry.push(surroundingGeom);
           } else if (surrounding.type === "road") {
@@ -163,18 +183,18 @@
           }
         });
 
-        let waterColor = 0x9cc0f9;
-        let grassColor = 0xb9e0c4;
+        let waterColor = 0x4aadd9;
+        let grassColor = 0x5bca5d;
         let highwayColor = 0xd0938e;
 
-        let mergeGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(waterGeometry);
-        const material = new THREE.MeshPhongMaterial({ color: waterColor });
-        let mesh = new THREE.Mesh(mergeGeometry, material);
-        mesh.receiveShadow = true;
-        surroudingsGroup.add(mesh);
+        // let mergeGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(waterGeometry);
+        // const material = new THREE.MeshPhongMaterial({ color: waterColor });
+        // let mesh = new THREE.Mesh(mergeGeometry, material);
+        // mesh.receiveShadow = true;
+        // surroudingsGroup.add(mesh);
 
         let mergeGrassGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(grassGeometry);
-        const grassMaterial = new THREE.MeshPhongMaterial({ color: grassColor });
+        const grassMaterial = new THREE.MeshLambertMaterial({ color: grassColor });
         let grassMesh = new THREE.Mesh(mergeGrassGeometry, grassMaterial);
         grassMesh.receiveShadow = true;
         surroudingsGroup.add(grassMesh);
