@@ -1,0 +1,336 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "id": "783285127",
+            "type": "Feature",
+            "properties": {
+                "height": 417,
+                "material": "glass",
+                "roofMaterial": "glass",
+                "roofShape": "skillion",
+                "roofHeight": 362,
+                "roofDirection": 163,
+                "orient": -28.24,
+                "building": "713565776"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -74.013368,
+                            40.71274
+                        ],
+                        [
+                            -74.012847,
+                            40.712867
+                        ],
+                        [
+                            -74.013024,
+                            40.712605
+                        ],
+                        [
+                            -74.013368,
+                            40.71274
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "783285128",
+            "type": "Feature",
+            "properties": {
+                "height": 417,
+                "material": "glass",
+                "roofMaterial": "glass",
+                "roofShape": "skillion",
+                "roofHeight": 362,
+                "roofDirection": 73,
+                "orient": -28.24,
+                "building": "713565776"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -74.012847,
+                            40.712867
+                        ],
+                        [
+                            -74.013012,
+                            40.713262
+                        ],
+                        [
+                            -74.012669,
+                            40.713128
+                        ],
+                        [
+                            -74.012847,
+                            40.712867
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "783285129",
+            "type": "Feature",
+            "properties": {
+                "height": 417,
+                "material": "glass",
+                "roofMaterial": "glass",
+                "roofShape": "skillion",
+                "roofHeight": 362,
+                "roofDirection": 343,
+                "orient": -28.24,
+                "building": "713565776"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -74.013534,
+                            40.713137
+                        ],
+                        [
+                            -74.013358,
+                            40.713396
+                        ],
+                        [
+                            -74.013012,
+                            40.713262
+                        ],
+                        [
+                            -74.013534,
+                            40.713137
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "783285130",
+            "type": "Feature",
+            "properties": {
+                "height": 417,
+                "material": "glass",
+                "roofMaterial": "glass",
+                "roofShape": "skillion",
+                "roofHeight": 362,
+                "roofDirection": 253,
+                "orient": -28.24,
+                "building": "713565776"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -74.013712,
+                            40.712874
+                        ],
+                        [
+                            -74.013534,
+                            40.713137
+                        ],
+                        [
+                            -74.013368,
+                            40.71274
+                        ],
+                        [
+                            -74.013712,
+                            40.712874
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "241029253",
+            "type": "Feature",
+            "properties": {
+                "name": "One World Trade Centre",
+                "height": 417,
+                "levels": 94,
+                "material": "glass",
+                "roofMaterial": "concrete",
+                "roofShape": "flat",
+                "orient": -28.24,
+                "building": "713565776"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -74.013368,
+                            40.71274
+                        ],
+                        [
+                            -74.013534,
+                            40.713137
+                        ],
+                        [
+                            -74.013012,
+                            40.713262
+                        ],
+                        [
+                            -74.012847,
+                            40.712867
+                        ],
+                        [
+                            -74.013368,
+                            40.71274
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "241029248",
+            "type": "Feature",
+            "properties": {
+                "height": 420,
+                "minHeight": 417,
+                "material": "concrete",
+                "roofMaterial": "concrete",
+                "roofShape": "flat",
+                "orient": -28.24,
+                "building": "713565776"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -74.013236,
+                            40.713157
+                        ],
+                        [
+                            -74.013151,
+                            40.713159
+                        ],
+                        [
+                            -74.013095,
+                            40.713146
+                        ],
+                        [
+                            -74.013047,
+                            40.713122
+                        ],
+                        [
+                            -74.013009,
+                            40.713089
+                        ],
+                        [
+                            -74.012978,
+                            40.713028
+                        ],
+                        [
+                            -74.012976,
+                            40.712985
+                        ],
+                        [
+                            -74.013001,
+                            40.712922
+                        ],
+                        [
+                            -74.013036,
+                            40.712888
+                        ],
+                        [
+                            -74.013113,
+                            40.71285
+                        ],
+                        [
+                            -74.013215,
+                            40.712841
+                        ],
+                        [
+                            -74.01331,
+                            40.71287
+                        ],
+                        [
+                            -74.013377,
+                            40.71293
+                        ],
+                        [
+                            -74.013399,
+                            40.713006
+                        ],
+                        [
+                            -74.013371,
+                            40.71308
+                        ],
+                        [
+                            -74.0133,
+                            40.713137
+                        ],
+                        [
+                            -74.013236,
+                            40.713157
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "241029247",
+            "type": "Feature",
+            "properties": {
+                "height": 541,
+                "minHeight": 420,
+                "material": "metal",
+                "color": "#808080",
+                "roofColor": "#808080",
+                "roofShape": "pyramid",
+                "roofHeight": 80,
+                "orient": -28.24,
+                "building": "713565776"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -74.013175,
+                            40.713026
+                        ],
+                        [
+                            -74.013154,
+                            40.713008
+                        ],
+                        [
+                            -74.01316,
+                            40.712985
+                        ],
+                        [
+                            -74.013189,
+                            40.712975
+                        ],
+                        [
+                            -74.013216,
+                            40.712987
+                        ],
+                        [
+                            -74.013222,
+                            40.713003
+                        ],
+                        [
+                            -74.013214,
+                            40.713018
+                        ],
+                        [
+                            -74.013175,
+                            40.713026
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}
