@@ -185,13 +185,13 @@
       function getBuildings() {
         fetch("./resources/burj-khalifa.geojson").then((resp) => {
           resp.json().then((data) => {
-            loadBuildings(data, center);
+            //loadBuildings(data, center);
           });
         });
 
         fetch("./resources/berlin-tower.geojson").then((resp) => {
           resp.json().then((data) => {
-            //loadBuildings(data, centerTwo);
+            loadBuildings(data, centerTwo);
           });
         });
 
@@ -220,23 +220,40 @@
             const finalHeight = height - minHeight;
 
             const building = new Building(element.geometry.coordinates, element.properties, finalHeight, centerP);
-            const buildingGeom = building.generate();
+            let buildingGeom = null
 
-            if(minHeight > 0) {
-              buildingGeom.translate(0, (0.01*minHeight), 0);
+            if(element.properties["shape"] !== "sphere") {
+              buildingGeom = building.generate();
+
+              if(minHeight > 0) {
+                buildingGeom.translate(0, (0.01*minHeight), 0);
+              }
+              
+              buildingsGeometry.push(buildingGeom);
+              let mergeGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(buildingsGeometry);
+
+              let mesh = new THREE.Mesh(mergeGeometry, MAT_BUILDING);
+              mesh.receiveShadow = true;
+              mesh.castShadow = true;
+              
+              buildingsGroup.add(mesh);
+
+            } else {
+              
+              const features = turf.points(...element.geometry.coordinates);
+              const center = turf.center(features);
+
+              buildingGeom = generateSphere(center.geometry.coordinates, centerTwo, 0.01*(finalHeight/2), (0.01*(minHeight+finalHeight/2)));
+
+              let mesh = new THREE.Mesh(buildingGeom, MAT_BUILDING);
+              mesh.receiveShadow = true;
+              mesh.castShadow = true;
+              
+              buildingsGroup.add(mesh);
+              
             }
-            
-            buildingsGeometry.push(buildingGeom);
           }
         });
-
-        let mergeGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(buildingsGeometry);
-
-        let mesh = new THREE.Mesh(mergeGeometry, MAT_BUILDING);
-        mesh.receiveShadow = true;
-        mesh.castShadow = true;
-        
-        buildingsGroup.add(mesh);
       }
 
       init();
