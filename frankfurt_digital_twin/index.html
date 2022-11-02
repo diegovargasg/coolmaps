@@ -26,9 +26,9 @@
       import { Sky } from "./js/Sky.js";
       import Stats from "./js/stats.module.js";
 
-      let camera, controls, scene, renderer, mapContainer, roadsGroup, surroudingsGroup, buildingsGroup, spheresGroup, sky, sun, water, stats, groundMesh;
-      let buildingsGeometry = [];
-      let spheresGeometry = [];
+      let camera, controls, scene, renderer, mapContainer, roadsGroup, surroudingsGroup, boxGroup, sphereGroup, sky, sun, water, stats, groundMesh;
+      let boxGeometries = [];
+      let sphereGeometries = [];
       let waterGeometry = [];
       let grassGeometry = [];
       let highwayGeometry = [];
@@ -50,15 +50,15 @@
 
         scene.add(surroudingsGroup);
 
-        buildingsGroup = new THREE.Group();
-        buildingsGroup.name = "Buildings Group";
+        boxGroup = new THREE.Group();
+        boxGroup.name = "Buildings Group";
 
-        scene.add(buildingsGroup);
+        scene.add(boxGroup);
 
-        spheresGroup = new THREE.Group();
-        spheresGroup.name = "Spheres Group";
+        sphereGroup = new THREE.Group();
+        sphereGroup.name = "Spheres Group";
 
-        scene.add(spheresGroup);
+        scene.add(sphereGroup);
 
         roadsGroup = new THREE.Group();
         roadsGroup.name = "Roads Group";
@@ -212,7 +212,7 @@
               const center = turf.center(features);
 
               const buildingGeom = generateSphere(center.geometry.coordinates, centerP, 0.01*(finalHeight/2), (0.01*(minHeight+finalHeight/2)));
-              spheresGeometry.push(buildingGeom);
+              sphereGeometries.push(buildingGeom);
               
 
             } else {
@@ -222,22 +222,22 @@
                 buildingGeom.translate(0, (0.01*minHeight), 0);
               }
 
-              buildingsGeometry.push(buildingGeom);
+              boxGeometries.push(buildingGeom);
             }
           }
         });
 
-        let mergeGeometry = THREE.BufferGeometryUtils.mergeBufferGeometries(buildingsGeometry);
-        let mesh = new THREE.Mesh(mergeGeometry, MAT_BUILDING);
-        mesh.receiveShadow = true;
-        mesh.castShadow = true;
-        buildingsGroup.add(mesh);
+        let mergeBoxes = THREE.BufferGeometryUtils.mergeBufferGeometries(boxGeometries);
+        let meshBox = new THREE.Mesh(mergeBoxes, MAT_BUILDING);
+        meshBox.receiveShadow = true;
+        meshBox.castShadow = true;
+        boxGroup.add(meshBox);
 
-        let mergeSpheres = THREE.BufferGeometryUtils.mergeBufferGeometries(spheresGeometry);
+        let mergeSpheres = THREE.BufferGeometryUtils.mergeBufferGeometries(sphereGeometries);
         let meshSphere = new THREE.Mesh(mergeSpheres, MAT_BUILDING);
         meshSphere.receiveShadow = true;
         meshSphere.castShadow = true;
-        spheresGroup.add(meshSphere);
+        sphereGroup.add(meshSphere);
       }
 
       init();
