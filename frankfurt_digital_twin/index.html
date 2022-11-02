@@ -194,7 +194,7 @@
 
           if ((element.properties["building"] !== "no" || element.properties["bridge"] === "yes") && element.geometry.type === "Polygon" ) {
             const building = new Building(element.geometry.coordinates, element.properties, element.properties["building:levels"], center);
-            const buildingGeom = building.generateGeometry();
+            const buildingGeom = building.generate();
 
             buildingsGeometry.push(buildingGeom);
           }

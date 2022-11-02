@@ -6,7 +6,7 @@ class Building {
     this.center = center;
   }
 
-  generateGeometry() {
+  generate() {
     let shape, geometry;
     let gaps = [];
 
