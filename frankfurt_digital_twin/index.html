@@ -26,14 +26,16 @@
       import { Sky } from "./js/Sky.js";
       import Stats from "./js/stats.module.js";
 
-      let camera, controls, scene, renderer, mapContainer, roadsGroup, surroudingsGroup, buildingsGroup, sky, sun, water, stats, groundMesh;
+      let camera, controls, scene, renderer, mapContainer, roadsGroup, surroudingsGroup, buildingsGroup, spheresGroup, sky, sun, water, stats, groundMesh;
       let buildingsGeometry = [];
+      let spheresGeometry = [];
       let waterGeometry = [];
       let grassGeometry = [];
       let highwayGeometry = [];
 
       let MAT_BUILDING, MAT_ROAD;
-      let center = [8.673, 50.10690781920793];
+      //let center = [8.673, 50.10690781920793];//Frankfurt
+      let center = [13.409, 52.520]//Berlin
 
       function init() {
         mapContainer = document.getElementById("mapContainer");
@@ -52,6 +54,11 @@
         buildingsGroup.name = "Buildings Group";
 
         scene.add(buildingsGroup);
+
+        spheresGroup = new THREE.Group();
+        spheresGroup.name = "Spheres Group";
+
+        scene.add(spheresGroup);
 
         roadsGroup = new THREE.Group();
         roadsGroup.name = "Roads Group";
@@ -119,7 +126,7 @@
         mapContainer.appendChild(stats.dom);
 
         getBuildings();
-        getSurroundings();
+        //getSurroundings();
       }
 
       function onWindowResize() {
@@ -181,22 +188,42 @@
       }
 
       function getBuildings() {
-        fetch("./resources/frankfurt-skyline.geojson").then((resp) => {
+        fetch("./resources/berlin-tower.geojson").then((resp) => {
           resp.json().then((data) => {
-            loadBuildings(data);
+            loadBuildings(data, center);
           });
         });
       }
 
-      function loadBuildings(data) {
+      function loadBuildings(data, centerP) {
         data.features.forEach((element) => {
           if (!element["properties"]) return;
 
           if ((element.properties["building"] !== "no" || element.properties["bridge"] === "yes") && element.geometry.type === "Polygon" ) {
-            const building = new Building(element.geometry.coordinates, element.properties, element.properties["building:levels"], center);
-            const buildingGeom = building.generate();
+            //const building = new Building(element.geometry.coordinates, element.properties, element.properties["building:levels"], center);
 
-            buildingsGeometry.push(buildingGeom);
+            const height = element.properties["height"];
+            const minHeight = element.properties["minHeight"] ? element.properties["minHeight"] : 0;
+            const finalHeight = height - minHeight;
+            const building = new Building(element.geometry.coordinates, element.properties, finalHeight, centerP);
+
+            if (element.properties["shape"] === "sphere") {
+              const features = turf.points(...element.geometry.coordinates);
+              const center = turf.center(features);
+
+              const buildingGeom = generateSphere(center.geometry.coordinates, centerP, 0.01*(finalHeight/2), (0.01*(minHeight+finalHeight/2)));
+              spheresGeometry.push(buildingGeom);
+              
+
+            } else {
+              const buildingGeom = building.generate();
+
+              if(minHeight > 0) {
+                buildingGeom.translate(0, (0.01*minHeight), 0);
+              }
+
+              buildingsGeometry.push(buildingGeom);
+            }
           }
         });
 
@@ -205,6 +232,12 @@
         mesh.receiveShadow = true;
         mesh.castShadow = true;
         buildingsGroup.add(mesh);
+
+        let mergeSpheres = THREE.BufferGeometryUtils.mergeBufferGeometries(spheresGeometry);
+        let meshSphere = new THREE.Mesh(mergeSpheres, MAT_BUILDING);
+        meshSphere.receiveShadow = true;
+        meshSphere.castShadow = true;
+        spheresGroup.add(meshSphere);
       }
 
       init();

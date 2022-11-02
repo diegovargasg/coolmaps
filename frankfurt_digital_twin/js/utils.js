@@ -63,3 +63,11 @@ function generateLine(points) {
 
   return geometry;
 }
+
+function generateSphere(coordinates, center, radius, z) {
+  let elPosition = GPSRelativePositionTurf(coordinates, center);
+  let geometry = new THREE.SphereGeometry(radius, 16, 8);
+  geometry.translate(-elPosition[0], z, elPosition[1]);
+
+  return geometry;
+}

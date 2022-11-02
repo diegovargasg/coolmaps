@@ -24,7 +24,8 @@ class Building {
 
     geometry = generateGeometry(shape, {
       curveSegments: 1,
-      depth: 0.05 * this.height,
+      //depth: 0.05 * this.height,
+      depth: 0.01 * this.height,
       bevelEnabled: false,
     });
 
