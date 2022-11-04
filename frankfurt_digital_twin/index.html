@@ -205,23 +205,12 @@
             const height = element.properties["height"];
             const minHeight = element.properties["minHeight"] ? element.properties["minHeight"] : 0;
             const finalHeight = height - minHeight;
-            const building = new Building(element.geometry.coordinates, element.properties, finalHeight, centerP);
+            const building = new Building(element.geometry.coordinates, element.properties, centerP);
+            const buildingGeom = building.generate();
 
             if (element.properties["shape"] === "sphere") {
-              const features = turf.points(...element.geometry.coordinates);
-              const center = turf.center(features);
-
-              const buildingGeom = generateSphere(center.geometry.coordinates, centerP, 0.01*(finalHeight/2), (0.01*(minHeight+finalHeight/2)));
               sphereGeometries.push(buildingGeom);
-              
-
             } else {
-              const buildingGeom = building.generate();
-
-              if(minHeight > 0) {
-                buildingGeom.translate(0, (0.01*minHeight), 0);
-              }
-
               boxGeometries.push(buildingGeom);
             }
           }
