@@ -1,0 +1,1587 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2022-11-10T17:03:54Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/288811926",
+        "addr:city": "Bad Vilbel",
+        "addr:country": "DE",
+        "addr:housenumber": "1",
+        "addr:postcode": "61118",
+        "addr:street": "Bahnhofsplatz",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "fixme": "Existiert das Objekt \"Sushi Queen\" noch? Die hier eingetragene Internetseite existiert nicht mehr.",
+        "name": "Sakura",
+        "opening_hours": "Mo-Su 11:00-21:00",
+        "outdoor_seating": "yes",
+        "phone": "+49 6101 5969703",
+        "source": "http://www.sushiqueenbadvilbel.de/",
+        "source:date": "2015-06-29",
+        "website": "https://www.pronto-food-online.com/api/fb/_dd8_ol",
+        "wheelchair": "limited",
+        "wheelchair:description": "Ebenerdiger Eingang. Toiletten im Obergeschoss ohne Aufzug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7421236,
+          50.1881297
+        ]
+      },
+      "id": "node/288811926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/290629234",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Shisan",
+        "opening_hours": "Mo-Sa 12:00-22:00; Su off",
+        "outdoor_seating": "yes",
+        "phone": "+4969 48986867",
+        "website": "http://www.shisan.de",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6969288,
+          50.1220593
+        ]
+      },
+      "id": "node/290629234"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/603657284",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "1",
+        "addr:postcode": "60488",
+        "addr:street": "Im Vogelsgesang",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Bistro Okame"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6256418,
+          50.1367678
+        ]
+      },
+      "id": "node/603657284"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/619213955",
+        "addr:housenumber": "57",
+        "addr:street": "Varrentrappstraße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegetarian": "yes",
+        "name": "Mangetsu",
+        "opening_hours": "Mo-Fr 11:45-14:15,18:00-22:00; Sa 18:00-22:00",
+        "phone": "+49 69 772 210",
+        "website": "http://mangetsu.de",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6469054,
+          50.1159552
+        ]
+      },
+      "id": "node/619213955"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/626130028",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "91",
+        "addr:postcode": "60311",
+        "addr:street": "Fahrgasse",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "delivery": "yes",
+        "name": "Mikuni",
+        "opening_hours": "Mo-Sa 12:00-14:30,18:30-22:00; Su,PH off",
+        "phone": "+49 69 283627",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6859741,
+          50.1131284
+        ]
+      },
+      "id": "node/626130028"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/631427638",
+        "addr:housenumber": "7",
+        "addr:street": "Töngesgasse",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "indoor_seating": "yes",
+        "name": "BJU",
+        "old_name": "Mosaiic",
+        "opening_hours": "Tu-Th 11:30-23:00; Fr 11:30-24:00; Sa 14:00-24:00; Su 16:00-23:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6851792,
+          50.1133965
+        ]
+      },
+      "id": "node/631427638"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/924262453",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Haru sushi",
+        "name:de": "Haru sushi",
+        "name:en": "Haru sushi",
+        "name:ko": "하루 스시",
+        "opening_hours": "Tu-Fr 12:00-14:30, Tu-Su 18:00-22:30",
+        "phone": "+49 69 91507363",
+        "website": "https://www.haru-frankfurt.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6911652,
+          50.1231532
+        ]
+      },
+      "id": "node/924262453"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1014383748",
+        "amenity": "restaurant",
+        "bar": "no",
+        "contact:phone": "+49 69 75089715",
+        "contact:website": "http://www.maruyasu.de",
+        "cuisine": "japanese",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Maruyasu",
+        "opening_hours": "Mo-Fr 11:00-20:00",
+        "opening_hours:covid19": "Mo-Fr 11:00-18:00",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6995783,
+          50.1208461
+        ]
+      },
+      "id": "node/1014383748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1109642801",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "email": "info@sushiedo.de",
+        "fax": "+49 69 13388465",
+        "name": "sushiedo",
+        "phone": "+49 69 56999869",
+        "website": "https://www.sushiedo.de/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6651855,
+          50.1087485
+        ]
+      },
+      "id": "node/1109642801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1131538315",
+        "addr:housenumber": "125",
+        "addr:postcode": "60314",
+        "addr:street": "Hanauer Landstraße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "description": "Sushi & Ramen",
+        "name": "Hiroshi",
+        "opening_hours": "Mo-Sa 12:00-15:00,17:30-22:30; Su 17:30-22:30",
+        "operator": "Van Cuong Nguyen",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7123399,
+          50.1117421
+        ]
+      },
+      "id": "node/1131538315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1213812366",
+        "addr:housenumber": "1",
+        "addr:street": "Feuerbachstraße",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2022-11-08",
+        "cuisine": "japanese",
+        "indoor_seating": "yes",
+        "internet_access": "no",
+        "name": "Sushi am Main",
+        "opening_hours": "Mo-Fr 12:00-15:00,18:00-23:00; Sa 13:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+49 69728495",
+        "website": "https://www.sushiammain.de/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6621618,
+          50.1136022
+        ]
+      },
+      "id": "node/1213812366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1784964603",
+        "addr:city": "Frankfurt am Main",
+        "addr:country": "DE",
+        "addr:housenumber": "18 - 20",
+        "addr:postcode": "60313",
+        "addr:street": "Schillerstraße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Sushi Circle",
+        "opening_hours": "Mo-Sa 12:00-22:00",
+        "phone": "+49 69 15342922",
+        "toilets:wheelchair": "no",
+        "website": "https://www.sushi-circle.de/filialen/sushi-circle-frankfurt-schiller-strasse.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6788431,
+          50.1152591
+        ]
+      },
+      "id": "node/1784964603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1901118637",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "51",
+        "addr:postcode": "60318",
+        "addr:street": "Jahnstraße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Sushi Restaurant",
+        "opening_hours": "Mo,We-Fr 12:00-15:00,17:00-22:30; Sa,Su 13:00-22:30",
+        "phone": "+49 69 91508855",
+        "website": "https://sushi-restaurant-frankfurt.de/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.680166,
+          50.1202029
+        ]
+      },
+      "id": "node/1901118637"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2126993678",
+        "addr:housenumber": "20",
+        "addr:postcode": "60327",
+        "addr:street": "Europa-Allee",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2021-10-20",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "MoschMosch",
+        "opening_hours": "Mo-Sa 11:00-23:00; Su 12:00-22:00",
+        "phone": "+49 69 13388181",
+        "website": "https://www.moschmosch.com",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6497809,
+          50.1090663
+        ]
+      },
+      "id": "node/2126993678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2216608060",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "MoschMosch",
+        "opening_hours": "PH,Su 12:00-22:00; Mo-Sa 11:00-22:00",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6769782,
+          50.112694
+        ]
+      },
+      "id": "node/2216608060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2295297548",
+        "addr:housenumber": "55",
+        "addr:postcode": "65760",
+        "addr:street": "Mergenthalerallee",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "MoMo",
+        "opening_hours": "Mo-Fr 11:30-14:00,17:30-22:00",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5683107,
+          50.135404
+        ]
+      },
+      "id": "node/2295297548"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2495370203",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "t-style",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6449896,
+          50.1192129
+        ]
+      },
+      "id": "node/2495370203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2830197212",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2021-11-14",
+        "contact:phone": "+49 69 36602496",
+        "contact:website": "http://shinjukusushi.just-deliver.de/",
+        "cuisine": "japanese",
+        "indoor_seating": "yes",
+        "name": "Shinjuku Sushi",
+        "opening_hours": "Mo-Fr 11:00-15:00,17:00-22:00; Su,PH 16:00-22:00",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6988582,
+          50.1199098
+        ]
+      },
+      "id": "node/2830197212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2948787346",
+        "addr:housenumber": "42",
+        "addr:street": "Kaiserstraße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "KABUKI",
+        "opening_hours": "Mo-Fr 12:00-15:00, Mo-Su,PH 18:00-24:00",
+        "phone": "+49 69 234353",
+        "website": "https://kabuki-restaurant.com/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6701189,
+          50.1089993
+        ]
+      },
+      "id": "node/2948787346"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2949656733",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Iroha",
+        "opening_hours": "Mo-Sa 12:00-15:00, 18:30-23:00",
+        "website": "https://www.iroha.de",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.679561,
+          50.116442
+        ]
+      },
+      "id": "node/2949656733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2985730871",
+        "amenity": "restaurant",
+        "capacity": "50",
+        "cuisine": "japanese",
+        "name": "Iimori",
+        "opening_hours": "Mo-Fr 11:00-15:00,17:00-21:30; Sa 12:00-15:00,17:00-21:30",
+        "website": "http://www.iimori.de",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6572224,
+          50.1079541
+        ]
+      },
+      "id": "node/2985730871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3397331283",
+        "addr:city": "Neu-Isenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "91",
+        "addr:postcode": "63263",
+        "addr:street": "Frankfurter Straße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "delivery": "yes",
+        "diet:pescetarian": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Nigiri Sushi",
+        "opening_hours": "Mo-Fr 11:30-22:00; Sa,Su 16:00-22:00",
+        "phone": "+49 6102 884757",
+        "website": "https://www.nigirisushi-neuisenburg.de/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6950672,
+          50.0526444
+        ]
+      },
+      "id": "node/3397331283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3431321697",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "61",
+        "addr:postcode": "60329",
+        "addr:street": "Kaiserstraße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "indoor_seating": "yes",
+        "name": "Chilinh",
+        "opening_hours": "Mar-Oct Mo-Su 10:00-23:00; Nov-Feb Mo-Su 11:00-21:30",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6681277,
+          50.1081312
+        ]
+      },
+      "id": "node/3431321697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3599904752",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Sushiko",
+        "opening_hours": "Mo-Sa 12:00-14:30,18:00-22:30; Su off",
+        "phone": "+49 69 60605460",
+        "toilets:wheelchair": "no",
+        "website": "http://www.frankfurt-sushi.de/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.681481,
+          50.1011675
+        ]
+      },
+      "id": "node/3599904752"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3708981409",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2022-10-10",
+        "cuisine": "japanese",
+        "name": "The Noodlemaker",
+        "opening_hours": "Mo,We-Sa 11:30-15:00,17:30-22:00; Su 12:00-15:00,17:30-22:00; Tu off",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6477269,
+          50.1083639
+        ]
+      },
+      "id": "node/3708981409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3732798250",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "3",
+        "addr:postcode": "60311",
+        "addr:street": "Friedensstraße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Kamon Sushi Bar",
+        "note": "also All you can eat",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+49 69 24009887",
+        "website": "http://www.kamon-ffm.de",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6748494,
+          50.1097819
+        ]
+      },
+      "id": "node/3732798250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3732798251",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "6-10",
+        "addr:postcode": "60311",
+        "addr:street": "Friedensstraße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Iroha",
+        "name:ja": "いろは",
+        "opening_hours": "Mo-Sa 12:00-15:00, 18:30-23:00",
+        "phone": "+49 69 21994930",
+        "website": "https://www.iroha.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6753779,
+          50.1098966
+        ]
+      },
+      "id": "node/3732798251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3752049003",
+        "addr:housenumber": "10",
+        "addr:street": "Wilhelm-Hauff-Straße",
+        "amenity": "restaurant",
+        "contact:website": "http://www.ramen-jun.de/",
+        "cuisine": "japanese",
+        "name": "Ramen Jun",
+        "opening_hours": "Mo-Su 12:00-21:00",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6561537,
+          50.113205
+        ]
+      },
+      "id": "node/3752049003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3752051856",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Nomu Sushi Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6773609,
+          50.1130549
+        ]
+      },
+      "id": "node/3752051856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4019451860",
+        "addr:housenumber": "61",
+        "addr:street": "Reuterweg",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Sushi am Main",
+        "opening_hours": "Mo-Fr 11:45-15:00,17:30-22:00; Sa,Su 17:00-21:45;",
+        "website": "https://www.sushiammain.de/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6702893,
+          50.1211422
+        ]
+      },
+      "id": "node/4019451860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4036489532",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "31",
+        "addr:postcode": "60313",
+        "addr:street": "Vilbeler Straße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Iwase",
+        "opening_hours": "Tu-Sa 12:00-14:00, Mo-Sa 18:30-22:00; Su off",
+        "phone": "+49 69 283992",
+        "takeaway": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6863178,
+          50.116833
+        ]
+      },
+      "id": "node/4036489532"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4093361236",
+        "addr:housenumber": "7",
+        "addr:street": "Dreieichstraße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Muku",
+        "opening_hours": "Tu-Fr 18:00-23:00; Sa 12:00-14:30, 18:00-23:00; Su 17:00-22:00",
+        "phone": "+49 69 48445153",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6924547,
+          50.1059108
+        ]
+      },
+      "id": "node/4093361236"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4093366778",
+        "addr:housenumber": "131",
+        "addr:street": "Hanauer Landstraße",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2022-10-26",
+        "cuisine": "japanese",
+        "name": "Masa",
+        "opening_hours": "Tu-Sa 19:00-23:00; Su,Mo off"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7131746,
+          50.1119955
+        ]
+      },
+      "id": "node/4093366778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4112166709",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Takumi",
+        "opening_hours": "Mo-Fr 12:00-14:00,18:00-21:00, Sa 12:00-14:00, Sa,Su 17:30-21:00, Su 12:00-14:00,17:30-20:30",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6573555,
+          50.1143981
+        ]
+      },
+      "id": "node/4112166709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4143236089",
+        "addr:housenumber": "11",
+        "addr:street": "Meisengasse",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Higematsu",
+        "opening_hours": "Mo-Sa 12:30-14:30, 18:30-22:00",
+        "phone": "+49 69 280688",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6757004,
+          50.1156244
+        ]
+      },
+      "id": "node/4143236089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4161896393",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "56",
+        "addr:postcode": "60437",
+        "addr:street": "Berner Straße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "delivery": "yes",
+        "name": "Planet Sushi",
+        "opening_hours": "Mo-Fr 11:30-22:00; Sa 12:30-22:00; Su 17:30-22:00",
+        "phone": "+49 69 50929872",
+        "website": "https://planet-sushi-frankfurt.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6560416,
+          50.1932324
+        ]
+      },
+      "id": "node/4161896393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4177158848",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "12",
+        "addr:postcode": "60325",
+        "addr:street": "Taunusanlage",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Moriki",
+        "opening_hours": "Mo-Fr 12:00-16:00,18:00-24:00, Sa,Su 12:00-24:00",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "wheelchair:description": "Eingang über die Terrasse, Rollstuhlgerechtes WC mit Haltegriffen, klappbar, auf beiden Seiten vorhanden. Genügend Freiraum zum Wenden."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6691722,
+          50.1140729
+        ]
+      },
+      "id": "node/4177158848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4229656290",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "indoor_seating": "yes",
+        "name": "Monchis",
+        "opening_hours": "Su-Th 11:00-01:00; Fr-Sa 11:00-03:00",
+        "outdoor_seating": "yes",
+        "phone": "+49 69 13385730",
+        "toilets:wheelchair": "no",
+        "website": "https://www.monchis.de/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6758385,
+          50.1145468
+        ]
+      },
+      "id": "node/4229656290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4268776929",
+        "addr:city": "Frankfurt am Main",
+        "addr:country": "DE",
+        "addr:housenumber": "83",
+        "addr:postcode": "60316",
+        "addr:street": "Berger Straße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Berger Street Food",
+        "opening_hours": "Mo-Sa 11:30-22:30; Su 13:30-21:30",
+        "phone": "+49 69 85801714",
+        "website": "http://bergerstreetfood.de/index.html",
+        "website:menu": "https://bergerstreetfood.de/speisekarte/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6994156,
+          50.1222065
+        ]
+      },
+      "id": "node/4268776929"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4271823078",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2022-05-24",
+        "cuisine": "sushi",
+        "name": "Sushi CAT",
+        "opening_hours": "Mo 11:00-14:30,17:30-22:30; Tu-Sa 11:00-22:30; Su 12:00-22:30",
+        "opening_hours:signed": "no",
+        "phone": "+49 69 49085252",
+        "takeaway": "yes",
+        "website": "http://www.sushicat-frankfurt.de",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7064198,
+          50.1226678
+        ]
+      },
+      "id": "node/4271823078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4317026389",
+        "addr:housenumber": "162",
+        "addr:street": "Hansaallee",
+        "amenity": "restaurant",
+        "check_date:opening_hours": "2022-05-19",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Sushi Sensei",
+        "opening_hours": "Mo-Fr 11:00-22:30; Sa 16:00-22:30; Su 12:00-22:30",
+        "outdoor_seating": "no",
+        "phone": "+49 69 297 298 81",
+        "website": "https://www.sushi-sensei.de",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6676165,
+          50.1374428
+        ]
+      },
+      "id": "node/4317026389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4769493611",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Bento Boutique",
+        "opening_hours": "Mo-Fr 11:30-14:30,17:00-21:30",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6685884,
+          50.1093661
+        ]
+      },
+      "id": "node/4769493611"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4784993722",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Bagan Sushi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6650899,
+          50.0973214
+        ]
+      },
+      "id": "node/4784993722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4870238846",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "delivery": "no",
+        "diet:vegan": "no",
+        "diet:vegetarian": "yes",
+        "email": "info@restaurant-nagoya.de",
+        "fax": "+49 69-809068 75",
+        "level": "0",
+        "name": "Nagoya",
+        "opening_hours": "Mo-Fr 11:30-23:00; Sa,Su 11:30-00:00; PH off",
+        "operator": "Cheok-Gastronomie GmbH",
+        "payment:american_express": "yes",
+        "payment:coins": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:notes": "yes",
+        "payment:visa": "yes",
+        "payment:visa_debit": "yes",
+        "phone": "+49 69-809068 74",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "http://restaurant-nagoya.de",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7673903,
+          50.1028503
+        ]
+      },
+      "id": "node/4870238846"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4909588195",
+        "addr:city": "Frankfurt am Main",
+        "addr:country": "DE",
+        "addr:housenumber": "161",
+        "addr:postcode": "60326",
+        "addr:street": "Frankenallee",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegetarian": "yes",
+        "email": "info@konamon.de",
+        "indoor_seating": "yes",
+        "name": "Konamon",
+        "opening_hours": "Mo-Su 17:30-22:00; Sa 17:00-22:00; PH off",
+        "outdoor_seating": "yes",
+        "payment:coins": "yes",
+        "payment:debit_cards": "yes",
+        "payment:notes": "yes",
+        "phone": "+49 69 87208005",
+        "website": "https://www.konamon.online/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6365563,
+          50.1039557
+        ]
+      },
+      "id": "node/4909588195"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4968558906",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Hokkaido Sushi & Nudel",
+        "opening_hours": "\"von 14:30-17:00 geschlossen; Sonn u Feiertag 16:00-21:30\"",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6928132,
+          50.1285452
+        ]
+      },
+      "id": "node/4968558906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5186557321",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "17",
+        "addr:postcode": "60313",
+        "addr:street": "Börsenstraße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "delivery": "yes",
+        "email": "contact@sakura-sushicafe.com",
+        "name": "Sakura Sushi",
+        "name:en": "Sakura",
+        "opening_hours": "Mo-Fr 12:00-14:00,18:00-21:00; Sa-Su 13:00-21:00;PH 13:00-21:00",
+        "phone": "+49 69 27272226",
+        "takeaway": "yes",
+        "website": "https://www.sakura-sushicafe.com/frankfurt",
+        "website:menu": "https://www.sakura-sushicafe.com/menu",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.676488,
+          50.1157685
+        ]
+      },
+      "id": "node/5186557321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5330543946",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "diet:vegetarian": "yes",
+        "name": "Sushi Maru",
+        "opening_hours": "Mo-Fr 11:30-14:30,17:30-22:00; Sa 17:30-22:00",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5633221,
+          50.1436503
+        ]
+      },
+      "id": "node/5330543946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5659181664",
+        "addr:housenumber": "4",
+        "addr:street": "Bahnhofstraße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Grace Sushi",
+        "opening_hours": "Mo-Sa 11:30-15:00,17:00-22:00; Su 17:00-22:00",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "website": "http://www.grace-sushi.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8330566,
+          50.124486
+        ]
+      },
+      "id": "node/5659181664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5719097634",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Mangetsu",
+        "opening_hours": "Mo-Sa 12:00-14:30, 18:00-22:00; PH off",
+        "phone": "+496992038791",
+        "website": "https://izakaya-mangetsu.de",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6795627,
+          50.1165386
+        ]
+      },
+      "id": "node/5719097634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6246527103",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "168F",
+        "addr:postcode": "60323",
+        "addr:street": "Fürstenbergerstraße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "email": "fuerstenberger@bergerstreetfood.de",
+        "name": "Berger Sushi Lover",
+        "opening_hours": "Tu-Fr 11:30-15:00, Tu-Fr 17:30-22:30, Sa-Su 13:30-22:30",
+        "phone": "+49 69 91501888",
+        "website": "https://bergerstreetfood.de",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6705431,
+          50.1246617
+        ]
+      },
+      "id": "node/6246527103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6928096364",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "email": "info@kushiyaichikawa.com",
+        "name": "Kushiya Ichikawa",
+        "opening_hours": "Mo-Tu,Th-Su 18:00-23:00",
+        "phone": "+496979539556",
+        "website": "https://www.kushiyaichikawa.com/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6396085,
+          50.124628
+        ]
+      },
+      "id": "node/6928096364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7055253131",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "24",
+        "addr:postcode": "65933",
+        "addr:street": "Zum Linnegraben",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "delivery": "only",
+        "name": "Sushi Palace"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.596941,
+          50.1020131
+        ]
+      },
+      "id": "node/7055253131"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7222435585",
+        "amenity": "restaurant",
+        "contact:phone": "+49 69 91394976",
+        "contact:website": "https://maruyasu-de.jimdo.com/",
+        "cuisine": "sushi",
+        "name": "Maruyasu Frankfurt Galeria Kaufhof",
+        "name:ja": "マルヤス KAUFHOF店",
+        "opening_hours": "Mo-We 11:00-20:00; Th-Sa 11:00-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6797469,
+          50.1141459
+        ]
+      },
+      "id": "node/7222435585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7348469067",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Sushi 2 Go",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6662755,
+          50.1191817
+        ]
+      },
+      "id": "node/7348469067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7394973581",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "17a",
+        "addr:postcode": "60318",
+        "addr:street": "Spohrstraße",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "delivery": "yes",
+        "diet:vegetarian": "yes",
+        "email": "info@gyozafactory.de",
+        "fax": "+49 69 97695047",
+        "name": "Gyoza Factory",
+        "opening_hours": "Tu-Sa 11:30-21:00",
+        "opening_hours:covid19": "Tu-Su 17:00-22:00; PH off",
+        "phone": "+49 69 97769674",
+        "takeaway": "yes",
+        "website": "https://www.gyozafactory.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6909237,
+          50.1271747
+        ]
+      },
+      "id": "node/7394973581"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7835217331",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Fujiwara",
+        "opening_hours": "We-Sa 12:00-14:00,18:00-20:00; Su 18:00-20:00",
+        "phone": "+49 69 6637 1816",
+        "website": "http://www.fujiwara-restaurant.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6484968,
+          50.1231244
+        ]
+      },
+      "id": "node/7835217331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7879905635",
+        "addr:city": "Frankfurt am Main",
+        "addr:country": "DE",
+        "addr:housenumber": "104",
+        "addr:postcode": "60316",
+        "addr:street": "Berger Straße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "description": "Fusion Sushi",
+        "name": "BERGERSTREETFOOD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6998429,
+          50.1220933
+        ]
+      },
+      "id": "node/7879905635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8070057438",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Sushimama",
+        "opening_hours": "Tu-Fr 11:30-15:00,17:00-22:00; Mo 17:00-22:00; Sa,Su 14:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.635631,
+          50.1010428
+        ]
+      },
+      "id": "node/8070057438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8506915155",
+        "addr:city": "Heusenstamm",
+        "addr:housenumber": "114-118",
+        "addr:postcode": "63150",
+        "addr:street": "Frankfurter Straße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Fresh Poke Bowl & Sushi",
+        "website": "https://www.freshpokebowlsushi.de/storedata/listStore"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.793603,
+          50.0582301
+        ]
+      },
+      "id": "node/8506915155"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8514335351",
+        "addr:city": "Heusenstamm",
+        "addr:housenumber": "35",
+        "addr:postcode": "63150",
+        "addr:street": "Frankfurter Straße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Te-Maki SUSHI",
+        "phone": "+49 6104 9473594"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8053971,
+          50.0594726
+        ]
+      },
+      "id": "node/8514335351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9026901800",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Fukuro Sushi & Ramen",
+        "opening_hours": "Mo-Sa 12:00-15:00,17:00-21:30; Su 16:00-21:30",
+        "phone": "+496971164641",
+        "website": "https://www.fukurosushi.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6492981,
+          50.1207895
+        ]
+      },
+      "id": "node/9026901800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9168415904",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "4a8",
+        "addr:postcode": "60528",
+        "addr:street": "Jugenheimer Straße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Niki Sushi",
+        "opening_hours": "Mo-Fr 11:00-14:30, 17:30–21:30; Sa 17:30–21:30",
+        "phone": "+49 69 67739030",
+        "website": "https://www.niki-sushi.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6386869,
+          50.0839541
+        ]
+      },
+      "id": "node/9168415904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9269872232",
+        "addr:city": "Bad Vilbel",
+        "addr:housenumber": "7",
+        "addr:postcode": "61118",
+        "addr:street": "Bahnhofsplatz",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Konichi",
+        "opening_hours": "Mo-Sa 11:30-14:30,17:30-22:00; Su 16:00-22:00",
+        "phone": "+49 6101 9874761",
+        "website": "https://konichi-sushi.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7412374,
+          50.1880896
+        ]
+      },
+      "id": "node/9269872232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9373421252",
+        "addr:city": "Frankfurt am Main",
+        "addr:housenumber": "1-7",
+        "addr:postcode": "60329",
+        "addr:street": "Düsseldorfer Straße",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "GO by Steffen Henssler Frankfurt",
+        "opening_hours": "Mo-Su 17:00-21:30",
+        "phone": "+49 69 348680692",
+        "website": "https://www.gobysteffenhenssler.com/de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6618443,
+          50.1086629
+        ]
+      },
+      "id": "node/9373421252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9589839720",
+        "addr:city": "Oberursel (Taunus)",
+        "addr:housenumber": "32",
+        "addr:postcode": "61440",
+        "addr:street": "Adenauerallee",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Sakura",
+        "opening_hours": "Mo-Do 12:00-14:00,17:00-21:00; Fr 12:00-21:00; Sa 13:00-21:00",
+        "phone": "+4961712791899",
+        "website": "https://www.sakura-sushicafe.com/taunus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5826991,
+          50.200455
+        ]
+      },
+      "id": "node/9589839720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9863298683",
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Zushii",
+        "opening_hours": "Mo-Fr 11:30-15:00, 17:00-22:00; Su,PH 17:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6915565,
+          50.1548235
+        ]
+      },
+      "id": "node/9863298683"
+    }
+  ]
+}
