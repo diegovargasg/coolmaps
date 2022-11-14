@@ -108,3 +108,32 @@ out center;
 
 (.matchingTennisBars;);
 out center;
+
+
+/**RETURNS BARS*/
+[out:json][timeout:25];
+// gather results
+(
+  node["amenity"="bar"]({{bbox}});
+  way["amenity"="bar"]({{bbox}});
+  relation["amenity"="bar"]({{bbox}});
+  node["amenity"="pub"]({{bbox}});
+  way["amenity"="pub"]({{bbox}});
+  relation["amenity"="pub"]({{bbox}});
+)->.bars;
+
+
+(
+  node["sport"="table_tennis"]({{bbox}});
+  way["sport"="table_tennis"]({{bbox}});
+  rel["sport"="table_tennis"]({{bbox}});
+)->.tennis;
+
+
+( node.bars(around.tennis:500);
+  way.bars(around.tennis:500);
+  rel.bars(around.tennis:500);
+ )->.matchingTennisBars;
+
+(.matchingTennisBars;);
+out center;
