@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+    <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Using OpenLayers with Vite</title>
   </head>
   <body>
     <form>
       <label for="radius">radius size</label>
-      <input id="radius" type="range" min="1" max="50" step="1" value="5"/>
+      <input id="radius" type="range" min="1" max="50" step="1" value="8"/>
       <label for="blur">blur size</label>
-      <input id="blur" type="range" min="1" max="50" step="1" value="2"/>
+      <input id="blur" type="range" min="1" max="50" step="1" value="16"/>
     </form>
-    <div id="map" style="margin-top: 200px;"></div>
+    <div id="map"></div>
+    <div id="popup" class="ol-popup">
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
