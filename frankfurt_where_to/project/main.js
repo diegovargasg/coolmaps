@@ -6,7 +6,7 @@ import { Heatmap as HeatmapLayer, Vector as VectorLayer, Tile as TileLayer } fro
 import { Fill, Stroke, Style, Text } from "ol/style";
 import cityShape from "../resources/frankfurt_shape/frankfurt_shape_3857.json" assert { type: "json" };
 import heatGeoJson from "../resources/frankfurt_tennis_bar_3857.json" assert { type: "json" };
-import tableTennisGeoJson from "../resources/frankfurt_table_tennis_3857.json" assert { type: "json" };
+import tableTennisGeoJson from "../resources/frankfurt_tennis_bar_3857.json" assert { type: "json" };
 import barTennisGeoJson from "../resources/frankfurt_bars_tennis_3857.json" assert { type: "json" };
 import "ol-ext/dist/ol-ext.css";
 import Colorize from "ol-ext/filter/Colorize";
