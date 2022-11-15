@@ -6,9 +6,14 @@ body {
   height: 100%;
 }
 #map {
-  position: relative;
-  height: 550px;
+  height: 350px;
   width: 100%;
+}
+@media (min-width: 576px) {
+  #map {
+    height: 550px;
+    width: 100%;
+  }
 }
 .ol-popup {
   position: absolute;
@@ -53,6 +58,14 @@ body {
   content: "✖";
 }
 
+.ol-scale-line {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.ol-scale-line-inner {
+  color: #000;
+  border-color: #000;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -72,8 +85,7 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   border: solid rgba(0, 0, 0, 0.15);
   border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
 .b-example-vr {
@@ -116,7 +128,7 @@ a.back-top {
   word-break: break-word;
 }
 
-.foot-note{
+.foot-note {
   font-size: 10px;
 }
 
