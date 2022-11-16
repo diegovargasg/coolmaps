@@ -1,0 +1,1208 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/key/values?key=amenity&filter=all&lang=de&sortname=count&sortorder=desc&page=1&rp=150&qtype=value&format=json_pretty",
+  "data_until": "2022-11-15T00:59:54Z",
+  "page": 1,
+  "rp": 150,
+  "total": 8872,
+  "data": [    {
+      "value": "parking",
+      "count": 4611781,
+      "fraction": 0.2058,
+      "in_wiki": true,
+      "description": "Parkplatz für Kraftfahrzeuge, wie PKW und LKW",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "bench",
+      "count": 1976051,
+      "fraction": 0.0882,
+      "in_wiki": true,
+      "description": "Ein Platz zum Sitzen für Menschen, bietet Platz für mehrere Personen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "parking_space",
+      "count": 1540937,
+      "fraction": 0.0688,
+      "in_wiki": true,
+      "description": "Eine einzelne Stellfläche eines größeren Parkplatzes",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "place_of_worship",
+      "count": 1357652,
+      "fraction": 0.0606,
+      "in_wiki": true,
+      "description": "Andachtsstätte, unabhängig von Religion und Glaubensgemeinschaft",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "restaurant",
+      "count": 1267612,
+      "fraction": 0.0566,
+      "in_wiki": true,
+      "description": "Eine Einrichtung mit Sitzplätzen, in der Speisen und Getränke angeboten werden.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "school",
+      "count": 1224846,
+      "fraction": 0.0547,
+      "in_wiki": true,
+      "description": "Primar- oder Sekundarschule, die in der Regel Schüler im Alter von sechs bis achtzehn Jahren besuchen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "waste_basket",
+      "count": 641284,
+      "fraction": 0.0286,
+      "in_wiki": true,
+      "description": "Einzelner kleiner Mülleimer, der für Fußgänger leicht zugänglich ist.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "fuel",
+      "count": 495006,
+      "fraction": 0.0221,
+      "in_wiki": true,
+      "description": "Eine Verkaufsstelle von Kraftstoffen für Fahrzeuge",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "bicycle_parking",
+      "count": 494089,
+      "fraction": 0.0221,
+      "in_wiki": true,
+      "description": "Ein Parkplatz, der für Fahrräder vorgesehen ist.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "cafe",
+      "count": 491386,
+      "fraction": 0.0219,
+      "in_wiki": true,
+      "description": "Ein Ort mit Sitzmöglichkeiten, an dem Getränke, Kuchen, Gebäck, Frühstück oder kleine Mahlzeiten verkauft werden",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "fast_food",
+      "count": 488409,
+      "fraction": 0.0218,
+      "in_wiki": true,
+      "description": "Ein Ort, an dem Essen und Getränke an einem Schalter gekauft werden um direkt verspeist zu werden.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "shelter",
+      "count": 437078,
+      "fraction": 0.0195,
+      "in_wiki": true,
+      "description": "Wetterschutz, Unterstand",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "bank",
+      "count": 380382,
+      "fraction": 0.017,
+      "in_wiki": true,
+      "description": "Ein Finanzinstitut, bei dem Kunden unter anderem Geld einzahlen und Kredite aufnehmen können",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "toilets",
+      "count": 372582,
+      "fraction": 0.0166,
+      "in_wiki": true,
+      "description": "Öffentliche Toilette",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "recycling",
+      "count": 369025,
+      "fraction": 0.0165,
+      "in_wiki": true,
+      "description": "Ein Recyclingcontainer oder ein Wertstoffhof",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "pharmacy",
+      "count": 355413,
+      "fraction": 0.0159,
+      "in_wiki": true,
+      "description": "Ein Geschäft, in dem Arzneimittel und Medizinprodukte verkauft werden",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "post_box",
+      "count": 351996,
+      "fraction": 0.0157,
+      "in_wiki": true,
+      "description": "Kasten zum Einwerfen von Briefen durch den Versender zwecks Weitertransport durch das Postunternehmen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "kindergarten",
+      "count": 279861,
+      "fraction": 0.0125,
+      "in_wiki": true,
+      "description": "Kindergarten / Kindertagesstätte",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "drinking_water",
+      "count": 268809,
+      "fraction": 0.012,
+      "in_wiki": true,
+      "description": "Eine öffentlich zugängliche Trinkwasserstelle",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "vending_machine",
+      "count": 210824,
+      "fraction": 0.0094,
+      "in_wiki": true,
+      "description": "Ein Gerät, das Waren, Fahrkarten oder andere Dinge verkauft (Verkaufsautomat)",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "bar",
+      "count": 207696,
+      "fraction": 0.0093,
+      "in_wiki": true,
+      "description": "Eine Einrichtung, in der alkoholische Getränke ausgeschenkt werden. Mahlzeiten werden meist nicht angeboten. Sie zeichnet sich durch eine lebhafte Atmosphäre oft mit lauter Musik aus. Sitzplätze sind oft nur in geringer Zahl vorhanden.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "hunting_stand",
+      "count": 204656,
+      "fraction": 0.0091,
+      "in_wiki": true,
+      "description": "Ein Jägerstand oder Hochsitz",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "hospital",
+      "count": 198673,
+      "fraction": 0.0089,
+      "in_wiki": true,
+      "description": "Eine medizinische Einrichtung, die stationäre medizinische Behandlung anbietet",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "atm",
+      "count": 197375,
+      "fraction": 0.0088,
+      "in_wiki": true,
+      "description": "Ein technisches Gerät zur Bargeldabhebung in Selbstbedienung",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "post_office",
+      "count": 193692,
+      "fraction": 0.0086,
+      "in_wiki": true,
+      "description": "Eine Poststelle",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "waste_disposal",
+      "count": 188572,
+      "fraction": 0.0084,
+      "in_wiki": true,
+      "description": "Ein mittelgroßer Abfallbehälter für abgepackten Haushalts- oder Industrieabfall.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "pub",
+      "count": 178988,
+      "fraction": 0.008,
+      "in_wiki": true,
+      "description": "Eine Einrichtung, in der alkoholische und Getränke bestellt und konsumiert werden können, mit traditionellem Aussehen und entspannter Atmosphäre. Oft werden auch Speisen verkauft, die vor Ort verzehrt werden können. Kunden können sich meist setzen.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "grave_yard",
+      "count": 170402,
+      "fraction": 0.0076,
+      "in_wiki": true,
+      "description": "Kleinerer Friedhof oder Bereich mit Gräbern – oft in unmittelbarer Nähe einer Kirche und meist nicht mehr genutzt.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "clinic",
+      "count": 164904,
+      "fraction": 0.0074,
+      "in_wiki": true,
+      "description": "Eine Gesundheitseinrichtung mit mehreren Ärzten oder Arztpraxen zur ambulanten Behandlung",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "parking_entrance",
+      "count": 152737,
+      "fraction": 0.0068,
+      "in_wiki": true,
+      "description": "Die Ein- bzw. Ausfahrt einer Tiefgarage oder eines Parkhauses",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "doctors",
+      "count": 152622,
+      "fraction": 0.0068,
+      "in_wiki": true,
+      "description": "Arbeitsplatz eines niedergelassenen Arztes",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "fountain",
+      "count": 152573,
+      "fraction": 0.0068,
+      "in_wiki": true,
+      "description": "Ein Springbrunnen oder Zierbrunnen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "community_centre",
+      "count": 150401,
+      "fraction": 0.0067,
+      "in_wiki": true,
+      "description": "Ein Ort, der hauptsächlich für lokale Veranstaltungen, Feierlichkeiten und Gruppenaktivitäten genutzt wird",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "townhall",
+      "count": 144350,
+      "fraction": 0.0064,
+      "in_wiki": true,
+      "description": "Rathaus oder Verwaltung eines Ortes",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "police",
+      "count": 140117,
+      "fraction": 0.0063,
+      "in_wiki": true,
+      "description": "Eine Polizeistation ist eine Einrichtung, von der aus Polizeibeamte Streife fahren und die eine erste Anlaufstelle für Zivilisten ist.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "social_facility",
+      "count": 128243,
+      "fraction": 0.0057,
+      "in_wiki": true,
+      "description": "Eine Einrichtung, die soziale Dienste anbietet.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "fire_station",
+      "count": 126052,
+      "fraction": 0.0056,
+      "in_wiki": true,
+      "description": "Feuerwache / ein Feuerwehrhaus zur Unterkunft der örtlichen Feuerwehr, deren Geräte und Fahrzeuge.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "dentist",
+      "count": 110172,
+      "fraction": 0.0049,
+      "in_wiki": true,
+      "description": "Eine medizinische Einrichtung zur Diagnose, Behandlung und Vorbeugung von Erkrankungen des Mund- und Kiefergelenks.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "library",
+      "count": 95647,
+      "fraction": 0.0043,
+      "in_wiki": true,
+      "description": "Ein Ort um Bücher zu lesen oder auszuleihen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "car_wash",
+      "count": 95060,
+      "fraction": 0.0042,
+      "in_wiki": true,
+      "description": "Eine Einrichtung, die der äußerlichen Reinigung von motorisierten Fahrzeugen dient",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "telephone",
+      "count": 91984,
+      "fraction": 0.0041,
+      "in_wiki": true,
+      "description": "Ein öffentliches Telefon",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "charging_station",
+      "count": 80496,
+      "fraction": 0.0036,
+      "in_wiki": true,
+      "description": "Ladestation für Elektrofahrzeuge.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "marketplace",
+      "count": 75576,
+      "fraction": 0.0034,
+      "in_wiki": true,
+      "description": "Ein öffentlicher Ort, an dem Händler und Standbetreiber regelmäßig Waren und Dienstleistungen anbieten",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "bus_station",
+      "count": 62553,
+      "fraction": 0.0028,
+      "in_wiki": true,
+      "description": "Ein Busbahnhof mit mehreren Haltestellen, die verschiedene Strecken bedienen und die Weiterfahrt in verschiedene Richtungen ermöglichen.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "college",
+      "count": 61349,
+      "fraction": 0.0027,
+      "in_wiki": true,
+      "description": "Eine Bildungseinrichtung des tertiären Bildungsbereichs, die keine Hochschulabschlüsse anbietet",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "university",
+      "count": 52573,
+      "fraction": 0.0023,
+      "in_wiki": true,
+      "description": "Hochschulen sind tertiäre Bildungseinrichtungen zur beruflichen Ausbildung, Pflege von Wissenschaft und Künsten durch Forschung und Lehre",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "bicycle_rental",
+      "count": 51939,
+      "fraction": 0.0023,
+      "in_wiki": true,
+      "description": "Eine Station zur Entleihe und Rückgabe von Mietfahrrädern.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "public_building",
+      "count": 48593,
+      "fraction": 0.0022,
+      "in_wiki": true,
+      "description": null,
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "veterinary",
+      "count": 48464,
+      "fraction": 0.0022,
+      "in_wiki": true,
+      "description": "Eine Niederlassung, die sich mit der Vorbeugung, Diagnose und Behandlung von Krankheiten bei Tieren befasst",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "childcare",
+      "count": 45771,
+      "fraction": 0.002,
+      "in_wiki": true,
+      "description": "- nicht benutzen -",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "ice_cream",
+      "count": 42855,
+      "fraction": 0.0019,
+      "in_wiki": true,
+      "description": "Ein Ort, an dem Speiseeis oder Frozen Yogurt zum direkten Verzehr angeboten wird.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "theatre",
+      "count": 42593,
+      "fraction": 0.0019,
+      "in_wiki": true,
+      "description": "Ein Theater mit Live-Auftritten",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "taxi",
+      "count": 42592,
+      "fraction": 0.0019,
+      "in_wiki": true,
+      "description": "Ein Ort an dem Taxis auf Passagiere warten. Oft in der Nähe wo sich viele Leute versammeln.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "water_point",
+      "count": 33543,
+      "fraction": 0.0015,
+      "in_wiki": true,
+      "description": "Eine Trinkwasserzapfstelle",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "bbq",
+      "count": 30928,
+      "fraction": 0.0014,
+      "in_wiki": true,
+      "description": "Ein offizieller Grillplatz im Freien",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "ferry_terminal",
+      "count": 29706,
+      "fraction": 0.0013,
+      "in_wiki": true,
+      "description": "Ein Ort, an dem Passagiere, Autos etc. eine Fähre betreten und verlassen können",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "cinema",
+      "count": 29662,
+      "fraction": 0.0013,
+      "in_wiki": true,
+      "description": "Aufführungsbetrieb für alle Arten von Filmen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "parcel_locker",
+      "count": 29394,
+      "fraction": 0.0013,
+      "in_wiki": true,
+      "description": "Ein Automat zum Abholen und Versenden von Paketen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "motorcycle_parking",
+      "count": 29169,
+      "fraction": 0.0013,
+      "in_wiki": true,
+      "description": "Ein für Motorräder ausgewiesener Parkplatz",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "shower",
+      "count": 26984,
+      "fraction": 0.0012,
+      "in_wiki": true,
+      "description": "Eine öffentliche Dusche",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "courthouse",
+      "count": 26406,
+      "fraction": 0.0012,
+      "in_wiki": true,
+      "description": "Ein Gebäude, welches ein Gericht beherbergt, das nach rechtsstaatlichen Grundsätzen Recht spricht.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "driving_school",
+      "count": 25689,
+      "fraction": 0.0011,
+      "in_wiki": true,
+      "description": "Eine Schule zum Erlernen des Führens eines Kraftfahrzeugs",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "grit_bin",
+      "count": 25607,
+      "fraction": 0.0011,
+      "in_wiki": true,
+      "description": "Ein Container der eine Mischung aus Salz und Splitt enthält",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "car_rental",
+      "count": 25019,
+      "fraction": 0.0011,
+      "in_wiki": true,
+      "description": "Ein Ort, an dem Autos zur vorübergehenden Nutzung angemietet werden",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "arts_centre",
+      "count": 23346,
+      "fraction": 0.001,
+      "in_wiki": true,
+      "description": "Kunstzentrum. Eine Örtlichkeit, an der eine große Bandbreite von künstlerischen Veranstaltungen durchgeführt wird.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "clock",
+      "count": 22442,
+      "fraction": 0.001,
+      "in_wiki": true,
+      "description": "Eine öffentlich sichtbare Uhr",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "nightclub",
+      "count": 22197,
+      "fraction": 0.001,
+      "in_wiki": true,
+      "description": "Eine Diskothek",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "public_bookcase",
+      "count": 16504,
+      "fraction": 0.0007,
+      "in_wiki": true,
+      "description": "Öffentlich zugänglicher Bücherschrank",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "watering_place",
+      "count": 16159,
+      "fraction": 0.0007,
+      "in_wiki": true,
+      "description": "Stelle oder Behälter, an der Tiere Wasser trinken können",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "events_venue",
+      "count": 16038,
+      "fraction": 0.0007,
+      "in_wiki": true,
+      "description": "Ort oder Einrichtung für Veranstaltungen wie bspw. Feiern, Hochzeiten etc.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "bureau_de_change",
+      "count": 14781,
+      "fraction": 0.0007,
+      "in_wiki": true,
+      "description": "Ein Geschäft in dem Kunden Geld wechseln können, Fremdwährung wird gegen Banknoten einer anderen Währung zu angebotenen Wechselkursen umgetauscht",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "loading_dock",
+      "count": 13564,
+      "fraction": 0.0006,
+      "in_wiki": true,
+      "description": "Eine Laderampe ist ein Gebäudeeingang für das Be- und Entladen von Transportfahrzeugen.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "letter_box",
+      "count": 13402,
+      "fraction": 0.0006,
+      "in_wiki": true,
+      "description": "Hausbriefkasten oder Briefkastenanlage zum Empfangen von Sendungen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "nursing_home",
+      "count": 13327,
+      "fraction": 0.0006,
+      "in_wiki": true,
+      "description": "Wohneinrichtung zur Betreuung und Pflege alter Menschen.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "prison",
+      "count": 12896,
+      "fraction": 0.0006,
+      "in_wiki": true,
+      "description": "Gefängnis",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "internet_cafe",
+      "count": 12784,
+      "fraction": 0.0006,
+      "in_wiki": true,
+      "description": "Internetcafe",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "food_court",
+      "count": 12193,
+      "fraction": 0.0005,
+      "in_wiki": true,
+      "description": null,
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "studio",
+      "count": 11913,
+      "fraction": 0.0005,
+      "in_wiki": true,
+      "description": "Eine Einrichtung zur Aufzeichnung von Film- oder Tonaufnahmen bzw. zur Übertragung von Radio- oder Fernsehprogrammen.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "bicycle_repair_station",
+      "count": 11232,
+      "fraction": 0.0005,
+      "in_wiki": true,
+      "description": "Ein öffentlicher, unbeaufsichtigter Fahrrad-Reparaturbereich, in der Regel mit Werkzeug, einer Pumpe und einem Montageständer",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "mobile_money_agent",
+      "count": 10919,
+      "fraction": 0.0005,
+      "in_wiki": true,
+      "description": "A place where mobile money can be payed in and out.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "biergarten",
+      "count": 10359,
+      "fraction": 0.0005,
+      "in_wiki": true,
+      "description": "Bierausschank und Bewirtung im Freien unter Bäumen, mit rustikalen Mobiliar.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "public_bath",
+      "count": 9845,
+      "fraction": 0.0004,
+      "in_wiki": true,
+      "description": "Ein Ort, an dem man gemeinsam öffentlich baden kann",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "car_sharing",
+      "count": 9338,
+      "fraction": 0.0004,
+      "in_wiki": true,
+      "description": "Ein Ort oder ein speziell vorgesehener Bereich an dem Autos geparkt werden, die einer gemeinschaftlichen Nutzung vorgesehen sind und meist kurzzeitig angemietet werden.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "payment_terminal",
+      "count": 9161,
+      "fraction": 0.0004,
+      "in_wiki": true,
+      "description": "Selbstbedienungsterminal, z.B. für Rechnungen bezahlen, Geld überweisen oder Telefon aufladen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "social_centre",
+      "count": 8343,
+      "fraction": 0.0004,
+      "in_wiki": true,
+      "description": "A centre of fraternities, sororities, professional societies, union halls and other nonprofit organization.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "vehicle_inspection",
+      "count": 7781,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "Fahrzeuginspektion zur Durchführung der Hauptuntersuchung für Kraftfahrzeuge",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "compressed_air",
+      "count": 7488,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "Eine Vorrichtung zum Aufpumpen von Reifen (z.B. Kraftfahrzeug, Fahrrad)",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "monastery",
+      "count": 7458,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "Kloster",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "music_school",
+      "count": 7036,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "Musikschule",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "waste_dump_site",
+      "count": 7002,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "A place where trash was illegally dumped.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "lavoir",
+      "count": 6941,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "Ein öffentlicher, meist überdachter Waschplatz, an dem gemeinschaftlich Wäsche gewaschen wird.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "casino",
+      "count": 6813,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "Spielbank oder Spielcasino",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "animal_breeding",
+      "count": 6632,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "Eine Einrichtung in der Tiere gezüchtet werden",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "sanitary_dump_station",
+      "count": 6589,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "geeigneter Platz an dem man menschliche Abfälle aus einem Fäkalientank entsorgt.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "money_transfer",
+      "count": 6174,
+      "fraction": 0.0003,
+      "in_wiki": true,
+      "description": "Ein Ort, der Geldtransfers (meist in bar) von einem Einzahler zu einem Empfänger anbietet",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "dojo",
+      "count": 5519,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "A formal training place for any of the Japanese do arts.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "animal_shelter",
+      "count": 5197,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Tierheim oder Tierasyl",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "trolley_bay",
+      "count": 5144,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Abstellplatz/-haus für Einkaufswagen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "prep_school",
+      "count": 5086,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": null,
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "language_school",
+      "count": 5049,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Eine Sprachschule, an der Fremdsprachen gelehrt werden",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "waste_transfer_station",
+      "count": 4845,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Müllumladestation",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "conference_centre",
+      "count": 4803,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Kongresszentrum",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "weighbridge",
+      "count": 4603,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Eine befahrbare Waage zum Wiegen von Fahrzeugen und Gütern",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "boat_rental",
+      "count": 4389,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Bootsverleih/Bootsvermietung",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "boat_storage",
+      "count": 4345,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Ein Lagerplatz für Boote außerhalb des Wassers.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "feeding_place",
+      "count": 4188,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "A place where animals are fed like a manger or an automated feeding station.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "ticket_validator",
+      "count": 3961,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Ein Gerät zur Entwertung von Fahrscheinenvon für öffentliche Verkehrsmittel. Ein analoger Entwerter (Stempler) oder als Gerät in Systemen integriert, die den Zugang zu öffentlichen Verkehrsmitteln oder Parkhäusern regeln",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "lounger",
+      "count": 3951,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Eine Liege zum Hinlegen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "ranger_station",
+      "count": 3755,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Eine offizielle Besucherstation innerhalb eines Nationalparks oder Naturschutzgebietes.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "game_feeding",
+      "count": 3711,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "A game feeding place",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "love_hotel",
+      "count": 3672,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "A love hotel is a type of short-stay hotel operated primarily for the purpose of allowing guests privacy for sexual activities.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "gambling",
+      "count": 3432,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "A place for gambling, not being a bookmaker, lottery shop, casino, or adult gaming centre.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "animal_boarding",
+      "count": 3389,
+      "fraction": 0.0002,
+      "in_wiki": true,
+      "description": "Ein Tierpension in der Tiere für eine Zeit untergebracht werden",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "health_post",
+      "count": 3177,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "A village or neighborhood health post, without a physician",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "training",
+      "count": 3166,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Public place where you can get training.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "post_depot",
+      "count": 3043,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Verteil- oder Sortierzentrum für Briefe und Pakete.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "research_institute",
+      "count": 2981,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ein Forschungsinstitut führt Forschungsprojekte oder Forschungsprogramme durch",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "smoking_area",
+      "count": 2961,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Raucherbereich",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "brothel",
+      "count": 2846,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ein Bordell ist eine Einrichtung, die ausdrücklich dem käuflichen Sex (Prostitution) gewidmet ist.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "vacuum_cleaner",
+      "count": 2845,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ein Staubsauger zur Reinigung von Kraftfahrzeugen",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "dressing_room",
+      "count": 2621,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ein Ort, an dem Menschen ihre Kleidung wechseln können.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "crematorium",
+      "count": 2456,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ein Krematorium ist eine Anlage zur Verbrennung von Leichen.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "photo_booth",
+      "count": 2273,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ein Stand um sofort-Bilder zu machen.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "funeral_hall",
+      "count": 2192,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ort für Trauerfeiern, der keine (religiöse) Andachtsstätte ist",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "kneipp_water_cure",
+      "count": 2149,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ein Fußbad ist ein flaches Außenbecken, oft mit Handlauf.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "blood_bank",
+      "count": 2131,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "A center where blood gathered as a result of blood donation is stored and preserved for later use in blood transfusion",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "reception_desk",
+      "count": 1974,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "First contact point of and information source for a POI for an outsider",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "driver_training",
+      "count": 1794,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": null,
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "car_pooling",
+      "count": 1785,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ort zum Bilden von Fahrgemeinschaften (Parken und Mitfahren)",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "mortuary",
+      "count": 1705,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Ein Leichenhaus, in dem werden Verstorbene vor der Bestattung aufgebahrt werden",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "coworking_space",
+      "count": 1698,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "A place where people can go to work (typically requires a fee); not limited to a single employer",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "office",
+      "count": 1603,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "DO NOT USE! Please use instead key:office.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "dive_centre",
+      "count": 1524,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Tauchbasis",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "table",
+      "count": 1500,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "A public table",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "payment_centre",
+      "count": 1451,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "A non-bank place, where people can pay bills of public and private services and taxes.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "karaoke_box",
+      "count": 1385,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": null,
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "stables",
+      "count": 1311,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "Reiterhof, Reitstall, Reitanlage",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "polling_station",
+      "count": 1247,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": "A place where one can cast a ballot.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "shop",
+      "count": 1237,
+      "fraction": 0.0001,
+      "in_wiki": true,
+      "description": null,
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "hookah_lounge",
+      "count": 1110,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "Ein Ort, an dem Wasserpfeifen (Shishas) geraucht werden können.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "stripclub",
+      "count": 1064,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "A place that offer striptease and lap dances.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "refugee_site",
+      "count": 1056,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "A human settlement sheltering refugees and/or internally displaced persons",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "exhibition_centre",
+      "count": 963,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "Messe",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "emergency_service",
+      "count": 878,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "A station from which a civil protection agency operates.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "chair",
+      "count": 819,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "A chair which remains located in the same place.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "vehicle_ramp",
+      "count": 818,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "A ramp for vehicle inspection and repairs.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "animal_training",
+      "count": 750,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "Eine Einrichtung für nicht wettbewerbsorientiertes Tiertraining",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "binoculars",
+      "count": 742,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "A pair of binoculars, fixed by a pole on a certain location for tourists to use",
+      "desclang": "en",
+      "descdir": "ltr"
+    },    {
+      "value": "dog_toilet",
+      "count": 732,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": "Eine Einrichtung, in der Hunde ihr Geschäft verrichten können, ohne die Umgebung zu verschmutzen.",
+      "desclang": "de",
+      "descdir": "ltr"
+    },    {
+      "value": "spa",
+      "count": 702,
+      "fraction": 0.0,
+      "in_wiki": true,
+      "description": null,
+      "desclang": "en",
+      "descdir": "ltr"
+    }]
+}
