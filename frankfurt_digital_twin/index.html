@@ -26,16 +26,17 @@
       import { Sky } from "./js/Sky.js";
       import Stats from "./js/stats.module.js";
 
-      let camera, controls, scene, renderer, mapContainer, roadsGroup, surroudingsGroup, boxGroup, sphereGroup, sky, sun, water, stats, groundMesh;
+      let camera, controls, scene, renderer, mapContainer, roadsGroup, surroudingsGroup, boxGroup, sphereGroup, pyramidGroup, sky, sun, water, stats, groundMesh;
       let boxGeometries = [];
       let sphereGeometries = [];
+      let pyramidGeometries = [];
       let waterGeometry = [];
       let grassGeometry = [];
       let highwayGeometry = [];
 
       let MAT_BUILDING, MAT_ROAD;
-      //let center = [8.673, 50.10690781920793];//Frankfurt
-      let center = [13.409, 52.520]//Berlin
+      let center = [8.673, 50.10690781920793];//Frankfurt
+      //let center = [13.409, 52.520]//Berlin
 
       function init() {
         mapContainer = document.getElementById("mapContainer");
@@ -60,6 +61,11 @@
 
         scene.add(sphereGroup);
 
+        pyramidGroup = new THREE.Group();
+        pyramidGroup.name = "Pyramid Group";
+
+        scene.add(pyramidGroup);
+
         roadsGroup = new THREE.Group();
         roadsGroup.name = "Roads Group";
 
@@ -80,10 +86,11 @@
         scene.add(sky);
 
         // GROUND
-        const groundGeo = new THREE.PlaneGeometry(28, 37);
+        const groundGeo = new THREE.PlaneGeometry(38, 38);
         const groundMat = new THREE.MeshStandardMaterial({ color: 0x0c1015 });
 
         const ground = new THREE.Mesh(groundGeo, groundMat);
+        ground.position.z = 2;
         ground.position.y = 0;
         ground.rotation.x = -Math.PI / 2;
         ground.receiveShadow = true;
@@ -126,7 +133,7 @@
         mapContainer.appendChild(stats.dom);
 
         getBuildings();
-        //getSurroundings();
+        getSurroundings();
       }
 
       function onWindowResize() {
@@ -188,7 +195,8 @@
       }
 
       function getBuildings() {
-        fetch("./resources/berlin-tower.geojson").then((resp) => {
+        //fetch("./resources/berlin-tower.geojson").then((resp) => {
+        fetch("./resources/frankfurt-skyline.geojson").then((resp) => {
           resp.json().then((data) => {
             loadBuildings(data, center);
           });
@@ -210,6 +218,8 @@
 
             if (element.properties["shape"] === "sphere") {
               sphereGeometries.push(buildingGeom);
+            } else if(element.properties["roofShape"] === "pyramid") {
+              pyramidGeometries.push(buildingGeom);
             } else {
               boxGeometries.push(buildingGeom);
             }
@@ -227,6 +237,12 @@
         meshSphere.receiveShadow = true;
         meshSphere.castShadow = true;
         sphereGroup.add(meshSphere);
+
+        let mergePyramids = THREE.BufferGeometryUtils.mergeBufferGeometries(pyramidGeometries);
+        let meshPyramid = new THREE.Mesh(mergePyramids, MAT_BUILDING);
+        meshPyramid.receiveShadow = true;
+        meshPyramid.castShadow = true;
+        pyramidGroup.add(meshPyramid);
       }
 
       init();

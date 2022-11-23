@@ -13,6 +13,8 @@ class Building {
   generate() {
     if(this.properties["shape"] === "sphere") {
       return this.generateSphere(); 
+    } else if(this.properties["roofShape"] === "pyramid") {
+      return this.generatePyramid();
     } else {
       return this.generateBox();
     }
@@ -64,6 +66,33 @@ class Building {
     let geometry = new THREE.SphereGeometry(radius, 16, 8);
     geometry.translate(-elPosition[0], z, elPosition[1]);
 
+    return geometry;
+  }
+
+  generatePyramid() {
+    const polygon = turf.polygon(this.coordinates);
+    const centroid = turf.centroid(polygon);
+    const from = turf.point(centroid.geometry.coordinates);
+    const to = turf.point(this.coordinates[0][0]);
+    const options = {units: 'meters'};
+    const distance = turf.distance(from, to, options);
+    const radius = 0.01 * distance;
+    const features = turf.points(...this.coordinates);
+    const featuresCenter = turf.center(features);
+    const height = this.properties.height;
+
+    let minHeight = 0;
+    if(this.properties['minHeight']) {
+      minHeight = this.properties.minHeight * 0.01;
+    }
+
+    const z = 0.01*54.4;
+    const roofHeight = this.properties.roofHeight;
+
+    let elPosition = GPSRelativePositionTurf(featuresCenter.geometry.coordinates, this.center);
+    let geometry = new THREE.CylinderGeometry(0, radius, height*0.01, 4);
+    geometry.translate(-elPosition[0], z, elPosition[1]);
+  
     return geometry;
   }
 }
