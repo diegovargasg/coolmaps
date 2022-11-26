@@ -6,7 +6,7 @@
       "type": "Feature",
       "properties": {
         "fill": "#f01414",
-        "height": 20,
+        "height": 25,
         "gaps": 1
       },
       "geometry": {
@@ -2032,7 +2032,7 @@
       "type": "Feature",
       "properties": {
         "fill": "#f01414",
-        "height": 20,
+        "height": 25,
         "gaps": 1
       },
       "geometry": {
