@@ -17,7 +17,7 @@
     <script src="js/turf.min.js"></script>
     <script src="js/axios.min.js"></script>
     <script src="js/utils.js"></script>
-    <script src="js/Building.js"></script>
+    <script src="js/Geometry.js"></script>
   </head>
   <body>
     <div id="mapContainer"></div>
@@ -213,14 +213,14 @@
           if (!element["properties"]) return;
 
           if (element.geometry.type === "Polygon") {
-            const building = new Building(element.geometry.coordinates, element.properties, centerP);
-            const buildingGeom = building.generate();
+            const geometry = new Geometry(element.geometry.coordinates, element.properties, centerP);
+            const geometryModel = geometry.generate();
             // const material = new THREE.MeshBasicMaterial({ color: element.properties.fill });
-            // const meshBox = new THREE.Mesh(buildingGeom, material);
+            // const meshBox = new THREE.Mesh(geometryModel, material);
             // meshBox.castShadow = true;
             // meshBox.receiveShadow = true;
             // scene.add(meshBox);
-            boxGeometries.push(buildingGeom);
+            boxGeometries.push(geometryModel);
           }
         });
 
