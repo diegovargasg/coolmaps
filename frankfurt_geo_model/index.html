@@ -209,7 +209,7 @@
       function animate() {
         requestAnimationFrame(animate);
         render();
-        stats.update();
+        //stats.update();
         controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
       }
 
@@ -296,11 +296,11 @@
         meshBox.castShadow = true;
         boxGroup.add(meshBox);
 
-        let mergeSpheres = THREE.BufferGeometryUtils.mergeBufferGeometries(sphereGeometries);
-        let meshSphere = new THREE.Mesh(mergeSpheres, MAT_BUILDING);
-        meshSphere.receiveShadow = true;
-        meshSphere.castShadow = true;
-        sphereGroup.add(meshSphere);
+        // let mergeSpheres = THREE.BufferGeometryUtils.mergeBufferGeometries(sphereGeometries);
+        // let meshSphere = new THREE.Mesh(mergeSpheres, MAT_BUILDING);
+        // meshSphere.receiveShadow = true;
+        // meshSphere.castShadow = true;
+        // sphereGroup.add(meshSphere);
 
         let mergePyramids = THREE.BufferGeometryUtils.mergeBufferGeometries(pyramidGeometries);
         let meshPyramid = new THREE.Mesh(mergePyramids, MAT_BUILDING);
