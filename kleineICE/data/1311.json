@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "name": "geo-strecke", "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}}, "features": [{"type": "Feature", "geometry": {"type": "MultiLineString", "coordinates": [[[8.591952, 53.59109, 0.0], [8.591731, 53.591309, 0.0], [8.591654, 53.591413, 0.0], [8.591615, 53.591473, 0.0]]]}}]}
