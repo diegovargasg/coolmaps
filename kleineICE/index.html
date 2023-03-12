@@ -38,6 +38,23 @@
       #strecke-title {
         visibility: hidden;
       }
+      #cesium-wrap {
+        position: relative;
+      }
+      #cesium-wrap .btn {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 500;
+      }
+      .cesium-viewer-bottom {
+        left: 5px !important;
+        bottom: 5px !important;
+      }
+      .cesium-viewer-animationContainer,
+      .cesium-viewer-timelineContainer {
+        display: none !important;
+      }
     </style>
     <link rel="stylesheet" type="text/css" href="https://kraaden.github.io/autocomplete/autocomplete.css">
   <script defer src="app.js"></script></head>
@@ -75,7 +92,8 @@
       </section>
       <div class="album py-3 py-lg-5 bg-light">
         <div class="container">
-          <div class="card shadow-sm">
+          <div id="cesium-wrap" class="card shadow-sm">
+            <button id="start-animation" type="button" class="btn btn-danger">Play</button>
             <div id="cesiumContainer"></div>
           </div>
         </div>
@@ -141,8 +159,9 @@
             <h5 class="modal-title fw-normal mt-5 mb-3">or choose a popular route</h5>
           </div>
           <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark mb-1 popular-btn" data-bs-dismiss="modal" data-id="6109">Berlin Ostbf - Potsdam Hbf</button>
             <button type="button" class="btn btn-outline-dark mb-1 popular-btn" data-bs-dismiss="modal" data-id="3600">Frankfurt Hbf - Göttingen</button>
-            <button type="button" class="btn btn-outline-dark mb-1 popular-btn" data-bs-dismiss="modal" data-id="2690">Köln - Frankfurt am M. Stadion</button>
+            <button type="button" class="btn btn-outline-dark mb-1 popular-btn" data-bs-dismiss="modal" data-id="1250">HH Oberhafen - Hamburg Hbf</button>
             <button type="button" class="btn btn-outline-dark mb-1 popular-btn" data-bs-dismiss="modal" data-id="6363">Leipzig Hbf - Dresden-Neustadt</button>
             <button type="button" class="btn btn-outline-dark mb-1 popular-btn" data-bs-dismiss="modal" data-id="5907">Nürnberg Hbf - Fürth Hbf</button>
           </div>
