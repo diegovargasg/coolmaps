@@ -41,7 +41,7 @@
       #cesium-wrap {
         position: relative;
       }
-      #cesium-wrap .btn {
+      #cesium-wrap .actions-wrap {
         position: absolute;
         top: 5px;
         left: 5px;
@@ -93,7 +93,10 @@
       <div class="album py-3 py-lg-5 bg-light">
         <div class="container">
           <div id="cesium-wrap" class="card shadow-sm">
-            <button id="start-animation" type="button" class="btn btn-danger">Play</button>
+            <div class="actions-wrap">
+              <button id="start-animation" type="button" class="btn btn-sm btn-light">Play</button>
+              <button id="restart-animation" type="button" class="btn btn-sm btn-light">Restart</button>
+            </div>
             <div id="cesiumContainer"></div>
           </div>
         </div>
