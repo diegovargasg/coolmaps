@@ -1,0 +1,225 @@
+{
+  "routes": [
+    {
+      "weight_name": "auto",
+      "weight": 1889.782,
+      "duration": 1415.12,
+      "distance": 6523.222,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 612.806,
+          "duration": 465.64,
+          "steps": [],
+          "distance": 2351.407,
+          "summary": "Friedrichstraße, B 2"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 174.621,
+          "duration": 118.263,
+          "steps": [],
+          "distance": 610.056,
+          "summary": "An der Spandauer Brücke, Rosenthaler Straße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 525.486,
+          "duration": 389.097,
+          "steps": [],
+          "distance": 1896.108,
+          "summary": "Tucholskystraße, Unter den Linden"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 576.869,
+          "duration": 442.119,
+          "steps": [],
+          "distance": 1665.65,
+          "summary": "Werderscher Markt, Friedrichstraße"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+          [
+            13.386397,
+            52.521635
+          ],
+          [
+            13.387898,
+            52.52245
+          ],
+          [
+            13.388827,
+            52.516848
+          ],
+          [
+            13.399325,
+            52.517634
+          ],
+          [
+            13.40288,
+            52.51896
+          ],
+          [
+            13.404987,
+            52.520013
+          ],
+          [
+            13.403103,
+            52.521458
+          ],
+          [
+            13.404517,
+            52.52196
+          ],
+          [
+            13.404049,
+            52.522611
+          ],
+          [
+            13.4037,
+            52.523079
+          ],
+          [
+            13.402291,
+            52.523681
+          ],
+          [
+            13.401837,
+            52.523651
+          ],
+          [
+            13.397732,
+            52.523753
+          ],
+          [
+            13.396033,
+            52.524189
+          ],
+          [
+            13.392884,
+            52.524984
+          ],
+          [
+            13.391718,
+            52.522858
+          ],
+          [
+            13.39164,
+            52.521998
+          ],
+          [
+            13.392628,
+            52.517386
+          ],
+          [
+            13.390674,
+            52.517269
+          ],
+          [
+            13.390708,
+            52.516983
+          ],
+          [
+            13.397414,
+            52.517489
+          ],
+          [
+            13.397716,
+            52.515924
+          ],
+          [
+            13.398027,
+            52.515436
+          ],
+          [
+            13.396748,
+            52.515233
+          ],
+          [
+            13.389181,
+            52.514759
+          ],
+          [
+            13.387898,
+            52.52245
+          ],
+          [
+            13.386397,
+            52.521635
+          ]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 20.763,
+      "name": "Schiffbauerdamm",
+      "location": [
+        13.386397,
+        52.521635
+      ]
+    },
+    {
+      "distance": 38.675,
+      "name": "An der Spandauer Brücke",
+      "location": [
+        13.404049,
+        52.522611
+      ]
+    },
+    {
+      "distance": 44.966,
+      "name": "Oranienburger Straße",
+      "location": [
+        13.396033,
+        52.524189
+      ]
+    },
+    {
+      "distance": 1.801,
+      "name": "Niederlagstraße",
+      "location": [
+        13.397716,
+        52.515924
+      ]
+    },
+    {
+      "distance": 20.763,
+      "name": "Schiffbauerdamm",
+      "location": [
+        13.386397,
+        52.521635
+      ]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "qfi1TpDYdeqpSl2WNWpV_W7H2liI0xpMBLTtVVM9cnxUWvAT3Us0uw=="
+}

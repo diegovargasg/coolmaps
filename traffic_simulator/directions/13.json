@@ -1,0 +1,125 @@
+{
+  "routes": [
+    {
+      "weight_name": "auto",
+      "weight": 4122.791,
+      "duration": 2096.886,
+      "distance": 9931.644,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 756.462,
+          "duration": 490.986,
+          "steps": [],
+          "distance": 2257.784,
+          "summary": "Tucholskystraße, Spandauer Straße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 2123.317,
+          "duration": 642.247,
+          "steps": [],
+          "distance": 2892.032,
+          "summary": "B 1, Friedrichstraße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 705.006,
+          "duration": 579.615,
+          "steps": [],
+          "distance": 2964.804,
+          "summary": "Schiffbauerdamm, B 2"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 538.006,
+          "duration": 384.038,
+          "steps": [],
+          "distance": 1817.023,
+          "summary": "Spandauer Straße, Rosenthaler Straße"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+          [
+            13.366059883906757,
+            52.52933395873285
+          ],
+          [
+            13.359979051162014,
+            52.535006442591595
+          ]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 1.371,
+      "name": "Tucholskystraße",
+      "location": [
+        13.393314,
+        52.525677
+      ]
+    },
+    {
+      "distance": 11.903,
+      "name": "",
+      "location": [
+        13.407853,
+        52.516189
+      ]
+    },
+    {
+      "distance": 12.276,
+      "name": "Schiffbauerdamm",
+      "location": [
+        13.387536,
+        52.522321
+      ]
+    },
+    {
+      "distance": 29.586,
+      "name": "Spandauer Straße",
+      "location": [
+        13.40744,
+        52.518116
+      ]
+    },
+    {
+      "distance": 1.371,
+      "name": "Tucholskystraße",
+      "location": [
+        13.393314,
+        52.525677
+      ]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "H7WFu8bYE0iQQtDrrcjQCx9tOtX1HOFfqR4RGoGp5J6izC48AKx5DQ=="
+}

@@ -1,0 +1,1344 @@
+{
+  "routes": [
+    {
+      "weight_name": "auto",
+      "weight": 643.471,
+      "duration": 445.925,
+      "distance": 1023.53,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "FRA", "iso_3166_1": "FR"}],
+          "weight": 96.982,
+          "duration": 69.705,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [88],
+                  "duration": 5.593,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 7.056,
+                  "geometry_index": 0,
+                  "location": [2.295059, 48.872272]
+                },
+                {
+                  "entry": [true, true, true, false, true],
+                  "in": 3,
+                  "bearings": [83, 172, 237, 268, 353],
+                  "duration": 4.807,
+                  "turn_weight": 5.5,
+                  "turn_duration": 0.024,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 11.233,
+                  "geometry_index": 1,
+                  "location": [2.295271, 48.872278]
+                },
+                {
+                  "mapbox_streets_v8": {"class": "street"},
+                  "location": [2.295451, 48.872293],
+                  "geometry_index": 2,
+                  "admin_index": 0,
+                  "weight": 3.205,
+                  "is_urban": true,
+                  "traffic_signal": true,
+                  "turn_duration": 2.028,
+                  "turn_weight": 1,
+                  "duration": 3.788,
+                  "bearings": [77, 175, 263],
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, false, false]
+                },
+                {
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "bearings": [75, 170, 257, 351],
+                  "duration": 14.727,
+                  "turn_weight": 2,
+                  "turn_duration": 0.022,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 20.081,
+                  "geometry_index": 3,
+                  "location": [2.295516, 48.872303]
+                },
+                {
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "bearings": [64, 158, 247, 341],
+                  "duration": 5.323,
+                  "turn_weight": 2,
+                  "turn_duration": 0.022,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 8.615,
+                  "geometry_index": 6,
+                  "location": [2.29604, 48.872426]
+                },
+                {
+                  "mapbox_streets_v8": {"class": "street"},
+                  "location": [2.29622, 48.872485],
+                  "geometry_index": 7,
+                  "admin_index": 0,
+                  "weight": 10.615,
+                  "is_urban": true,
+                  "traffic_signal": true,
+                  "turn_duration": 2.028,
+                  "turn_weight": 4,
+                  "duration": 7.59,
+                  "bearings": [58, 152, 244, 332],
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, true, false, false]
+                },
+                {
+                  "bearings": [52, 151, 238, 329],
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "turn_weight": 2,
+                  "turn_duration": 0.028,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "geometry_index": 8,
+                  "location": [2.296363, 48.872544]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive east on Rue de Presbourg.",
+                "bearing_after": 88,
+                "bearing_before": 0,
+                "location": [2.295059, 48.872272]
+              },
+              "name": "Rue de Presbourg",
+              "duration": 69.705,
+              "distance": 163.526,
+              "driving_side": "right",
+              "weight": 96.982,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [2.295059, 48.872272],
+                  [2.295271, 48.872278],
+                  [2.295451, 48.872293],
+                  [2.295516, 48.872303],
+                  [2.295715, 48.872337],
+                  [2.295963, 48.872401],
+                  [2.29604, 48.872426],
+                  [2.29622, 48.872485],
+                  [2.296363, 48.872544],
+                  [2.296542, 48.872635],
+                  [2.296774, 48.872789],
+                  [2.29681, 48.872825],
+                  [2.29684, 48.872855],
+                  [2.296933, 48.872948]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [213],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 13,
+                  "location": [2.296933, 48.872948]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "You have arrived at your destination.",
+                "bearing_after": 0,
+                "bearing_before": 33,
+                "location": [2.296933, 48.872948]
+              },
+              "name": "Rue de Presbourg",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[2.296933, 48.872948], [2.296933, 48.872948]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 163.526,
+          "summary": "Rue de Presbourg"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "FRA", "iso_3166_1": "FR"}],
+          "weight": 136.754,
+          "duration": 90.387,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [30],
+                  "duration": 5.206,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 6.615,
+                  "geometry_index": 0,
+                  "location": [2.296933, 48.872948]
+                },
+                {
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "bearings": [27, 117, 210, 296],
+                  "duration": 5.146,
+                  "turn_weight": 2,
+                  "turn_duration": 0.022,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 8.064,
+                  "geometry_index": 1,
+                  "location": [2.297012, 48.873038]
+                },
+                {
+                  "entry": [true, true, true, false, true],
+                  "in": 3,
+                  "bearings": [25, 76, 115, 207, 291],
+                  "duration": 7.076,
+                  "turn_weight": 10.5,
+                  "turn_duration": 0.021,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 19.32,
+                  "geometry_index": 2,
+                  "location": [2.297083, 48.873129]
+                },
+                {
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "bearings": [23, 114, 205, 291],
+                  "duration": 9.72,
+                  "turn_weight": 2,
+                  "turn_duration": 0.022,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 13.76,
+                  "geometry_index": 3,
+                  "location": [2.29715, 48.873225]
+                },
+                {
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "bearings": [13, 113, 203, 296],
+                  "duration": 34.778,
+                  "turn_weight": 2,
+                  "turn_duration": 0.038,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 44.63,
+                  "geometry_index": 4,
+                  "location": [2.297235, 48.873359]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [80, 179, 265, 353],
+                  "duration": 7.024,
+                  "turn_weight": 2,
+                  "turn_duration": 0.028,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 10.82,
+                  "geometry_index": 9,
+                  "location": [2.297315, 48.873874]
+                },
+                {
+                  "entry": [true, false, false, true, true],
+                  "in": 1,
+                  "bearings": [82, 173, 225, 260, 347],
+                  "duration": 6.754,
+                  "turn_weight": 5.5,
+                  "turn_duration": 0.03,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 4,
+                  "weight": 13.585,
+                  "geometry_index": 10,
+                  "location": [2.297296, 48.873978]
+                },
+                {
+                  "bearings": [86, 167, 265, 346],
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "turn_weight": 2,
+                  "turn_duration": 0.021,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "geometry_index": 11,
+                  "location": [2.297261, 48.874076]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive northeast on Rue de Presbourg.",
+                "bearing_after": 30,
+                "bearing_before": 0,
+                "location": [2.296933, 48.872948]
+              },
+              "name": "Rue de Presbourg",
+              "duration": 90.387,
+              "distance": 156.078,
+              "driving_side": "right",
+              "weight": 136.754,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [2.296933, 48.872948],
+                  [2.297012, 48.873038],
+                  [2.297083, 48.873129],
+                  [2.29715, 48.873225],
+                  [2.297235, 48.873359],
+                  [2.29729, 48.873516],
+                  [2.297309, 48.873627],
+                  [2.29732, 48.873738],
+                  [2.297318, 48.87384],
+                  [2.297315, 48.873874],
+                  [2.297296, 48.873978],
+                  [2.297261, 48.874076],
+                  [2.297198, 48.874242],
+                  [2.297174, 48.874288]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [164],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 13,
+                  "location": [2.297174, 48.874288]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "Your destination is on the left.",
+                "modifier": "left",
+                "bearing_after": 0,
+                "bearing_before": 344,
+                "location": [2.297174, 48.874288]
+              },
+              "name": "Rue de Presbourg",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[2.297174, 48.874288], [2.297174, 48.874288]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 156.078,
+          "summary": "Rue de Presbourg"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "FRA", "iso_3166_1": "FR"}],
+          "weight": 105.537,
+          "duration": 75.228,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [341],
+                  "duration": 12.266,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 15.115,
+                  "geometry_index": 0,
+                  "location": [2.297174, 48.874288]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [61, 158, 241, 331],
+                  "duration": 9.234,
+                  "turn_weight": 2,
+                  "turn_duration": 0.03,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 13.025,
+                  "geometry_index": 3,
+                  "location": [2.297072, 48.874458]
+                },
+                {
+                  "entry": [true, true, false, true, true, false],
+                  "in": 2,
+                  "bearings": [58, 117, 151, 239, 324, 346],
+                  "duration": 6.077,
+                  "turn_weight": 3,
+                  "turn_duration": 0.03,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 4,
+                  "weight": 10.497,
+                  "geometry_index": 4,
+                  "location": [2.296969, 48.874578]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [56, 144, 235, 320],
+                  "duration": 22.465,
+                  "turn_weight": 2,
+                  "turn_duration": 0.024,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 29.342,
+                  "geometry_index": 5,
+                  "location": [2.296834, 48.8747]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [24, 123, 201, 299],
+                  "duration": 5.502,
+                  "turn_weight": 2,
+                  "turn_duration": 0.024,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 8.615,
+                  "geometry_index": 9,
+                  "location": [2.296205, 48.875071]
+                },
+                {
+                  "mapbox_streets_v8": {"class": "street"},
+                  "location": [2.296023, 48.875137],
+                  "geometry_index": 10,
+                  "admin_index": 0,
+                  "weight": 12.36,
+                  "is_urban": true,
+                  "traffic_signal": true,
+                  "turn_duration": 2.036,
+                  "turn_weight": 5.5,
+                  "duration": 7.751,
+                  "bearings": [25, 119, 206, 292],
+                  "out": 3,
+                  "in": 1,
+                  "entry": [true, false, true, true]
+                },
+                {
+                  "bearings": [25, 112, 207, 287],
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "turn_weight": 2,
+                  "turn_duration": 0.028,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "geometry_index": 11,
+                  "location": [2.295842, 48.875185]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive north on Rue de Tilsitt.",
+                "bearing_after": 341,
+                "bearing_before": 0,
+                "location": [2.297174, 48.874288]
+              },
+              "name": "Rue de Tilsitt",
+              "duration": 75.228,
+              "distance": 174.181,
+              "driving_side": "right",
+              "weight": 105.537,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [2.297174, 48.874288],
+                  [2.297145, 48.874343],
+                  [2.297107, 48.874418],
+                  [2.297072, 48.874458],
+                  [2.296969, 48.874578],
+                  [2.296834, 48.8747],
+                  [2.296744, 48.874771],
+                  [2.296609, 48.874875],
+                  [2.29642, 48.874979],
+                  [2.296205, 48.875071],
+                  [2.296023, 48.875137],
+                  [2.295842, 48.875185],
+                  [2.295788, 48.875199],
+                  [2.295489, 48.875252],
+                  [2.295451, 48.875256]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [104],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 14,
+                  "location": [2.295451, 48.875256]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "Your destination is on the left.",
+                "modifier": "left",
+                "bearing_after": 0,
+                "bearing_before": 284,
+                "location": [2.295451, 48.875256]
+              },
+              "name": "Rue de Tilsitt",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[2.295451, 48.875256], [2.295451, 48.875256]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 174.181,
+          "summary": "Rue de Tilsitt"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "FRA", "iso_3166_1": "FR"}],
+          "weight": 87.228,
+          "duration": 62.206,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [279],
+                  "duration": 14.692,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 17.757,
+                  "geometry_index": 0,
+                  "location": [2.295451, 48.875256]
+                },
+                {
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "bearings": [90, 175, 266, 356],
+                  "duration": 4.694,
+                  "turn_weight": 2,
+                  "turn_duration": 0.024,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 7.88,
+                  "geometry_index": 3,
+                  "location": [2.294952, 48.87528]
+                },
+                {
+                  "mapbox_streets_v8": {"class": "street"},
+                  "location": [2.294793, 48.875272],
+                  "geometry_index": 4,
+                  "admin_index": 0,
+                  "weight": 8.41,
+                  "is_urban": true,
+                  "traffic_signal": true,
+                  "turn_duration": 2.028,
+                  "turn_weight": 4,
+                  "duration": 5.68,
+                  "bearings": [86, 172, 261, 353],
+                  "out": 2,
+                  "in": 0,
+                  "entry": [false, true, true, false]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [1, 81, 177, 257],
+                  "duration": 13.472,
+                  "turn_weight": 2,
+                  "turn_duration": 0.024,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 18.538,
+                  "geometry_index": 5,
+                  "location": [2.294629, 48.875254]
+                },
+                {
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "bearings": [69, 155, 244, 334],
+                  "duration": 4.562,
+                  "turn_weight": 2,
+                  "turn_duration": 0.026,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 7.513,
+                  "geometry_index": 7,
+                  "location": [2.294045, 48.875136]
+                },
+                {
+                  "entry": [false, true, true, true],
+                  "in": 0,
+                  "bearings": [64, 153, 233, 331],
+                  "duration": 5.015,
+                  "turn_weight": 2,
+                  "turn_duration": 0.036,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 7.88,
+                  "geometry_index": 8,
+                  "location": [2.293859, 48.875077]
+                },
+                {
+                  "bearings": [53, 146, 233, 329],
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "turn_weight": 2,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 9,
+                  "location": [2.293724, 48.875009]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive west on Rue de Tilsitt.",
+                "bearing_after": 279,
+                "bearing_before": 0,
+                "location": [2.295451, 48.875256]
+              },
+              "name": "Rue de Tilsitt",
+              "duration": 62.206,
+              "distance": 168.181,
+              "driving_side": "right",
+              "weight": 87.228,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [2.295451, 48.875256],
+                  [2.295233, 48.875278],
+                  [2.294986, 48.875283],
+                  [2.294952, 48.87528],
+                  [2.294793, 48.875272],
+                  [2.294629, 48.875254],
+                  [2.294323, 48.875206],
+                  [2.294045, 48.875136],
+                  [2.293859, 48.875077],
+                  [2.293724, 48.875009],
+                  [2.293592, 48.874948],
+                  [2.29339, 48.874825],
+                  [2.293361, 48.874803]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [46],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 12,
+                  "location": [2.293361, 48.874803]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "Your destination is on the left.",
+                "modifier": "left",
+                "bearing_after": 0,
+                "bearing_before": 226,
+                "location": [2.293361, 48.874803]
+              },
+              "name": "Rue de Tilsitt",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[2.293361, 48.874803], [2.293361, 48.874803]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 168.181,
+          "summary": "Rue de Tilsitt"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "FRA", "iso_3166_1": "FR"}],
+          "weight": 72.784,
+          "duration": 44.802,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [220],
+                  "duration": 7.777,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 9.699,
+                  "geometry_index": 0,
+                  "location": [2.293361, 48.874803]
+                },
+                {
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "bearings": [38, 124, 214, 304],
+                  "duration": 7.381,
+                  "turn_weight": 2,
+                  "turn_duration": 0.024,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 10.82,
+                  "geometry_index": 2,
+                  "location": [2.293195, 48.874667]
+                },
+                {
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "bearings": [33, 117, 211, 296],
+                  "duration": 5.011,
+                  "turn_weight": 2,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 7.88,
+                  "geometry_index": 4,
+                  "location": [2.293055, 48.87453]
+                },
+                {
+                  "entry": [true, false, true, true, true],
+                  "in": 1,
+                  "bearings": [23, 31, 115, 201, 296],
+                  "duration": 4.034,
+                  "turn_weight": 10.5,
+                  "turn_duration": 0.038,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 15.4,
+                  "geometry_index": 5,
+                  "location": [2.292967, 48.874434]
+                },
+                {
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "bearings": [21, 114, 199, 291],
+                  "duration": 6.976,
+                  "turn_weight": 2,
+                  "turn_duration": 0.021,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 10.33,
+                  "geometry_index": 6,
+                  "location": [2.292919, 48.87435]
+                },
+                {
+                  "bearings": [18, 106, 193, 286],
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "turn_weight": 2,
+                  "turn_duration": 0.026,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 8,
+                  "location": [2.292845, 48.874202]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive southwest on Rue de Tilsitt.",
+                "bearing_after": 220,
+                "bearing_before": 0,
+                "location": [2.293361, 48.874803]
+              },
+              "name": "Rue de Tilsitt",
+              "duration": 44.802,
+              "distance": 111.683,
+              "driving_side": "right",
+              "weight": 72.784,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [2.293361, 48.874803],
+                  [2.293222, 48.874695],
+                  [2.293195, 48.874667],
+                  [2.29312, 48.8746],
+                  [2.293055, 48.87453],
+                  [2.292967, 48.874434],
+                  [2.292919, 48.87435],
+                  [2.292855, 48.874237],
+                  [2.292845, 48.874202],
+                  [2.292809, 48.874103],
+                  [2.292778, 48.873998],
+                  [2.292767, 48.873902]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [6],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 11,
+                  "location": [2.292767, 48.873902]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "Your destination is on the left.",
+                "modifier": "left",
+                "bearing_after": 0,
+                "bearing_before": 186,
+                "location": [2.292767, 48.873902]
+              },
+              "name": "Rue de Tilsitt",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[2.292767, 48.873902], [2.292767, 48.873902]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 111.683,
+          "summary": "Rue de Tilsitt"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "FRA", "iso_3166_1": "FR"}],
+          "weight": 54.087,
+          "duration": 39.435,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [182],
+                  "duration": 7.919,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 9.804,
+                  "geometry_index": 0,
+                  "location": [2.292767, 48.873902]
+                },
+                {
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "bearings": [2, 82, 176, 260],
+                  "duration": 6.279,
+                  "turn_weight": 2,
+                  "turn_duration": 0.026,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 9.84,
+                  "geometry_index": 2,
+                  "location": [2.292757, 48.873724]
+                },
+                {
+                  "mapbox_streets_v8": {"class": "street"},
+                  "location": [2.292772, 48.873584],
+                  "geometry_index": 4,
+                  "admin_index": 0,
+                  "weight": 10.615,
+                  "is_urban": true,
+                  "traffic_signal": true,
+                  "turn_duration": 2.024,
+                  "turn_weight": 4,
+                  "duration": 7.388,
+                  "bearings": [80, 172, 260, 356],
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false]
+                },
+                {
+                  "bearings": [80, 165, 260, 352],
+                  "entry": [false, true, false, false],
+                  "in": 3,
+                  "turn_weight": 2,
+                  "turn_duration": 0.03,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "geometry_index": 5,
+                  "location": [2.292795, 48.873478]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive south on Rue de Presbourg.",
+                "bearing_after": 182,
+                "bearing_before": 0,
+                "location": [2.292767, 48.873902]
+              },
+              "name": "Rue de Presbourg",
+              "duration": 39.435,
+              "distance": 86.945,
+              "driving_side": "right",
+              "weight": 54.087,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [2.292767, 48.873902],
+                  [2.292762, 48.873855],
+                  [2.292757, 48.873724],
+                  [2.29276, 48.873664],
+                  [2.292772, 48.873584],
+                  [2.292795, 48.873478],
+                  [2.292829, 48.873383],
+                  [2.292886, 48.87327],
+                  [2.292975, 48.873144]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [335],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 8,
+                  "location": [2.292975, 48.873144]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "Your destination is on the right.",
+                "modifier": "right",
+                "bearing_after": 0,
+                "bearing_before": 155,
+                "location": [2.292975, 48.873144]
+              },
+              "name": "Rue de Presbourg",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[2.292975, 48.873144], [2.292975, 48.873144]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 86.945,
+          "summary": "Rue de Presbourg"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "FRA", "iso_3166_1": "FR"}],
+          "weight": 90.098,
+          "duration": 64.164,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [153],
+                  "duration": 5.628,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 6.837,
+                  "geometry_index": 0,
+                  "location": [2.292975, 48.873144]
+                },
+                {
+                  "entry": [false, true, false, false],
+                  "in": 3,
+                  "bearings": [61, 150, 239, 333],
+                  "duration": 4.543,
+                  "turn_weight": 2,
+                  "turn_duration": 0.022,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 7.512,
+                  "geometry_index": 2,
+                  "location": [2.293053, 48.873044]
+                },
+                {
+                  "mapbox_streets_v8": {"class": "street"},
+                  "location": [2.293122, 48.872966],
+                  "geometry_index": 3,
+                  "admin_index": 0,
+                  "weight": 8.009,
+                  "is_urban": true,
+                  "traffic_signal": true,
+                  "turn_duration": 2.026,
+                  "turn_weight": 4,
+                  "duration": 5.449,
+                  "bearings": [56, 144, 238, 330],
+                  "out": 1,
+                  "in": 3,
+                  "entry": [true, true, true, false]
+                },
+                {
+                  "entry": [false, true, false, false],
+                  "in": 3,
+                  "bearings": [61, 148, 241, 324],
+                  "duration": 3.751,
+                  "turn_weight": 2,
+                  "turn_duration": 0.009,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 6.41,
+                  "geometry_index": 4,
+                  "location": [2.293206, 48.87289]
+                },
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [135, 206, 328],
+                  "duration": 19.597,
+                  "turn_weight": 1.5,
+                  "turn_duration": 0.048,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 25.314,
+                  "geometry_index": 5,
+                  "location": [2.293289, 48.872803]
+                },
+                {
+                  "entry": [false, true, false, false],
+                  "in": 3,
+                  "bearings": [30, 117, 211, 306],
+                  "duration": 5.975,
+                  "turn_weight": 2,
+                  "turn_duration": 0.036,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 9.056,
+                  "geometry_index": 7,
+                  "location": [2.293855, 48.87249]
+                },
+                {
+                  "mapbox_streets_v8": {"class": "street"},
+                  "location": [2.294056, 48.872423],
+                  "geometry_index": 8,
+                  "admin_index": 0,
+                  "weight": 11.056,
+                  "is_urban": true,
+                  "traffic_signal": true,
+                  "turn_duration": 2.022,
+                  "turn_weight": 4,
+                  "duration": 7.841,
+                  "bearings": [24, 114, 151, 184, 207, 258, 297],
+                  "out": 1,
+                  "in": 6,
+                  "entry": [true, true, false, false, true, true, false]
+                },
+                {
+                  "bearings": [18, 107, 199, 294],
+                  "entry": [false, true, false, false],
+                  "in": 3,
+                  "turn_weight": 2,
+                  "turn_duration": 0.03,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "geometry_index": 9,
+                  "location": [2.294257, 48.872363]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive southeast on Rue de Presbourg.",
+                "bearing_after": 153,
+                "bearing_before": 0,
+                "location": [2.292975, 48.873144]
+              },
+              "name": "Rue de Presbourg",
+              "duration": 64.164,
+              "distance": 162.935,
+              "driving_side": "right",
+              "weight": 90.098,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [2.292975, 48.873144],
+                  [2.293002, 48.873105],
+                  [2.293053, 48.873044],
+                  [2.293122, 48.872966],
+                  [2.293206, 48.87289],
+                  [2.293289, 48.872803],
+                  [2.293529, 48.872646],
+                  [2.293855, 48.87249],
+                  [2.294056, 48.872423],
+                  [2.294257, 48.872363],
+                  [2.294415, 48.872331],
+                  [2.294553, 48.872306],
+                  [2.294674, 48.872295]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [281],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 12,
+                  "location": [2.294674, 48.872295]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "You have arrived at your destination.",
+                "bearing_after": 0,
+                "bearing_before": 101,
+                "location": [2.294674, 48.872295]
+              },
+              "name": "Rue de Presbourg",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[2.294674, 48.872295], [2.294674, 48.872295]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 162.935,
+          "summary": "Rue de Presbourg"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+          [2.295059, 48.872272],
+          [2.295271, 48.872278],
+          [2.295451, 48.872293],
+          [2.295516, 48.872303],
+          [2.295715, 48.872337],
+          [2.295963, 48.872401],
+          [2.29604, 48.872426],
+          [2.29622, 48.872485],
+          [2.296363, 48.872544],
+          [2.296542, 48.872635],
+          [2.296774, 48.872789],
+          [2.29681, 48.872825],
+          [2.29684, 48.872855],
+          [2.296933, 48.872948],
+          [2.297012, 48.873038],
+          [2.297083, 48.873129],
+          [2.29715, 48.873225],
+          [2.297235, 48.873359],
+          [2.29729, 48.873516],
+          [2.297309, 48.873627],
+          [2.29732, 48.873738],
+          [2.297318, 48.87384],
+          [2.297315, 48.873874],
+          [2.297296, 48.873978],
+          [2.297261, 48.874076],
+          [2.297198, 48.874242],
+          [2.297174, 48.874288],
+          [2.297145, 48.874343],
+          [2.297107, 48.874418],
+          [2.297072, 48.874458],
+          [2.296969, 48.874578],
+          [2.296834, 48.8747],
+          [2.296744, 48.874771],
+          [2.296609, 48.874875],
+          [2.29642, 48.874979],
+          [2.296205, 48.875071],
+          [2.296023, 48.875137],
+          [2.295842, 48.875185],
+          [2.295788, 48.875199],
+          [2.295489, 48.875252],
+          [2.295451, 48.875256],
+          [2.295233, 48.875278],
+          [2.294986, 48.875283],
+          [2.294952, 48.87528],
+          [2.294793, 48.875272],
+          [2.294629, 48.875254],
+          [2.294323, 48.875206],
+          [2.294045, 48.875136],
+          [2.293859, 48.875077],
+          [2.293724, 48.875009],
+          [2.293592, 48.874948],
+          [2.29339, 48.874825],
+          [2.293361, 48.874803],
+          [2.293222, 48.874695],
+          [2.293195, 48.874667],
+          [2.29312, 48.8746],
+          [2.293055, 48.87453],
+          [2.292967, 48.874434],
+          [2.292919, 48.87435],
+          [2.292855, 48.874237],
+          [2.292845, 48.874202],
+          [2.292809, 48.874103],
+          [2.292778, 48.873998],
+          [2.292767, 48.873902],
+          [2.292762, 48.873855],
+          [2.292757, 48.873724],
+          [2.29276, 48.873664],
+          [2.292772, 48.873584],
+          [2.292795, 48.873478],
+          [2.292829, 48.873383],
+          [2.292886, 48.87327],
+          [2.292975, 48.873144],
+          [2.293002, 48.873105],
+          [2.293053, 48.873044],
+          [2.293122, 48.872966],
+          [2.293206, 48.87289],
+          [2.293289, 48.872803],
+          [2.293529, 48.872646],
+          [2.293855, 48.87249],
+          [2.294056, 48.872423],
+          [2.294257, 48.872363],
+          [2.294415, 48.872331],
+          [2.294553, 48.872306],
+          [2.294674, 48.872295]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 2.745,
+      "name": "Rue de Presbourg",
+      "location": [2.295059, 48.872272]
+    },
+    {
+      "distance": 3.305,
+      "name": "Rue de Presbourg",
+      "location": [2.296933, 48.872948]
+    },
+    {
+      "distance": 1.625,
+      "name": "Rue de Tilsitt",
+      "location": [2.297174, 48.874288]
+    },
+    {
+      "distance": 2.241,
+      "name": "Rue de Tilsitt",
+      "location": [2.295451, 48.875256]
+    },
+    {
+      "distance": 3.235,
+      "name": "Rue de Tilsitt",
+      "location": [2.293361, 48.874803]
+    },
+    {
+      "distance": 1.012,
+      "name": "Rue de Presbourg",
+      "location": [2.292767, 48.873902]
+    },
+    {
+      "distance": 1.269,
+      "name": "Rue de Presbourg",
+      "location": [2.292975, 48.873144]
+    },
+    {
+      "distance": 0.959,
+      "name": "Rue de Presbourg",
+      "location": [2.294674, 48.872295]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "eEiTbN9f1jcL0LbPL60fj2j4lXDp5JrPz201OnyvBN_9b2y0oSKBrQ=="
+}

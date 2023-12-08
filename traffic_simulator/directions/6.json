@@ -1,0 +1,1059 @@
+{
+  "routes": [
+    {
+      "weight_name": "auto",
+      "weight": 830.362,
+      "duration": 396.586,
+      "distance": 1037.357,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "DEU", "iso_3166_1": "DE"}],
+          "weight": 436.843,
+          "duration": 151.656,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [333],
+                  "duration": 7.052,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 20.124,
+                  "geometry_index": 0,
+                  "location": [13.360751, 52.523796]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [63, 153, 244, 333],
+                  "duration": 7.508,
+                  "turn_weight": 2,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 23.801,
+                  "geometry_index": 1,
+                  "location": [13.360672, 52.52389]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [63, 153, 244, 334],
+                  "duration": 34.399,
+                  "turn_weight": 2,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 97.589,
+                  "geometry_index": 2,
+                  "location": [13.360588, 52.52399]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [63, 154, 244, 334],
+                  "duration": 42.301,
+                  "turn_weight": 2,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 119.39,
+                  "geometry_index": 3,
+                  "location": [13.360211, 52.524451]
+                },
+                {
+                  "bearings": [63, 154, 244, 334],
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "turn_weight": 2,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "geometry_index": 4,
+                  "location": [13.359751, 52.525019]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive northwest on Claire-Waldoff-Promenade.",
+                "bearing_after": 333,
+                "bearing_before": 0,
+                "location": [13.360751, 52.523796]
+              },
+              "name": "Claire-Waldoff-Promenade",
+              "duration": 96.779,
+              "distance": 161.248,
+              "driving_side": "right",
+              "weight": 277.997,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [13.360751, 52.523796],
+                  [13.360672, 52.52389],
+                  [13.360588, 52.52399],
+                  [13.360211, 52.524451],
+                  [13.359751, 52.525019],
+                  [13.359691, 52.525093]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [true, false, true, true],
+                  "in": 1,
+                  "bearings": [64, 154, 244, 334],
+                  "duration": 4.481,
+                  "turn_weight": 7,
+                  "turn_duration": 2.105,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 13.254,
+                  "geometry_index": 5,
+                  "location": [13.359691, 52.525093]
+                },
+                {
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "bearings": [63, 153, 244, 334],
+                  "duration": 21.371,
+                  "turn_weight": 2,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 60.075,
+                  "geometry_index": 6,
+                  "location": [13.359787, 52.525122]
+                },
+                {
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "bearings": [63, 153, 243, 334],
+                  "duration": 1.993,
+                  "turn_weight": 2,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 7.361,
+                  "geometry_index": 7,
+                  "location": [13.360647, 52.525386]
+                },
+                {
+                  "entry": [true, true, false, true],
+                  "in": 2,
+                  "bearings": [63, 153, 243, 334],
+                  "duration": 23.483,
+                  "turn_weight": 2,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 66.329,
+                  "geometry_index": 8,
+                  "location": [13.360726, 52.525411]
+                },
+                {
+                  "bearings": [62, 155, 243, 344],
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "turn_weight": 2,
+                  "turn_duration": 0.021,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 0,
+                  "geometry_index": 9,
+                  "location": [13.361672, 52.5257]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn right onto Otto-Dix-Straße.",
+                "modifier": "right",
+                "bearing_after": 64,
+                "bearing_before": 334,
+                "location": [13.359691, 52.525093]
+              },
+              "name": "Otto-Dix-Straße",
+              "duration": 54.877,
+              "distance": 161.009,
+              "driving_side": "right",
+              "weight": 158.846,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [13.359691, 52.525093],
+                  [13.359787, 52.525122],
+                  [13.360647, 52.525386],
+                  [13.360726, 52.525411],
+                  [13.361672, 52.5257],
+                  [13.361813, 52.525745]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [242],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 10,
+                  "location": [13.361813, 52.525745]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "You have arrived at your destination.",
+                "bearing_after": 0,
+                "bearing_before": 62,
+                "location": [13.361813, 52.525745]
+              },
+              "name": "Otto-Dix-Straße",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[13.361813, 52.525745], [13.361813, 52.525745]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 322.257,
+          "summary": "Claire-Waldoff-Promenade, Otto-Dix-Straße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "DEU", "iso_3166_1": "DE"}],
+          "weight": 148.642,
+          "duration": 53.377,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [333],
+                  "duration": 27.982,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 76.658,
+                  "geometry_index": 0,
+                  "location": [13.361813, 52.525745]
+                },
+                {
+                  "entry": [false, false, true],
+                  "in": 0,
+                  "bearings": [153, 242, 333],
+                  "duration": 22.35,
+                  "turn_weight": 1,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 61.934,
+                  "geometry_index": 1,
+                  "location": [13.361298, 52.526369]
+                },
+                {
+                  "bearings": [63, 153, 244, 334],
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "turn_weight": 2,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "geometry_index": 2,
+                  "location": [13.360886, 52.526867]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive northwest on Lesser-Ury-Weg.",
+                "bearing_after": 333,
+                "bearing_before": 0,
+                "location": [13.361813, 52.525745]
+              },
+              "name": "Lesser-Ury-Weg",
+              "duration": 53.377,
+              "distance": 148.229,
+              "driving_side": "right",
+              "weight": 148.642,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [13.361813, 52.525745],
+                  [13.361298, 52.526369],
+                  [13.360886, 52.526867],
+                  [13.360831, 52.526935]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [154],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 3,
+                  "location": [13.360831, 52.526935]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "You have arrived at your destination.",
+                "bearing_after": 0,
+                "bearing_before": 334,
+                "location": [13.360831, 52.526935]
+              },
+              "name": "Lesser-Ury-Weg",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[13.360831, 52.526935], [13.360831, 52.526935]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 148.229,
+          "summary": "Lesser-Ury-Weg"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "DEU", "iso_3166_1": "DE"}],
+          "weight": 244.877,
+          "duration": 191.553,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "entry": [true],
+                  "bearings": [63],
+                  "duration": 5.387,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 5.805,
+                  "geometry_index": 0,
+                  "location": [13.360831, 52.526935]
+                },
+                {
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "bearings": [62, 243, 331],
+                  "duration": 2.092,
+                  "turn_weight": 1,
+                  "turn_duration": 0.021,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 3.211,
+                  "geometry_index": 1,
+                  "location": [13.361107, 52.52702]
+                },
+                {
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "bearings": [63, 242, 334],
+                  "duration": 2.659,
+                  "turn_weight": 1,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 3.977,
+                  "geometry_index": 2,
+                  "location": [13.361212, 52.527054]
+                },
+                {
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "bearings": [63, 243, 334],
+                  "duration": 2.184,
+                  "turn_weight": 1,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 3.463,
+                  "geometry_index": 3,
+                  "location": [13.361338, 52.527093]
+                },
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [63, 152, 243],
+                  "duration": 14.889,
+                  "turn_weight": 1,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 16.832,
+                  "geometry_index": 4,
+                  "location": [13.361425, 52.52712]
+                },
+                {
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "bearings": [63, 243, 334],
+                  "duration": 3.44,
+                  "turn_weight": 1,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 4.686,
+                  "geometry_index": 5,
+                  "location": [13.362023, 52.527305]
+                },
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [63, 155, 243],
+                  "duration": 6.858,
+                  "turn_weight": 1,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 8.333,
+                  "geometry_index": 6,
+                  "location": [13.362285, 52.527387]
+                },
+                {
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "bearings": [63, 243, 334],
+                  "duration": 9.076,
+                  "turn_weight": 1,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 10.777,
+                  "geometry_index": 7,
+                  "location": [13.36276, 52.527534]
+                },
+                {
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "bearings": [63, 155, 243, 335],
+                  "duration": 1.932,
+                  "turn_weight": 2,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 4.037,
+                  "geometry_index": 8,
+                  "location": [13.363388, 52.52773]
+                },
+                {
+                  "entry": [true, false, false, true],
+                  "in": 2,
+                  "bearings": [63, 153, 243, 321],
+                  "duration": 3.064,
+                  "turn_weight": 2,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 5.317,
+                  "geometry_index": 9,
+                  "location": [13.363521, 52.527771]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [62, 243],
+                  "duration": 18.578,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 20.903,
+                  "geometry_index": 10,
+                  "location": [13.363599, 52.527795]
+                },
+                {
+                  "bearings": [63, 155, 242, 334],
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "turn_weight": 2,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "geometry_index": 11,
+                  "location": [13.364072, 52.527945]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive northeast on Seydlitzstraße.",
+                "bearing_after": 63,
+                "bearing_before": 0,
+                "location": [13.360831, 52.526935]
+              },
+              "name": "Seydlitzstraße",
+              "duration": 74.759,
+              "distance": 255.55,
+              "driving_side": "right",
+              "weight": 94.316,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [13.360831, 52.526935],
+                  [13.361107, 52.52702],
+                  [13.361212, 52.527054],
+                  [13.361338, 52.527093],
+                  [13.361425, 52.52712],
+                  [13.362023, 52.527305],
+                  [13.362285, 52.527387],
+                  [13.36276, 52.527534],
+                  [13.363388, 52.52773],
+                  [13.363521, 52.527771],
+                  [13.363599, 52.527795],
+                  [13.364072, 52.527945],
+                  [13.364189, 52.527982]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [true, false, true],
+                  "in": 1,
+                  "bearings": [163, 243, 334],
+                  "duration": 9.264,
+                  "turn_weight": 7,
+                  "turn_duration": 3.125,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 13.579,
+                  "geometry_index": 12,
+                  "location": [13.364189, 52.527982]
+                },
+                {
+                  "entry": [false, true, false],
+                  "in": 2,
+                  "bearings": [63, 179, 344],
+                  "duration": 14.712,
+                  "turn_weight": 1.5,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 17.367,
+                  "geometry_index": 14,
+                  "location": [13.364259, 52.527835]
+                },
+                {
+                  "entry": [false, true, false],
+                  "in": 0,
+                  "bearings": [23, 206, 293],
+                  "duration": 1.346,
+                  "turn_weight": 1,
+                  "turn_duration": 0.008,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 2.548,
+                  "geometry_index": 19,
+                  "location": [13.364149, 52.527481]
+                },
+                {
+                  "entry": [false, true, true],
+                  "in": 0,
+                  "bearings": [26, 104, 204],
+                  "duration": 11.053,
+                  "turn_weight": 1,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 2,
+                  "weight": 12.997,
+                  "geometry_index": 20,
+                  "location": [13.364125, 52.527451]
+                },
+                {
+                  "entry": [true, false, false],
+                  "in": 2,
+                  "bearings": [153, 321, 358],
+                  "duration": 5.093,
+                  "turn_weight": 1.5,
+                  "turn_duration": 0.122,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 6.918,
+                  "geometry_index": 26,
+                  "location": [13.36404, 52.52719]
+                },
+                {
+                  "entry": [false, true, false],
+                  "in": 2,
+                  "bearings": [62, 151, 333],
+                  "duration": 2.037,
+                  "turn_weight": 1,
+                  "turn_duration": 0.022,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 3.322,
+                  "geometry_index": 27,
+                  "location": [13.364131, 52.527079]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [154, 331],
+                  "duration": 7.808,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 9.514,
+                  "geometry_index": 28,
+                  "location": [13.364171, 52.527035]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [152, 333],
+                  "duration": 3.667,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 4.87,
+                  "geometry_index": 30,
+                  "location": [13.364315, 52.526861]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [155, 332],
+                  "duration": 4.638,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 6.031,
+                  "geometry_index": 31,
+                  "location": [13.364385, 52.52678]
+                },
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [153, 245, 335],
+                  "duration": 3.525,
+                  "turn_weight": 1,
+                  "turn_duration": 0.021,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 4.87,
+                  "geometry_index": 32,
+                  "location": [13.364465, 52.526675]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [153, 333],
+                  "duration": 9.18,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 10.675,
+                  "geometry_index": 33,
+                  "location": [13.36453, 52.526597]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [153, 333],
+                  "duration": 3.692,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 4.87,
+                  "geometry_index": 34,
+                  "location": [13.364698, 52.526392]
+                },
+                {
+                  "entry": [false, true, false, false],
+                  "in": 3,
+                  "bearings": [63, 153, 244, 333],
+                  "duration": 4.239,
+                  "turn_weight": 2,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 6.644,
+                  "geometry_index": 36,
+                  "location": [13.364767, 52.52631]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [153, 333],
+                  "duration": 7.936,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 9.514,
+                  "geometry_index": 38,
+                  "location": [13.364845, 52.526216]
+                },
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [153, 241, 333],
+                  "duration": 8.382,
+                  "turn_weight": 1,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 10.03,
+                  "geometry_index": 39,
+                  "location": [13.364991, 52.526039]
+                },
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [153, 242, 333],
+                  "duration": 2.715,
+                  "turn_weight": 1,
+                  "turn_duration": 0.019,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 3.815,
+                  "geometry_index": 40,
+                  "location": [13.365083, 52.525927]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [153, 333],
+                  "duration": 9.078,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 10.851,
+                  "geometry_index": 41,
+                  "location": [13.365138, 52.525861]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [152, 333],
+                  "duration": 1.726,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 2.759,
+                  "geometry_index": 43,
+                  "location": [13.365324, 52.525639]
+                },
+                {
+                  "lanes": [
+                    {"indications": ["left"], "valid": false, "active": false},
+                    {
+                      "indications": ["straight", "right"],
+                      "valid_indication": "straight",
+                      "valid": true,
+                      "active": true
+                    }
+                  ],
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [153, 332],
+                  "duration": 2.248,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 3.463,
+                  "geometry_index": 44,
+                  "location": [13.36536, 52.525597]
+                },
+                {
+                  "lanes": [
+                    {"indications": ["left"], "valid": false, "active": false},
+                    {
+                      "indications": ["straight", "right"],
+                      "valid_indication": "straight",
+                      "valid": true,
+                      "active": true
+                    }
+                  ],
+                  "bearings": [153, 333],
+                  "entry": [true, false],
+                  "in": 1,
+                  "turn_weight": 1,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "geometry_index": 45,
+                  "location": [13.365406, 52.525542]
+                }
+              ],
+              "maneuver": {
+                "type": "end of road",
+                "instruction": "Turn right onto Lehrter Straße.",
+                "modifier": "right",
+                "bearing_after": 163,
+                "bearing_before": 63,
+                "location": [13.364189, 52.527982]
+              },
+              "name": "Lehrter Straße",
+              "duration": 116.794,
+              "distance": 311.321,
+              "driving_side": "right",
+              "weight": 150.562,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [13.364189, 52.527982],
+                  [13.36423, 52.527908],
+                  [13.364259, 52.527835],
+                  [13.364265, 52.527707],
+                  [13.364255, 52.527653],
+                  [13.364235, 52.527605],
+                  [13.364176, 52.527513],
+                  [13.364149, 52.527481],
+                  [13.364125, 52.527451],
+                  [13.364112, 52.527435],
+                  [13.364073, 52.527393],
+                  [13.364039, 52.527346],
+                  [13.364027, 52.527308],
+                  [13.36402, 52.527263],
+                  [13.36404, 52.52719],
+                  [13.364131, 52.527079],
+                  [13.364171, 52.527035],
+                  [13.36421, 52.526985],
+                  [13.364315, 52.526861],
+                  [13.364385, 52.52678],
+                  [13.364465, 52.526675],
+                  [13.36453, 52.526597],
+                  [13.364698, 52.526392],
+                  [13.36473, 52.526354],
+                  [13.364767, 52.52631],
+                  [13.364802, 52.526268],
+                  [13.364845, 52.526216],
+                  [13.364991, 52.526039],
+                  [13.365083, 52.525927],
+                  [13.365138, 52.525861],
+                  [13.365234, 52.525745],
+                  [13.365324, 52.525639],
+                  [13.36536, 52.525597],
+                  [13.365406, 52.525542],
+                  [13.365472, 52.525462],
+                  [13.365497, 52.525433]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [333],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 47,
+                  "location": [13.365497, 52.525433]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "You have arrived at your destination.",
+                "bearing_after": 0,
+                "bearing_before": 153,
+                "location": [13.365497, 52.525433]
+              },
+              "name": "Lehrter Straße",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[13.365497, 52.525433], [13.365497, 52.525433]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 566.871,
+          "summary": "Seydlitzstraße, Lehrter Straße"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+          [13.360751, 52.523796],
+          [13.360672, 52.52389],
+          [13.360588, 52.52399],
+          [13.360211, 52.524451],
+          [13.359751, 52.525019],
+          [13.359691, 52.525093],
+          [13.359787, 52.525122],
+          [13.360647, 52.525386],
+          [13.360726, 52.525411],
+          [13.361672, 52.5257],
+          [13.361813, 52.525745],
+          [13.361298, 52.526369],
+          [13.360886, 52.526867],
+          [13.360831, 52.526935],
+          [13.361107, 52.52702],
+          [13.361212, 52.527054],
+          [13.361338, 52.527093],
+          [13.361425, 52.52712],
+          [13.362023, 52.527305],
+          [13.362285, 52.527387],
+          [13.36276, 52.527534],
+          [13.363388, 52.52773],
+          [13.363521, 52.527771],
+          [13.363599, 52.527795],
+          [13.364072, 52.527945],
+          [13.364189, 52.527982],
+          [13.36423, 52.527908],
+          [13.364259, 52.527835],
+          [13.364265, 52.527707],
+          [13.364255, 52.527653],
+          [13.364235, 52.527605],
+          [13.364176, 52.527513],
+          [13.364149, 52.527481],
+          [13.364125, 52.527451],
+          [13.364112, 52.527435],
+          [13.364073, 52.527393],
+          [13.364039, 52.527346],
+          [13.364027, 52.527308],
+          [13.36402, 52.527263],
+          [13.36404, 52.52719],
+          [13.364131, 52.527079],
+          [13.364171, 52.527035],
+          [13.36421, 52.526985],
+          [13.364315, 52.526861],
+          [13.364385, 52.52678],
+          [13.364465, 52.526675],
+          [13.36453, 52.526597],
+          [13.364698, 52.526392],
+          [13.36473, 52.526354],
+          [13.364767, 52.52631],
+          [13.364802, 52.526268],
+          [13.364845, 52.526216],
+          [13.364991, 52.526039],
+          [13.365083, 52.525927],
+          [13.365138, 52.525861],
+          [13.365234, 52.525745],
+          [13.365324, 52.525639],
+          [13.36536, 52.525597],
+          [13.365406, 52.525542],
+          [13.365472, 52.525462],
+          [13.365497, 52.525433]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 4.3,
+      "name": "Claire-Waldoff-Promenade",
+      "location": [13.360751, 52.523796]
+    },
+    {
+      "distance": 0.521,
+      "name": "Otto-Dix-Straße",
+      "location": [13.361813, 52.525745]
+    },
+    {
+      "distance": 2.624,
+      "name": "Lesser-Ury-Weg",
+      "location": [13.360831, 52.526935]
+    },
+    {
+      "distance": 2.965,
+      "name": "Lehrter Straße",
+      "location": [13.365497, 52.525433]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "9A7D9rqTrWyq5gTzXL2c-w5y709KdVxvGvJCFxxfVmKDvKZ0RYle2Q=="
+}

@@ -1,0 +1,233 @@
+{
+  "routes": [
+    {
+      "weight_name": "auto",
+      "weight": 910.277,
+      "duration": 660.702,
+      "distance": 3424.091,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 45.255,
+          "duration": 37.342,
+          "steps": [],
+          "distance": 155.918,
+          "summary": "Burgstraße, Anna-Louisa-Karsch-Straße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 286.108,
+          "duration": 207.907,
+          "steps": [],
+          "distance": 1089.174,
+          "summary": "Dircksenstraße, Karl-Liebknecht-Straße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 240.022,
+          "duration": 173.398,
+          "steps": [],
+          "distance": 924.432,
+          "summary": "Spandauer Straße, Rathausstraße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 338.892,
+          "duration": 242.056,
+          "steps": [],
+          "distance": 1254.568,
+          "summary": "Schinkelplatz, B 2"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+          [
+            13.400838,
+            52.520966
+          ],
+          [
+            13.400948,
+            52.520801
+          ],
+          [
+            13.402712,
+            52.521332
+          ],
+          [
+            13.404517,
+            52.52196
+          ],
+          [
+            13.403647,
+            52.523111
+          ],
+          [
+            13.405257,
+            52.523467
+          ],
+          [
+            13.406606,
+            52.523494
+          ],
+          [
+            13.408071,
+            52.523211
+          ],
+          [
+            13.409663,
+            52.522572
+          ],
+          [
+            13.405521,
+            52.520505
+          ],
+          [
+            13.404628,
+            52.520044
+          ],
+          [
+            13.405759,
+            52.519392
+          ],
+          [
+            13.407084,
+            52.518364
+          ],
+          [
+            13.401363,
+            52.515978
+          ],
+          [
+            13.40117,
+            52.515987
+          ],
+          [
+            13.400802,
+            52.516223
+          ],
+          [
+            13.39993,
+            52.515883
+          ],
+          [
+            13.39993,
+            52.515883
+          ],
+          [
+            13.398735,
+            52.515589
+          ],
+          [
+            13.398476,
+            52.515986
+          ],
+          [
+            13.398254,
+            52.517293
+          ],
+          [
+            13.398086,
+            52.517536
+          ],
+          [
+            13.399178,
+            52.517608
+          ],
+          [
+            13.399665,
+            52.517715
+          ],
+          [
+            13.40288,
+            52.51896
+          ],
+          [
+            13.404987,
+            52.520013
+          ],
+          [
+            13.403103,
+            52.521458
+          ],
+          [
+            13.400948,
+            52.520801
+          ],
+          [
+            13.400838,
+            52.520966
+          ]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 7.592,
+      "name": "Burgstraße",
+      "location": [
+        13.400838,
+        52.520966
+      ]
+    },
+    {
+      "distance": 8.012,
+      "name": "Anna-Louisa-Karsch-Straße",
+      "location": [
+        13.402712,
+        52.521332
+      ]
+    },
+    {
+      "distance": 8.04,
+      "name": "Karl-Liebknecht-Straße",
+      "location": [
+        13.405521,
+        52.520505
+      ]
+    },
+    {
+      "distance": 14.908,
+      "name": "Schloßplatz",
+      "location": [
+        13.39993,
+        52.515883
+      ]
+    },
+    {
+      "distance": 7.592,
+      "name": "Burgstraße",
+      "location": [
+        13.400838,
+        52.520966
+      ]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "9rh2CIlraIkhQDa_0_3DhstAoWv1IixP-P1BPyhiUwIsoyx3u6b0ag=="
+}

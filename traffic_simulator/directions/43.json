@@ -1,0 +1,233 @@
+{
+  "routes": [
+    {
+      "weight_name": "auto",
+      "weight": 2045.147,
+      "duration": 1138.162,
+      "distance": 4849.296,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 353.161,
+          "duration": 285.296,
+          "steps": [],
+          "distance": 1380.564,
+          "summary": "B 2, Universitätsstraße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 895.299,
+          "duration": 232.448,
+          "steps": [],
+          "distance": 793.384,
+          "summary": "Am Weidendamm, Planckstraße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 387.861,
+          "duration": 315.46,
+          "steps": [],
+          "distance": 1059.928,
+          "summary": "Planckstraße, Friedrichstraße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 408.826,
+          "duration": 304.957,
+          "steps": [],
+          "distance": 1615.421,
+          "summary": "Oranienburger Straße, Monbijouplatz"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+          [
+            13.401975,
+            52.518676
+          ],
+          [
+            13.399268,
+            52.517746
+          ],
+          [
+            13.392628,
+            52.517386
+          ],
+          [
+            13.391997,
+            52.520059
+          ],
+          [
+            13.390265,
+            52.519959
+          ],
+          [
+            13.389524,
+            52.521309
+          ],
+          [
+            13.389377,
+            52.522035
+          ],
+          [
+            13.39019,
+            52.522071
+          ],
+          [
+            13.391034,
+            52.522103
+          ],
+          [
+            13.389377,
+            52.522035
+          ],
+          [
+            13.389542,
+            52.521267
+          ],
+          [
+            13.390226,
+            52.520159
+          ],
+          [
+            13.390447,
+            52.518924
+          ],
+          [
+            13.392212,
+            52.51914
+          ],
+          [
+            13.391997,
+            52.520059
+          ],
+          [
+            13.391424,
+            52.520026
+          ],
+          [
+            13.390265,
+            52.519959
+          ],
+          [
+            13.389524,
+            52.521309
+          ],
+          [
+            13.389377,
+            52.522035
+          ],
+          [
+            13.388021,
+            52.521765
+          ],
+          [
+            13.387337,
+            52.526239
+          ],
+          [
+            13.389297,
+            52.52586
+          ],
+          [
+            13.397732,
+            52.523753
+          ],
+          [
+            13.400072,
+            52.522779
+          ],
+          [
+            13.400948,
+            52.520801
+          ],
+          [
+            13.402859,
+            52.521379
+          ],
+          [
+            13.404628,
+            52.520044
+          ],
+          [
+            13.403043,
+            52.519109
+          ],
+          [
+            13.401975,
+            52.518676
+          ]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 7.471,
+      "name": "Liebknechtbrücke",
+      "location": [
+        13.401975,
+        52.518676
+      ]
+    },
+    {
+      "distance": 2.613,
+      "name": "Am Weidendamm",
+      "location": [
+        13.39019,
+        52.522071
+      ]
+    },
+    {
+      "distance": 22.715,
+      "name": "Georgenstraße",
+      "location": [
+        13.391424,
+        52.520026
+      ]
+    },
+    {
+      "distance": 15.128,
+      "name": "Oranienburger Straße",
+      "location": [
+        13.389297,
+        52.52586
+      ]
+    },
+    {
+      "distance": 7.471,
+      "name": "Liebknechtbrücke",
+      "location": [
+        13.401975,
+        52.518676
+      ]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "IfnOzTsHMuAIkgfj1w7EvJebESwST5qkcFCJYU1IfvgGz4phbO7Ryg=="
+}

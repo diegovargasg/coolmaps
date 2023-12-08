@@ -1,0 +1,229 @@
+{
+  "routes": [
+    {
+      "weight_name": "auto",
+      "weight": 3211.714,
+      "duration": 1544.324,
+      "distance": 5900.783,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 768.24,
+          "duration": 356.534,
+          "steps": [],
+          "distance": 1228.064,
+          "summary": "Krausnickstraße, Oranienburger Straße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 659.274,
+          "duration": 478.46,
+          "steps": [],
+          "distance": 2165.739,
+          "summary": "Linienstraße, Friedrichstraße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 381.922,
+          "duration": 317.727,
+          "steps": [],
+          "distance": 1173.18,
+          "summary": "B 2, Friedrichstraße"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 1402.277,
+          "duration": 391.603,
+          "steps": [],
+          "distance": 1333.799,
+          "summary": "Oranienburger Straße, Krausnickstraße"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+          [
+            13.395354,
+            52.525354
+          ],
+          [
+            13.396032,
+            52.52537
+          ],
+          [
+            13.395802,
+            52.525966
+          ],
+          [
+            13.398435,
+            52.526448
+          ],
+          [
+            13.398859,
+            52.52548
+          ],
+          [
+            13.396177,
+            52.525011
+          ],
+          [
+            13.395416,
+            52.524356
+          ],
+          [
+            13.389995,
+            52.525692
+          ],
+          [
+            13.39183,
+            52.526102
+          ],
+          [
+            13.393523,
+            52.52641
+          ],
+          [
+            13.392925,
+            52.527491
+          ],
+          [
+            13.388503,
+            52.526299
+          ],
+          [
+            13.388361,
+            52.526146
+          ],
+          [
+            13.387144,
+            52.526374
+          ],
+          [
+            13.388827,
+            52.516848
+          ],
+          [
+            13.393172,
+            52.517192
+          ],
+          [
+            13.39296,
+            52.517399
+          ],
+          [
+            13.391742,
+            52.517333
+          ],
+          [
+            13.38878,
+            52.517149
+          ],
+          [
+            13.387449,
+            52.52581
+          ],
+          [
+            13.387337,
+            52.526239
+          ],
+          [
+            13.395416,
+            52.524356
+          ],
+          [
+            13.396177,
+            52.525011
+          ],
+          [
+            13.398859,
+            52.52548
+          ],
+          [
+            13.398435,
+            52.526448
+          ],
+          [
+            13.395802,
+            52.525966
+          ],
+          [
+            13.396032,
+            52.52537
+          ],
+          [
+            13.395354,
+            52.525354
+          ]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 46.428,
+      "name": "",
+      "location": [
+        13.395354,
+        52.525354
+      ]
+    },
+    {
+      "distance": 15.572,
+      "name": "Auguststraße",
+      "location": [
+        13.39183,
+        52.526102
+      ]
+    },
+    {
+      "distance": 25.394,
+      "name": "Unter den Linden",
+      "location": [
+        13.391742,
+        52.517333
+      ]
+    },
+    {
+      "distance": 6.298,
+      "name": "Friedrichstraße",
+      "location": [
+        13.387449,
+        52.52581
+      ]
+    },
+    {
+      "distance": 46.428,
+      "name": "",
+      "location": [
+        13.395354,
+        52.525354
+      ]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "RIBNTVC-C0gvzxCRO9eg5FWCmQy-dnPE31pYp0gCREBMIoJJAJ1FGA=="
+}

@@ -1,0 +1,575 @@
+{
+  "routes": [
+    {
+      "weight_name": "auto",
+      "weight": 639.805,
+      "duration": 185.444,
+      "distance": 758.869,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "admins": [{"iso_3166_1_alpha3": "DEU", "iso_3166_1": "DE"}],
+          "weight": 639.805,
+          "duration": 185.444,
+          "steps": [
+            {
+              "intersections": [
+                {
+                  "classes": ["tunnel"],
+                  "entry": [true],
+                  "bearings": [320],
+                  "duration": 32.236,
+                  "mapbox_streets_v8": {"class": "trunk"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 34.547,
+                  "geometry_index": 0,
+                  "location": [13.36852, 52.523843]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [2, 181],
+                  "duration": 26.324,
+                  "mapbox_streets_v8": {"class": "trunk"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 28.38,
+                  "geometry_index": 7,
+                  "location": [13.367972, 52.525122]
+                },
+                {
+                  "lanes": [
+                    {"indications": ["left"], "valid": false, "active": false},
+                    {
+                      "indications": ["straight"],
+                      "valid_indication": "straight",
+                      "valid": true,
+                      "active": true
+                    },
+                    {"indications": ["right"], "valid": false, "active": false},
+                    {"indications": ["right"], "valid": false, "active": false}
+                  ],
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [2, 179],
+                  "duration": 2.252,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 2.382,
+                  "geometry_index": 9,
+                  "location": [13.36798, 52.525713]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [63, 182, 244, 348],
+                  "duration": 3.083,
+                  "lanes": [
+                    {"indications": ["left"], "valid": false, "active": false},
+                    {
+                      "indications": ["straight"],
+                      "valid_indication": "straight",
+                      "valid": true,
+                      "active": true
+                    },
+                    {"indications": ["right"], "valid": false, "active": false},
+                    {"indications": ["right"], "valid": false, "active": false}
+                  ],
+                  "turn_duration": 0.052,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 3.275,
+                  "geometry_index": 11,
+                  "location": [13.367985, 52.525786]
+                },
+                {
+                  "lanes": [
+                    {"indications": ["left"], "valid": false, "active": false},
+                    {
+                      "indications": ["straight"],
+                      "valid_indication": "straight",
+                      "valid": true,
+                      "active": true
+                    },
+                    {"indications": ["right"], "valid": false, "active": false},
+                    {"indications": ["right"], "valid": false, "active": false}
+                  ],
+                  "location": [13.367952, 52.525882],
+                  "geometry_index": 14,
+                  "admin_index": 0,
+                  "weight": 11.562,
+                  "is_urban": true,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "turn_duration": 0.03,
+                  "turn_weight": 1.5,
+                  "duration": 9.214,
+                  "bearings": [63, 92, 168, 244, 341],
+                  "out": 4,
+                  "in": 2,
+                  "entry": [true, false, false, false, true]
+                },
+                {
+                  "entry": [false, false, true, true],
+                  "in": 1,
+                  "bearings": [61, 161, 239, 350],
+                  "duration": 1.625,
+                  "turn_weight": 6.5,
+                  "turn_duration": 0.014,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 8.242,
+                  "geometry_index": 17,
+                  "location": [13.367831, 52.526099]
+                },
+                {
+                  "entry": [false, false, false, true],
+                  "in": 1,
+                  "bearings": [56, 170, 237, 357],
+                  "duration": 0.834,
+                  "turn_duration": 0.012,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 3,
+                  "weight": 0.967,
+                  "geometry_index": 19,
+                  "location": [13.367808, 52.526178]
+                },
+                {
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "bearings": [2, 59, 177, 238],
+                  "duration": 6.749,
+                  "turn_duration": 0.009,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 7.16,
+                  "geometry_index": 20,
+                  "location": [13.367805, 52.526219]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [3, 183],
+                  "duration": 17.703,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 18.963,
+                  "geometry_index": 22,
+                  "location": [13.367831, 52.526555]
+                },
+                {
+                  "entry": [true, false, false],
+                  "in": 2,
+                  "bearings": [7, 146, 184],
+                  "duration": 7.145,
+                  "turn_duration": 0.008,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 7.74,
+                  "geometry_index": 24,
+                  "location": [13.367911, 52.527437]
+                },
+                {
+                  "entry": [true, false, false],
+                  "in": 2,
+                  "bearings": [11, 108, 187],
+                  "duration": 10.419,
+                  "turn_duration": 0.009,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 11.18,
+                  "geometry_index": 25,
+                  "location": [13.367944, 52.527596]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [16, 192],
+                  "duration": 13.687,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 14.62,
+                  "geometry_index": 27,
+                  "location": [13.368021, 52.527825]
+                },
+                {
+                  "entry": [true, false, false],
+                  "in": 1,
+                  "bearings": [34, 193, 211],
+                  "duration": 11.873,
+                  "turn_weight": 2.25,
+                  "turn_duration": 0.028,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 15.082,
+                  "geometry_index": 29,
+                  "location": [13.368149, 52.528122]
+                },
+                {
+                  "entry": [true, false],
+                  "in": 1,
+                  "bearings": [55, 228],
+                  "duration": 10.535,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "weight": 11.406,
+                  "geometry_index": 32,
+                  "location": [13.368737, 52.52855]
+                },
+                {
+                  "bearings": [63, 149, 241, 329],
+                  "entry": [true, false, false, false],
+                  "in": 2,
+                  "lanes": [
+                    {"indications": ["left"], "valid": false, "active": false},
+                    {"indications": ["left"], "valid": false, "active": false},
+                    {
+                      "indications": ["right"],
+                      "valid_indication": "right",
+                      "valid": true,
+                      "active": true
+                    }
+                  ],
+                  "turn_duration": 2.008,
+                  "traffic_signal": true,
+                  "mapbox_streets_v8": {"class": "primary"},
+                  "is_urban": true,
+                  "admin_index": 0,
+                  "out": 0,
+                  "geometry_index": 35,
+                  "location": [13.369429, 52.528817]
+                }
+              ],
+              "maneuver": {
+                "type": "depart",
+                "instruction": "Drive northwest on Tunnel Tiergarten Spreebogen.",
+                "bearing_after": 320,
+                "bearing_before": 0,
+                "location": [13.36852, 52.523843]
+              },
+              "name": "Tunnel Tiergarten Spreebogen",
+              "duration": 158.127,
+              "distance": 621.014,
+              "driving_side": "right",
+              "weight": 178.153,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [13.36852, 52.523843],
+                  [13.368336, 52.523969],
+                  [13.368186, 52.524109],
+                  [13.368065, 52.524291],
+                  [13.368005, 52.524463],
+                  [13.367979, 52.524642],
+                  [13.367966, 52.524813],
+                  [13.367972, 52.525122],
+                  [13.367987, 52.525423],
+                  [13.36798, 52.525713],
+                  [13.367982, 52.525749],
+                  [13.367985, 52.525786],
+                  [13.367977, 52.525824],
+                  [13.367964, 52.525858],
+                  [13.367952, 52.525882],
+                  [13.367895, 52.525984],
+                  [13.36788, 52.52601],
+                  [13.367831, 52.526099],
+                  [13.367809, 52.526163],
+                  [13.367808, 52.526178],
+                  [13.367805, 52.526219],
+                  [13.36781, 52.526308],
+                  [13.367831, 52.526555],
+                  [13.367898, 52.527371],
+                  [13.367911, 52.527437],
+                  [13.367944, 52.527596],
+                  [13.367991, 52.527746],
+                  [13.368021, 52.527825],
+                  [13.368097, 52.527973],
+                  [13.368149, 52.528122],
+                  [13.368402, 52.528354],
+                  [13.368547, 52.528449],
+                  [13.368737, 52.52855],
+                  [13.368824, 52.528592],
+                  [13.36928, 52.528772],
+                  [13.369429, 52.528817],
+                  [13.369599, 52.528869]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "lanes": [
+                    {"indications": ["left"], "valid": false, "active": false},
+                    {"indications": ["left"], "valid": false, "active": false},
+                    {
+                      "indications": ["right"],
+                      "valid_indication": "right",
+                      "valid": true,
+                      "active": true
+                    }
+                  ],
+                  "location": [13.369599, 52.528869],
+                  "geometry_index": 36,
+                  "admin_index": 0,
+                  "weight": 9.586,
+                  "is_urban": false,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "turn_duration": 2.535,
+                  "turn_weight": 7,
+                  "duration": 5.052,
+                  "bearings": [157, 200, 243, 338],
+                  "out": 0,
+                  "in": 2,
+                  "entry": [true, false, false, true]
+                },
+                {
+                  "entry": [false, true, false, false],
+                  "in": 3,
+                  "bearings": [66, 158, 246, 337],
+                  "duration": 2.105,
+                  "turn_weight": 2,
+                  "turn_duration": 0.008,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 4.188,
+                  "geometry_index": 37,
+                  "location": [13.369675, 52.528759]
+                },
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [68, 158, 338],
+                  "duration": 1.329,
+                  "turn_weight": 1,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 2.393,
+                  "geometry_index": 40,
+                  "location": [13.369737, 52.528667]
+                },
+                {
+                  "bearings": [68, 158, 338],
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "turn_weight": 1,
+                  "turn_duration": 0.007,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 1,
+                  "geometry_index": 41,
+                  "location": [13.369776, 52.528609]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn right onto Heidestraße.",
+                "modifier": "right",
+                "bearing_after": 157,
+                "bearing_before": 63,
+                "location": [13.369599, 52.528869]
+              },
+              "name": "Heidestraße",
+              "duration": 15.643,
+              "distance": 69.065,
+              "driving_side": "right",
+              "weight": 24.727,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [13.369599, 52.528869],
+                  [13.369675, 52.528759],
+                  [13.36969, 52.528737],
+                  [13.3697, 52.528723],
+                  [13.369737, 52.528667],
+                  [13.369776, 52.528609],
+                  [13.369986, 52.528295]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "entry": [true, true, false],
+                  "in": 2,
+                  "bearings": [158, 244, 338],
+                  "duration": 3.053,
+                  "turn_weight": 407,
+                  "turn_duration": 1.723,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 1,
+                  "weight": 410.538,
+                  "geometry_index": 42,
+                  "location": [13.369986, 52.528295]
+                },
+                {
+                  "bearings": [64, 158, 231, 338],
+                  "entry": [false, false, true, false],
+                  "in": 0,
+                  "turn_weight": 2.8,
+                  "turn_duration": 0.045,
+                  "mapbox_streets_v8": {"class": "street"},
+                  "is_urban": false,
+                  "admin_index": 0,
+                  "out": 2,
+                  "geometry_index": 43,
+                  "location": [13.369864, 52.528258]
+                }
+              ],
+              "maneuver": {
+                "type": "turn",
+                "instruction": "Turn right onto Jean-Monnet-Straße.",
+                "modifier": "right",
+                "bearing_after": 244,
+                "bearing_before": 158,
+                "location": [13.369986, 52.528295]
+              },
+              "name": "Jean-Monnet-Straße",
+              "duration": 11.674,
+              "distance": 68.79,
+              "driving_side": "right",
+              "weight": 436.925,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [
+                  [13.369986, 52.528295],
+                  [13.369864, 52.528258],
+                  [13.369177, 52.527924]
+                ],
+                "type": "LineString"
+              }
+            },
+            {
+              "intersections": [
+                {
+                  "bearings": [51],
+                  "entry": [true],
+                  "in": 0,
+                  "admin_index": 0,
+                  "geometry_index": 44,
+                  "location": [13.369177, 52.527924]
+                }
+              ],
+              "maneuver": {
+                "type": "arrive",
+                "instruction": "You have arrived at your destination.",
+                "bearing_after": 0,
+                "bearing_before": 231,
+                "location": [13.369177, 52.527924]
+              },
+              "name": "Jean-Monnet-Straße",
+              "duration": 0,
+              "distance": 0,
+              "driving_side": "right",
+              "weight": 0,
+              "mode": "driving",
+              "geometry": {
+                "coordinates": [[13.369177, 52.527924], [13.369177, 52.527924]],
+                "type": "LineString"
+              }
+            }
+          ],
+          "distance": 758.869,
+          "summary": "Tunnel Tiergarten Spreebogen, Heidestraße"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+          [13.36852, 52.523843],
+          [13.368336, 52.523969],
+          [13.368186, 52.524109],
+          [13.368065, 52.524291],
+          [13.368005, 52.524463],
+          [13.367979, 52.524642],
+          [13.367966, 52.524813],
+          [13.367972, 52.525122],
+          [13.367987, 52.525423],
+          [13.36798, 52.525713],
+          [13.367982, 52.525749],
+          [13.367985, 52.525786],
+          [13.367977, 52.525824],
+          [13.367964, 52.525858],
+          [13.367952, 52.525882],
+          [13.367895, 52.525984],
+          [13.36788, 52.52601],
+          [13.367831, 52.526099],
+          [13.367809, 52.526163],
+          [13.367808, 52.526178],
+          [13.367805, 52.526219],
+          [13.36781, 52.526308],
+          [13.367831, 52.526555],
+          [13.367898, 52.527371],
+          [13.367911, 52.527437],
+          [13.367944, 52.527596],
+          [13.367991, 52.527746],
+          [13.368021, 52.527825],
+          [13.368097, 52.527973],
+          [13.368149, 52.528122],
+          [13.368402, 52.528354],
+          [13.368547, 52.528449],
+          [13.368737, 52.52855],
+          [13.368824, 52.528592],
+          [13.36928, 52.528772],
+          [13.369429, 52.528817],
+          [13.369599, 52.528869],
+          [13.369675, 52.528759],
+          [13.36969, 52.528737],
+          [13.3697, 52.528723],
+          [13.369737, 52.528667],
+          [13.369776, 52.528609],
+          [13.369986, 52.528295],
+          [13.369864, 52.528258],
+          [13.369177, 52.527924]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 0.292,
+      "name": "Tunnel Tiergarten Spreebogen",
+      "location": [13.36852, 52.523843]
+    },
+    {
+      "distance": 0.391,
+      "name": "Jean-Monnet-Straße",
+      "location": [13.369177, 52.527924]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "telUufp-A4C1F5gi5uTpDNUa8TNQl5AWqt2uKx8SdJ4IEMnwFGcUcw=="
+}

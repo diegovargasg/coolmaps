@@ -1,0 +1,157 @@
+{
+  "routes": [
+    {
+      "weight_name": "auto",
+      "weight": 1931.09,
+      "duration": 1492.896,
+      "distance": 7261.01,
+      "legs": [
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 534.115,
+          "duration": 435.764,
+          "steps": [],
+          "distance": 2231.391,
+          "summary": "Neustädtische Kirchstraße, B 2"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 413.047,
+          "duration": 292.201,
+          "steps": [],
+          "distance": 1540.896,
+          "summary": "Rathausstraße, B 2"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 599.038,
+          "duration": 462.748,
+          "steps": [],
+          "distance": 2474.585,
+          "summary": "Dircksenstraße, B 2"
+        },
+        {
+          "via_waypoints": [],
+          "admins": [
+            {
+              "iso_3166_1_alpha3": "DEU",
+              "iso_3166_1": "DE"
+            }
+          ],
+          "weight": 384.891,
+          "duration": 302.183,
+          "steps": [],
+          "distance": 1014.138,
+          "summary": "Behrenstraße, Glinkastraße"
+        }
+      ],
+      "geometry": {
+        "coordinates": [
+        [
+            13.36739,
+            52.524859,
+            0.0
+        ],
+        [
+            13.366747,
+            52.524672,
+            0.0
+        ],
+        [
+            13.366092,
+            52.524433,
+            0.0
+        ],
+        [
+            13.365539,
+            52.52418,
+            0.0
+        ],
+        [
+            13.364859,
+            52.523779,
+            0.0
+        ],
+        [
+            13.363933,
+            52.52321,
+            0.0
+        ],
+        [
+            13.36335,
+            52.522891,
+            0.0
+        ],
+        [
+            13.362832,
+            52.522628,
+            0.0
+        ]
+        ],
+        "type": "LineString"
+      }
+    }
+  ],
+  "waypoints": [
+    {
+      "distance": 39.175,
+      "name": "Georgenstraße",
+      "location": [
+        13.386645,
+        52.519922
+      ]
+    },
+    {
+      "distance": 74.254,
+      "name": "Rathausstraße",
+      "location": [
+        13.40561,
+        52.517748
+      ]
+    },
+    {
+      "distance": 65.653,
+      "name": "Anna-Louisa-Karsch-Straße",
+      "location": [
+        13.403122,
+        52.521464
+      ]
+    },
+    {
+      "distance": 0.979,
+      "name": "Charlottenstraße",
+      "location": [
+        13.391046,
+        52.515299
+      ]
+    },
+    {
+      "distance": 39.175,
+      "name": "Georgenstraße",
+      "location": [
+        13.386645,
+        52.519922
+      ]
+    }
+  ],
+  "code": "Ok",
+  "uuid": "f8PjkqJNz-heVqLiezviAcuavxChOxmFio5XEI3gxKitZjBtn4KCFQ=="
+}
