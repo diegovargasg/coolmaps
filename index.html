@@ -162,7 +162,7 @@
           <a href="#" class="back-top">Back to top</a>
         </p>
         <p class="">
-          &copy; 2022 - Diego Vargas
+          &copy; <span id="year"></span> - Diego Vargas
           <a href="https://www.linkedin.com/in/diego-vargas-dev/" target="_blank" class="ms-1 svg-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
               <path
@@ -180,7 +180,13 @@
         </p>
       </div>
     </footer>
-
+    <script>
+      (function () {
+        const currentYear = new Date().getFullYear();
+        const yearDiv = document.getElementById('year');
+        yearDiv.textContent = currentYear;
+      })();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
